@@ -1,0 +1,27 @@
+/** 
+ * Imports
+ * Modules Used:
+ */
+import { logMessage } from "./Modules/logging";
+
+/**
+ * Constants
+ * Define values that don't change
+ */
+const PAGE_NAME = "index.js";
+
+/**
+ * Variables
+ * Values that will change
+ */
+
+let message = "Page has fully loaded";
+
+/**
+ * Event Listeners
+ * Code running while users interacts with page
+ */
+window.addEventListener("load", () => {
+    logMessage(PAGE_NAME, message);
+}
+)
