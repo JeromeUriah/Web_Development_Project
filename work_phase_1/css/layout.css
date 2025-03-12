@@ -3,7 +3,21 @@
     width: 80vw;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
     background-color: rgb(167, 99, 206);
+}
+
+.introduction_title{
+    margin: 5%;
+    padding: 5%;
+    height: 80%;
+    width: 45%;
+}
+
+.title{
+    margin-left: 0;
+    margin-bottom: 2%;
+    padding-left: 0;
 }
 
 @media (min-width: 768px) {
