@@ -16,7 +16,7 @@ h2, h3, h4, h5{
 p{
     font-family:"EB Garamond", serif;
     font-size: 10px;
-    color:  var(--text);
+    color: var(--text);
 }
 
 .headertext {
