@@ -1,8 +1,137 @@
 /* button styles */
-.button{
-    padding: 10px 20px;
-    border-radius: 5px;
+.button-primary{
+    padding: 5px 30px;
+    border-radius: 30px;
+    width: fit-content;
     font-size: 1rem;
     border: none;
     cursor: pointer;
+    background-color: var(--text);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9px;
+    color: var(--background);
+    display: block;
+    margin-top: 0.5vw;
+}
+.button-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+.button-second{
+    padding: 5px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(138, 112, 231);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9px;
+    color: white;
+    display: block;
+    margin-top: 0.5vw;
+}
+
+.button-second:hover {
+    background-color: white;
+    color: black;
+}
+
+.button-third{
+    padding: 5px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(102, 68, 224);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9px;
+    color: white;
+    display: block;
+    margin-top: 0.5vw;
+}
+
+.button-third:hover {
+    background-color: white;
+    color: black;
+}
+
+.button-fourth{
+    padding: 5px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(72, 34, 207);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9px;
+    color: white;
+    display: block;
+    margin-top: 0.5vw;
+}
+
+.button-fourth:hover {
+    background-color: white;
+    color: black;
+}
+
+.button-fifth{
+    padding: 5px 30px;
+    border-radius: 30px;
+    width: fit-content;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(158, 34, 207);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9px;
+    color: white;
+    display: block;
+    margin-top: 0.5vw;
+}
+
+.button-fifth:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width:800px) {
+    .button-primary{
+        padding: 10px 30px;
+        border-radius: 0px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .button-second{
+        padding: 10px 30px;
+        border-radius: 0px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .button-third{
+        padding: 10px 30px;
+        border-radius: 0px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .button-fourth{
+        padding: 10px 30px;
+        border-radius: 0px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .button-fifth{
+        padding: 10px 30px;
+        border-radius: 0px;
+        width: 100%;
+        align-items: center;
+    }
+    
 }

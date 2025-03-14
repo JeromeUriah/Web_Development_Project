@@ -1,6 +1,7 @@
-.p{
-    font-size: 1rem;
-    color: black;
+:root {
+    --background: rgb(174, 156, 238);
+    --text: rgb(84, 26, 74);
+    --lightbackground: rgb(209, 200, 243);
 }
 
 
