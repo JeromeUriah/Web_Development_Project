@@ -1,40 +1,28 @@
-.title_text{
+h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 4vw;
+    font-size: 2rem;
+    line-height: 1.5;
     color: rgb(80, 24, 112);
+    align-self: start;
 }
 
-.title_subtext{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2vw;
+h2{
+    font-family:"EB Garamond", serif;
+    font-size: 1.5rem;
     color: rgb(80, 24, 112);
-    margin-top: 1vw;
+    line-height: 1.5;
 }
 
-.headertext{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1vw;
-    color: rgb(80, 24, 112);
-}
-
-.right_content{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1vw;
-    color: rgb(80, 24, 112);
-}
-
-.left_content{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1vw;
-    margin-top: 1vw;
+p{
+    font-family:"EB Garamond", serif;
+    font-size: 1rem;
     color: rgb(80, 24, 112);
 }
 
 .headertext {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2vw;
+    font-family:"EB Garamond", serif;
+    font-size: 1.5rem;
     color: rgb(80, 24, 112);
     margin-left:4vw;
     padding-top: 2vw;
 }
-
