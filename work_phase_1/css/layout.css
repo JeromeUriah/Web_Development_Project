@@ -1,5 +1,6 @@
 body{
     background-color: var(--background);
+    scrollbar-width: none;
 }
 
 .logo{
@@ -12,6 +13,7 @@ body{
 
 .header{
     height: 10%;
+    width: 100%;
 }
 
 .content{
@@ -36,9 +38,48 @@ body{
 .right{
     height: 100%;
     width: 70%;
-    padding: 1rem;
     float: right;
     background-color: var(--background);
+}
+
+.right-home{
+    height: 100%;
+    width: 70%;
+    padding: 1rem;
+    background-color: var(--background);
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.card{
+    width: 15vw;
+    height: 30vw;
+    text-align: center;
+    margin: auto;
+    background-color: var(--lightbackground) ;
+    border:solid, white, 0.5vw;
+    border-radius: 1vw;
+}
+
+.fill-div {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    background-color: var(--lightbackground);
+    font-size: 36vw;
+    font-weight: bold;
+    overflow: hidden;
+    border-radius: 1vw;
+}
+
+.fill-div:hover{
+    background-color: var(--text);
+    color: white;
+    border-radius: 1vw;
 }
 
 .additional{
@@ -102,17 +143,28 @@ body{
         display: block; 
         float: none; 
         width: 100%;
-        margin-left: 0;
+        margin: 0;
         align-items: center;
         padding: 1vw;
+
     }
     .right{
         display: block; 
         float: none; 
         width: 100%;
-        margin-left: 2vw;
         align-items: center;
+        margin: 0;
+        padding: 0.2vw;
     }
+
+    .right-home{
+        float: none; 
+        width: 100%;
+        align-items: center;
+        margin: none;
+        gap: 0.5vw;
+    }
+
     .additional{
         display: block; 
         float: none; 
@@ -139,5 +191,9 @@ body{
         margin-left: 0;
         margin-top: 0;
         text-align: center;
+    }
+
+    .card{
+        width: 100%;
     }
 }
