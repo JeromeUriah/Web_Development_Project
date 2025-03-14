@@ -1,0 +1,17 @@
+.title_text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vw;
+    color: rgb(80, 24, 112);
+}
+
+.title_subtext{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    color: rgb(80, 24, 112);
+}
+
+.main_content{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1vw;
+    color: rgb(80, 24, 112);
+}

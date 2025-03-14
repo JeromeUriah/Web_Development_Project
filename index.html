@@ -58,63 +58,44 @@
         <link rel="stylesheet" href="work_phase_1/css/reset.css" />
         <link rel="stylesheet" href="work_phase_1/css/base.css" />
         <link rel="stylesheet" href="work_phase_1/css/layout.css" />
-        <link rel="stylesheet" href="work_phase_1/css/typography.css" />
         <link rel="stylesheet" href="work_phase_1/css/components.css" />
         
     </head>
-    <body class="main">
-        <div class="header">
-            <h1 class="headertext">Jerome</h1>
-        </div>
-
-        <div class="content">
-            <div class="left">
-                <div class ="introduction_title">
-                    <section>
-                        <div class="title">
-                            <h1 class="title_text">
-                                Home Page
-                            </h1>
-                            <p class="left_content">
-                                Hello, I am Jerome Uriah Ng. 
-                                I am from Singapore and am currently studying in UQ.
-                            </p>
-                        </div>
-                    </section>
-                    <section>
-                        <a href="work_phase_1/index.html">Phase 1</a>
-                        <a href="work_phase_2/index.html">Phase 2</a>
-                        <a href="work_phase_3/index.html">Phase 3</a>
-                        <a href="work_phase_4/index.html">Phase 4</a>
-                    </section>
-                </div>
-            </div>
-            <div class="right">
+    <body>
+        <div class="container">
+            <div class="introduction_title">
                 <section>
-                    <p class="right_content">Placeholder</p>
+                    <div class="title">
+                        <h1 class="title_text">
+                            Home Page 
+                        </h1>
+                    </div>
                 </section>
-            </div>
+            <article>
+                <p class="main_content">Hello! I am from <b>Singapore</b> and a current student at<i>University of Queensland</i>.</p>
+                <p class="main_content">I have a background in Data Analytics and am trying to learn something new.</p>
+            </article>
+            <section>
+                <a href="work_phase_1/index.html">1</a>
+                <a href="work_phase_2/index.html">2</a>
+                <a href="work_phase_3/index.html">3</a>
+                <a href="work_phase_4/index.html">4</a>
+            </section>
         </div>
-
-
-
-        <div>
-            <script>
-                if ("serviceWorker" in navigator) {
-                    navigator.serviceWorker
-                        .register("/pwa_service_worker/service-worker.js")
-                        .then((registration) => {
-                            console.log("Service Worker registered:", registration);
-                        })
-                        .catch((error) => {
-                            console.error(
-                                "Service Worker registration failed:",
-                                error
-                            );
-                        });
-                    }
-            </script>
-        </div>
-        
+        <script>
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker
+                    .register("/pwa_service_worker/service-worker.js")
+                    .then((registration) => {
+                        console.log("Service Worker registered:", registration);
+                    })
+                    .catch((error) => {
+                        console.error(
+                            "Service Worker registration failed:",
+                            error
+                        );
+                    });
+            }
+        </script>
     </body>
 </html>
