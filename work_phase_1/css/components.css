@@ -2,13 +2,12 @@
 .button-primary{
     padding: 5px 30px;
     border-radius: 30px;
-    width: fit-content;
+    width: 100%;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     background-color: var(--text);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 9px;
     color: var(--background);
     display: block;
     margin-top: 0.5vw;
@@ -21,13 +20,12 @@
 .button-second{
     padding: 5px 30px;
     border-radius: 30px;
-    width: fit-content;
+    width: 100%;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     background-color: rgb(138, 112, 231);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 9px;
     color: white;
     display: block;
     margin-top: 0.5vw;
@@ -41,13 +39,12 @@
 .button-third{
     padding: 5px 30px;
     border-radius: 30px;
-    width: fit-content;
+    width: 100%;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     background-color: rgb(102, 68, 224);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 9px;
     color: white;
     display: block;
     margin-top: 0.5vw;
@@ -61,13 +58,12 @@
 .button-fourth{
     padding: 5px 30px;
     border-radius: 30px;
-    width: fit-content;
+    width: 100%;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     background-color: rgb(72, 34, 207);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 9px;
     color: white;
     display: block;
     margin-top: 0.5vw;
@@ -81,13 +77,12 @@
 .button-fifth{
     padding: 5px 30px;
     border-radius: 30px;
-    width: fit-content;
+    width: 100%;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     background-color: rgb(158, 34, 207);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 9px;
     color: white;
     display: block;
     margin-top: 0.5vw;

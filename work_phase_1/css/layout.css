@@ -30,6 +30,7 @@ body{
     margin-left: 5%;
     float: left;
     background-color: var(--background);
+    word-wrap: break-word
 }
 
 .right{
@@ -46,6 +47,7 @@ body{
     padding: 1rem;
     float: left;
     background-color: var(--background);
+    margin-left: 1vw;
 }
 
 .title{
@@ -56,7 +58,7 @@ body{
 .card-container {
     display: flex;
     flex-direction: column; /* Stack cards vertically on mobile */
-    align-items: left; /* Center cards */
+    align-items: center; /* Center cards */
     gap: 1rem; /* Add space between cards */
     padding: 1rem;
 }  
@@ -70,7 +72,8 @@ body{
     height: 100%;
     width: fit-content;
     max-width: 350px;
-    text-align: center;
+    flex-direction: column; 
+    align-items: center;
 }        
 
 @media (max-width:800px) {
