@@ -1,23 +1,47 @@
-.container{
-    height: 100vh;
-    width: 80vw;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    background-color: rgb(167, 99, 206);
+.main{
+    background-color: rgb(162, 75, 212);
 }
 
-.introduction_title{
+.header{
+    height: 10vh;
+}
+
+.content{
+    display: flex;
+}
+
+.left{
+    flex: 1;
+    height: 80vh;
+    width: 30vw;
+    margin-right: 1vw;
+    margin-left: 4vw;
+    margin-bottom: 5vw;
+    display: flex;
+    background-color: rgb(162, 75, 212);
+}
+
+.right{
+    height: 80vh;
+    width: 30vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+    display: flex;
+    background-color: rgb(162, 75, 212);
+    border: 0.1vw solid black;
+}
+
+.containerleft1{
     margin: 5%;
     padding: 5%;
     height: 80%;
     width: 45%;
 }
 
+
 .title{
-    margin-left: 0;
-    margin-bottom: 2%;
-    padding-left: 0;
+    margin-top: 50%;
+    width: 30vw;
 }
 
 @media (min-width: 768px) {
