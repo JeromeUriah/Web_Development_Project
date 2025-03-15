@@ -120,6 +120,20 @@ body{
     word-wrap: break-word;
 }  
 
+.journal-card {
+    background-color: var(--altbackground);
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    height: 100%;
+    width: fit-content;
+    max-width: 350px;
+    min-width: 300px;
+    flex-direction: column; 
+    text-align: left;
+    word-wrap: break-word;
+}  
+
 .link-card {
     background-color: var(--altbackground);
     border: 1px solid #ddd;
