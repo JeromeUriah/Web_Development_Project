@@ -1,7 +1,10 @@
 :root {
-    --background: rgb(174, 156, 238);
-    --text: rgb(84, 26, 74);
-    --lightbackground: rgb(209, 200, 243);
+    --dark: rgb(36 72 85);
+    --bright: rgb(230 72 51);
+    --contrast:rgb(135 79 65);
+    --light:rgb(144 174 173);
+    --text:rgb(251 233 208);
+    --altbackground: rgb(36, 86, 75);
 }
 
 

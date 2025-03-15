@@ -30,10 +30,11 @@ h4{
 
 h5{
     font-family:"EB Garamond", serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color:  var(--text);
     line-height: 1;
     font-style: italic;
+    margin-top: 0.5vw;
 }
 
 p{
@@ -53,20 +54,32 @@ p{
 
 .headerlinks {
     font-size: 1rem;
-    color:  var(--background);
+    color:  var(--text);
     margin-top: none;
+    width: 100%;
+}
+
+headerlinks:hover{
+    color: black;
+
 }
 
 a{
     font-family:"EB Garamond", serif;
     font-size: 1rem;
     display: block;
+    color: var(--bright);
+    font-weight: bold;
+    
+}
+a:hover{
+    color: black;
 }
 
 .logotext{
     font-family:"EB Garamond", serif;
     font-size: 2rem;
-    color: white;
+    color: var(--bright);
 }
 
 @media (max-width:800px) {
@@ -76,5 +89,10 @@ a{
         float: none;
         margin-right: 0;
     }
+
+    .logotext{
+        color: var(--text);
+    }
+    
     
 }

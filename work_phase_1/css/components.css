@@ -6,9 +6,9 @@
     font-size: 1rem;
     border: none;
     cursor: pointer;
-    background-color: var(--text);
+    background-color: var(--bright);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: var(--background);
+    color: var(--text);
     display: block;
     margin-top: 0.5vw;
 }
@@ -24,9 +24,9 @@
     font-size: 1rem;
     border: none;
     cursor: pointer;
-    background-color: rgb(138, 112, 231);
+    background-color: var(--dark);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: var(--text);
     display: block;
     margin-top: 0.5vw;
 }
@@ -43,9 +43,9 @@
     font-size: 1rem;
     border: none;
     cursor: pointer;
-    background-color: rgb(102, 68, 224);
+    border: solid var(--contrast) 0.2vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: var(--text);
     display: block;
     margin-top: 0.5vw;
 }
@@ -60,35 +60,15 @@
     border-radius: 30px;
     width: 100%;
     font-size: 1rem;
-    border: none;
+    border: solid var(--text) 0.2vw;
     cursor: pointer;
-    background-color: rgb(72, 34, 207);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
+    color: var(--text);
     display: block;
     margin-top: 0.5vw;
 }
 
 .button-fourth:hover {
-    background-color: white;
-    color: black;
-}
-
-.button-fifth{
-    padding: 5px 30px;
-    border-radius: 30px;
-    width: 100%;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    background-color: rgb(158, 34, 207);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    display: block;
-    margin-top: 0.5vw;
-}
-
-.button-fifth:hover {
     background-color: white;
     color: black;
 }
@@ -116,13 +96,6 @@
     }
 
     .button-fourth{
-        padding: 10px 30px;
-        border-radius: 0px;
-        width: 100%;
-        align-items: center;
-    }
-
-    .button-fifth{
         padding: 10px 30px;
         border-radius: 0px;
         width: 100%;
