@@ -4,31 +4,48 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Style Guide - Colour Scheme</title>
+        <title>Colour Scheme Guide</title>
         <!--Linking CSS-->
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/base.css" />
         <link rel="stylesheet" href="css/layout.css" />
-        <link rel="stylesheet" href="css/typography.css" />
+        <link rel="stylesheet" href="css/typography.css">
         <link rel="stylesheet" href="css/components.css" />
+        <!--Importing Fonts--> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <header>
-            <h1 class="headertext"> Jerome </h1>
-        </header>
-        <div class="container">
-            <h1>Colour Scheme</h1>
-            <section>
-                <p> This is the colour scheme for this website.</p>
-            </section>
-            <section>
-                <h2>Links</h2>
-                <a href="./index.html">Work Phase 1 Home</a>
-            </section>
-
+        <div class="header">
+            <div class="logo"><a href="../journal.html" class="logotext">JEROME</a></div>
         </div>
+
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1>Colour Scheme Guide</h1>
+                    <p> This contains the colour scheme guide for the site</p>
+                    <button class="button-primary"><a class="headerlinks" href="../work_phase_1/index.html">Back</a></button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div>
+                    <div class="card-container">
+                        <div class="simple-card">
+                            <h1>Background</h1>
+                            <p>Font Family: Georgia, 'Times New Roman', Times, serif</p>
+                            <p>Font Size: 4rem </p>
+                            <p>Color: var(--color-primary)</p>
+                        </div>
+                    </div>    
+                </div>               
+            </div>
+        </div>
+
         <!--External Javascripts-->
-        <script type="module" src="js/colour_scheme.js"></script>
-    
+        <script type="module" src="js/typography.js"></script>
     </body>
 </html>

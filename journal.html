@@ -52,7 +52,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>About Me</title>
+        <title>Journal</title>
         <link rel="stylesheet" href="work_phase_1/css/reset.css" />
         <link rel="stylesheet" href="work_phase_1/css/base.css" />
         <link rel="stylesheet" href="work_phase_1/css/layout.css" />
@@ -67,7 +67,7 @@
     </head>
     <body>
         <div class="header">
-            <div class="logo"><a href="journal.html" class="logotext">JEROME</a></div>
+            <div class="logo"><a href="index.html" class="logotext">JEROME</a></div>
         </div>
 
         <div class="content">
@@ -76,43 +76,50 @@
                     <section>
                         <div class="title">
                             <h1>
-                                Home Page
+                                Journal Page
                             </h1>
-                            <p>Hello, I am Jerome Uriah Ng. I am from Singapore and am currently studying in UQ.</p>
+                            <p>This is the collection of journal entries documenting the process of website creation</p>
                         </div>
                     </section>
                 </div>
             </div>
             <div class="right">
-                <h2>Work Phases</h2>
-                <div class="right-home">
-                    <div class="card"><a class="fill-div" href="work_phase_1/index.html">1</a></div>
-                    <div class="card"><a class="fill-div" href="work_phase_2/index.html">2</a></div>
-                    <div class="card"><a class="fill-div" href="work_phase_3/index.html">3</a></div>
-                    <div class="card"><a class="fill-div" href="work_phase_4/index.html">4</a></div>
+                <div class="card-container">
+                    <div id="title-card"><h1>Week 1</h1></div>
+                    <div class="simple-card">
+                        <h4>Creating the site</h4>
+                        <p>1. Created logos </p>
+                        <p>2. Enabled site to be a pwa</p>
+                        <p>3. Established link from vs code to uq cloud</p>
+                        <p>4. Did inital styling of site</p>
+                        <p>5. Settled on colour schemes and fonts to use</p>
+                        <h5>Problems Faced:</h5>
+                        <p>1. Layout of site was hard to read</p>
+                        <p class="solution">1.1 Created 2 divs to separate site into 2</p>
+                        <p class="solution">1.2 Used float to allow divs to be inline</p>
+                    </div>
+                    <div id="title-card"><h1>Week 2</h1></div>
+                    <div class="simple-card">
+                        <h4>Work Phase 1 page</h4>
+                        <p>1. Created component,typographies html files</p>
+                        <p>2. Created reset, base, layout, typography and component css files</p>
+                    </div>
+                    <div id="title-card"><h1>Week 3</h1></div>
+                    <div class="simple-card">
+                        <h4>Site optimisation and style finialization</h4>
+                        <p>1. Optimised site for mobile</p>
+                        <p>2. Finalized the colour scheme and standadised fonts</p>
+                        <p>3. Settled on a vintage colour scheme</p>
+                        <p>4. Created journal page to update in site</p>
+                        <p>5. Created buttons and implemented into site</p>
+                        <h5>Problems Faced</h5>
+                        <p>1. Some divs are not clickable</p>
+                        <p class="solution">1.1 Styled links to look like cards and used those instead</p>
+                        <p class="solution">1.2 Added hovers to links as well</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-
-        <div>
-            <script>
-                if ("serviceWorker" in navigator) {
-                    navigator.serviceWorker
-                        .register("/pwa_service_worker/service-worker.js")
-                        .then((registration) => {
-                            console.log("Service Worker registered:", registration);
-                        })
-                        .catch((error) => {
-                            console.error(
-                                "Service Worker registration failed:",
-                                error
-                            );
-                        });
-                    }
-            </script>
-        </div>
-        
     </body>
 </html>
