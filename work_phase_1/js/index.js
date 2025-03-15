@@ -2,7 +2,7 @@
  * Imports
  * Modules Used:
  */
-import { logMessage } from "../js/modules/logging";
+import {logMessage} from "../js/modules/logging.js";
 
 /**
  * Constants
