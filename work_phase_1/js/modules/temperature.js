@@ -30,8 +30,9 @@ function fetchTemperature() {
             windSpeedValue.textContent = windSpeed;
         })
         .catch(error => {
-            console.error("Error fetching temperature:", error);
-            temperatureValue.textContent = "N/A"; // Handle errors gracefully
+            console.error("Error fetching data:", error);
+            temperatureValue.textContent = "N/A";
+            windSpeedValue.textContent = "N/A"; // Handle errors gracefully
         });
 }
 
