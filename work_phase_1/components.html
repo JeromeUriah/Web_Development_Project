@@ -67,7 +67,9 @@
         <header>
             <div class="logo"><a href="../journal.html" class="logotext">JEROME</a></div>
         </header>
-
+        <div id="temperature-widget" class="temperature-widget"> 
+            <p>Current Temperature: <span id="temperature-value">--</span>°C</p> 
+        </div>        
         <div class="content">
             <div class="left">
                 <div class="title">
@@ -107,5 +109,7 @@
         </div>
         <!--External Javascripts-->
         <script type="module" src="js/components.js"></script>
+        <!-- Linking to Temperature JavaScript -->
+        <script type="module" src="js/modules/temperature.js"></script>
     </body>
 </html>

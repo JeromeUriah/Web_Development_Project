@@ -73,6 +73,42 @@
     color: black;
 }
 
+/* making link look like a card */
+.link-card {
+    background-color: var(--altbackground);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    height: 100%;
+    width: fit-content;
+    max-width: 350px;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 0.5vw;
+    display: block  ;
+}
+
+.link-card:hover{
+    background-color: var(--contrast);
+}
+
+/* Temperature Widget Styles */ 
+.temperature-widget { 
+    float:left;
+    top: 10px; 
+    right: 10px; 
+    background: var(--altbackground); 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 10px var(--light); 
+    font-size: 1rem; 
+    font-weight: bold; 
+    color: var(--text);  
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
 @media (max-width:800px) {
     .button-primary{
         padding: 10px 30px;
@@ -102,4 +138,13 @@
         align-items: center;
     }
     
+    .link-card {  
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        height: 100%;
+        width: 100vw;
+        text-align: center;
+    }   
 }
