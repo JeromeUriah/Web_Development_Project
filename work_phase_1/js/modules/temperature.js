@@ -1,10 +1,11 @@
 function fetchTemperature() {
     // Get the temperature value element from the DOM
     const temperatureValue = document.getElementById("temperature-value");
+    const windSpeedValue = document.getElementById("wind-speed-value");
 
     // This checks if the temperature widget is in the DOM
-    if (!temperatureValue) {
-        console.error("Temperature widget not found in the DOM.");
+    if (!temperatureValue || !windSpeedValue) {
+        console.error("Weather Data widget not found in the DOM.");
         return;
     }
 
@@ -24,7 +25,9 @@ function fetchTemperature() {
         })
         .then(data => {
             const temperature = data.current_weather.temperature;
+            const windSpeed = data.current_weather.windspeed; // Current wind speed
             temperatureValue.textContent = temperature; // Update UI
+            windSpeedValue.textContent = windSpeed;
         })
         .catch(error => {
             console.error("Error fetching temperature:", error);
