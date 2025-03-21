@@ -1,0 +1,21 @@
+.left{
+    height: 100%;
+    width: 25%;
+    margin-left: 5%;
+    float: left;
+    background-color: var(--dark);
+    word-wrap: break-word;
+}
+
+.right{
+    height: 100%;
+    width: 65%;
+    float: right;
+    background-color: var(--dark);
+    word-wrap: break-word;
+}
+
+.header{
+    height: 10%;
+    width: 100%;
+}

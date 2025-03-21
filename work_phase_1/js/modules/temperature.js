@@ -23,7 +23,7 @@ function fetchTemperature() {
             }
             return response.json(); // Convert the response to JSON - an object
         })
-        .then(data => {
+        .then(data => { 
             const temperature = data.current_weather.temperature;
             const windSpeed = data.current_weather.windspeed; // Current wind speed
             temperatureValue.textContent = temperature; // Update UI

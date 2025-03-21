@@ -1,0 +1,27 @@
+:root {
+    --dark:rgb(23, 69, 67);
+    --bright:rgb(83, 160, 124);
+    --contrast:rgb(135 79 65);
+    --light:rgb(153, 189, 161);
+    --text:rgb(199, 190, 178);
+    --altbackground: rgb(203, 222, 194);
+    --textfont: "EB Garamond", serif;
+}
+
+body{
+    background-color: var(--dark);
+}
+
+h1,h2,h3,h4,h5,p,a{
+    color: var(--text);
+    font-family: var(--textfont)
+}
+
+.content{
+    padding: 0.5%;
+}
+
+.header{
+    height: 10%;
+    width: 100%;
+}

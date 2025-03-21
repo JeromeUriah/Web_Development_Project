@@ -99,9 +99,9 @@ body{
 
 .card-container {
     display: flex;
-    flex-direction: column; /* Stack cards vertically on mobile */
-    align-items: center; /* Center cards */
-    gap: 0.5vw; /* Add space between cards */
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw; 
     padding: 1rem;
 }  
 
@@ -154,12 +154,9 @@ body{
     width: 100%;
     height: fit-content;
     word-wrap: break-word;
-    /**used to scroll text*/
-    white-space: nowrap;    
+    white-space: nowrap;   
     overflow-x: scroll;
     overflow-y: hidden;
-    /**keep scrolling when
-      *finger or cursor scrolling*/
     -webkit-overflow-scrolling: touch; 
 }
 

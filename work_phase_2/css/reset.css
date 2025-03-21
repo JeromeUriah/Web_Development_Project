@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Remove list styles on ul, ol elements */
-ul,
-ol {
-    list-style: none;
-}
-
 /* Reset anchor styles */
 a {
     text-decoration: none;
@@ -32,14 +26,6 @@ p {
     padding: 0;
 }
 
-/* Reset quotes */
-blockquote,
-q {
-    quotes: none;
-    margin: 0;
-    padding: 0;
-}
-
 /* Remove table spacing */
 table {
     border-collapse: collapse;
@@ -50,23 +36,12 @@ table {
 
 /* Reset form elements */
 button,
-input,
-select,
-textarea {
+a {
     font: inherit;
     background: none;
     border: none;
     outline: none;
     appearance: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* Reset images */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
     margin: 0;
     padding: 0;
 }
