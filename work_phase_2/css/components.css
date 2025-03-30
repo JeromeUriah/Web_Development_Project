@@ -1,3 +1,23 @@
+/* making link look like a card */
+.link-card {
+    background-color: var(--cardbackground);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    height: 100%;
+    width: fit-content;
+    max-width: 350px;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 0.5vw;
+    display: block  ;
+}
+
+.link-card:hover{
+    background-color: var(--bright);
+}
+
 /* INTERACTIVE HIGHLIGHTING */
 /* Base Highlight Style */
 .interactive-highlight {
@@ -13,31 +33,115 @@
 .interactive-highlight::after {
     content: attr(data-card); /* See the explanation */
     position: absolute; /* Positions the tooltip relative to the highlighted text */
-    top: -100%; /* Moves the tooltip slightly above the highlighted text */
+    top: -30%; /* Moves the tooltip slightly above the highlighted text */
     right: -0; /* Moves the tooltip slightly to the right of the highlighted text */
-    background: var(--accent-color);
     color: white;
+    background-color: black;
     font-size: 0.8rem;
-    font-weight: bold;
-    width: 120px; /* Sets a fixed width for the tooltip */
-    height: 30px; /* Sets a fixed height, making the tooltip a perfect circle */
+    width: fit-content; /* Sets a fixed width for the tooltip */
+    height: content; /* Sets a fixed height, making the tooltip a perfect circle */
     display: flex; /* Uses Flexbox to center the text inside the circle */
     align-items: center; /* Vertically centers the text inside the tooltip */
     justify-content: center; /* Horizontally centers the text inside the tooltip */
-    border-radius: 10%; /* Creates rounded corners */
+    border-radius: 5%; /* Creates rounded corners */
     opacity: 0; /* Initially hides the tooltip */
     transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
 }
 
-/* Show Number on Hover (Desktop) */
-@media (hover: hover) {
-    .interactive-highlight:hover::after {
-        opacity: 1;
-    }
+.flip-card {
+    width: 65%;
+    height: 180px;
+    perspective: 1000px; /* Adds depth to make the flip look 3D */
+    cursor: pointer; /* Adds indication of interactivity */
+    outline: none; /* Removes default focus outline */
+}
+
+/* Flip Card Inner - the rotating part of the card */
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d; /* creates a 3D space */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Front & Back Common Styles */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex; /* we are using flex inside our cards */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    background: var(--cardbackground);
+}
+
+/* set the colour for the front */
+.flip-card-front {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* set the colour for the back */
+.flip-card-back {
+    background: var(--secondary-color);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Flip Card Inner */
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    border: 1px solid var(--text);
+    background-color: var(--cardbackground);
+}
+
+.flip-containers {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 }
 
 /* Show Number on Tap (Mobile) */
 .interactive-highlight:focus::after,
 .interactive-highlight:active::after {
     opacity: 1;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Show Number on Hover (Desktop) */
+@media (hover: hover) and (max-width:800px) {
+    .interactive-highlight:hover::after {
+        opacity: 1;
+    }
+
+    .flip-containers {
+        margin-top: 2%;
+        width: 100%;
+        height: 100%;
+        display: inline-grid;
+        grid-template-rows: auto auto;
+        align-items: center;
+    }
+
+    .flip-card-inner {
+    border-radius: 2%;
+    }
 }

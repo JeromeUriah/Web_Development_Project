@@ -1,11 +1,13 @@
 :root {
     --dark:rgb(23, 69, 67);
-    --bright:rgb(83, 160, 124);
+    --bright:rgb(36 107 104);
     --contrast:rgb(135 79 65);
     --light:rgb(153, 189, 161);
     --text:rgb(199, 190, 178);
     --altbackground: rgb(203, 222, 194);
+    --cardbackground: rgb(45, 62, 80);
     --textfont: "EB Garamond", serif;
+    --logo: rgb(230 72 51);
 }
 
 body{
@@ -24,4 +26,10 @@ h1,h2,h3,h4,h5,p,a,li,ol{
 .header{
     height: 10%;
     width: 100%;
+}
+
+.logotext{
+    font-family:"EB Garamond", serif;
+    font-size: 2rem;
+    color: var(--logo);
 }
