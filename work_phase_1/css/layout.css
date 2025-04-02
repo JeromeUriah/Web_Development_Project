@@ -181,6 +181,8 @@ body{
     margin-top: 1vw;
 }
 
+
+
 @media (max-width:800px) {
     .content{
         display: block; 
@@ -263,3 +265,4 @@ body{
         scrollbar-width: none;  /* Firefox */
     }
 }
+

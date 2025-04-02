@@ -14,7 +14,6 @@ h3{
     font-size: 2rem;
     line-height: 1;
     margin-top: 0.5vw;
-    color: var(--contrast);
 }
 
 h4{
@@ -58,6 +57,9 @@ ol{
     list-style-position: inside;
 }
 
+.reading {
+    color: var(--contrast);
+}
 
 
 @media (max-width:800px) {
@@ -68,10 +70,6 @@ ol{
         margin-right: 0;
     }
 
-    .logotext{
-        color: var(--text);
-    }
-    
     .link-card {  
         border: 1px solid #ddd;
         border-radius: 8px;
