@@ -1,3 +1,28 @@
+.button-primary{
+    padding: 5px 30px;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--bright);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text);
+    display: block;
+    margin-top: 0.5vw;
+}
+.button-primary:hover {
+    background-color: white;
+    color: black;
+}
+
+.headerlinks {
+    font-size: 1rem;
+    color: var(--text);
+    margin-top: none;
+    width: 100%;
+}
+
 /* making link look like a card */
 .link-card {
     background-color: var(--altbackground);
