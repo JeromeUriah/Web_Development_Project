@@ -3,66 +3,35 @@
     <head>
         <!-- Adding Icons to pages-->
         <!-- iPhone -->
-        <link
-            rel="apple-touch-icon"
-            sizes="60x60"
-            href="../pwa_icons/ios/60.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="120x120"
-            href="../pwa_icons/ios/120.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="../pwa_icons/ios/180.png"
-        />
+        <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="../pwa_icons/ios/120.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../pwa_icons/ios/180.png" />
         <!-- iPad -->
-        <link
-            rel="apple-touch-icon"
-            sizes="76x76"
-            href="../pwa_icons/ios/76.png"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="152x152"
-            href="../pwa_icons/ios/152.png"
-        />
+        <link rel="apple-touch-icon" sizes="76x76" href="../pwa_icons/ios/76.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="../pwa_icons/ios/152.png" />
         <!-- iPad Pro -->
-        <link
-            rel="apple-touch-icon"
-            sizes="167x167"
-            href="../pwa_icons/ios/167.png"
-        />
+        <link rel="apple-touch-icon" sizes="167x167" href="../pwa_icons/ios/167.png" />
         <!-- Standard favicons -->
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="../pwa_icons/ios/16.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="../pwa_icons/ios/32.png"
-        />
+        <link rel="icon" type="image/png" sizes="16x16" href="../pwa_icons/ios/16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png" />
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
         <title>Work Phase 2</title>
-        <link rel="stylesheet" href="../work_phase_2/css/reset.css">
-        <link rel="stylesheet" href="../work_phase_2/css/base.css">
-        <link rel="stylesheet" href="../work_phase_2/css/layout.css">
-        <link rel="stylesheet" href="../work_phase_2/css/fonts.css">
-        <link rel="stylesheet" href="../work_phase_2/css/components.css">
+        <link rel="stylesheet" href="../work_phase_2/css/reset.css" />
+        <link rel="stylesheet" href="../work_phase_2/css/base.css" />
+        <link rel="stylesheet" href="../work_phase_2/css/layout.css" />
+        <link rel="stylesheet" href="../work_phase_2/css/fonts.css" />
+        <link rel="stylesheet" href="../work_phase_2/css/components.css" />
 
         <!--Importing Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet" />
     </head>
 
     <body>
@@ -72,33 +41,586 @@
                 <a href="../journal.html" class="logotext">JEROME</a>
             </div>
         </div>
-        <div class="content">
-            <div class="left">
-                <div class="introduction_title">
-                    <section>
-                        <div class="title">
-                            <h1>User Needs</h1>
-                            <h2>What is in this website?</h2>
-                            <p>This contains content for work phase 2</p>
+        <button class="menu-toggle" onclick="toggle()">Click Me</button>
+        <nav class="navbar">
+            <ul id="menu">
+                <li class="list_links"><a href="../work_phase_2/index.html" aria-current="home">Home</a></li>
+                <li class="list_links"><a href="../work_phase_2/client_needs_analysis.html" aria-current="Client Needs">Client Needs</a></li>
+                <li class="list_links"><a href="../work_phase_2/user_stories.html" aria-current="User Stories">User Stories</a></li>
+                <li class="list_links"><a href="../work_phase_2/accessibility_assessment.html" aria-current="Accessibility Assessment">Accessibility Assessment</a></li>
+                <li class="list_links"><a href="../work_phase_2/ethics_analysis.html" aria-current="Ethics Analysis">Ethics Analysis</a></li>
+                <li class="list_links"><a href="../work_phase_2/genai_mt_acknowledgement.html" aria-current="home">Acknowledgement</a></li>
+            </ul>
+        </nav>
+        <div id="contentuser">
+            <h1>User Stories</h1>
+            <p>This contains the user stories</p>
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                    <div class="swiper-slide card">
+                        <h3>Kai</h3>
+                        <p>Age: 19</p>
+                        <p>Kai is a young prodigy in the world of virtual reality. They're obsessed with creating immersive experiences that blur the lines between reality and the digital world.<br/> Kai's bedroom is a tech haven, filled with VR headsets, coding projects, and stacks of sci-fi novels. They're a bit of a loner, but incredibly passionate about their work, often spending hours lost in their virtual creations.<br/> Kai is a true visionary, pushing the boundaries of what's possible in VR. They're also a big fan of anime and enjoys creating their own digital art.</p>
+                        <br/>
+                        <i>1. What is your favourites websites to browse for new technologies and what is the appeal of the site?</i>
+                        <div class="answer">
+                            <p class="longtext"> Ah, you want the inside scoop, huh? Alright, here are the websites I can’t live without. Each one has its own unique vibe, and honestly, they’ve become almost like digital havens for me. Let’s dive in:</p>
+                            <p class="longtext"> 1. Road to VR </p>
+                            <p class="longtext"> It’s like a VR enthusiast’s dreamland. I’m constantly checking out Road to VR because it’s laser-focused on everything related to virtual reality—headsets, apps, development trends, news, and reviews. They’ve got super in-depth articles and even hands-on reviews that go beyond the surface level. </p>
+                            <p class="longtext"> Plus, they dive into topics that don’t even hit mainstream media, like VR haptics, motion capture tech, or upcoming indie VR games. It’s perfect for me because it’s tailored to the kind of immersive tech I’m obsessed with.</p>
+                            <p class="longtext"> 2. The Verge </p>
+                            <p class="longtext"> I check The Verge pretty much every day. They cover everything from the latest tech trends to deep dives into how tech shapes our culture. The reason I love it? It doesn’t just throw out headlines—it tells you why the new tech is important. Their articles are thoughtful and often have great perspectives on things like AI, virtual reality, and futuristic tech. Plus, the layout is clean, and it’s easy to navigate through their sections on gadgets, software, and more. It keeps me informed about the tech world while sparking fresh ideas for my projects.</p>
+                            <p class="longtext"> 3. GitHub </p>
+                            <p class="longtext"> I can’t even explain how much I love GitHub. It’s not just a site—it’s a community of developers, coders, and tech enthusiasts. GitHub is my go-to when I’m looking to build something new. I get access to tons of open-source code, and there’s always a cool project or framework to explore. It’s like a never-ending stream of creative inspiration. I also love that I can see how other people solve problems and how they structure their projects. It’s the perfect place to learn, share, and collaborate.</p>
+                            <p class="longtext"> 4. TechCrunch </p>
+                            <p class="longtext"> TechCrunch is super solid when it comes to breaking news on tech startups, innovation, and the latest trends in emerging technologies. What makes it special for me is that it covers not just the products but the business side of tech too—investments, acquisitions, new companies disrupting the scene. They cover VR a lot, especially in the context of big tech companies trying to push the space forward. Plus, it’s fast—if something new drops, you’ll see it there almost instantly.</p>
+                            <p class="longtext"> 5. Hackaday </p>
+                            <p class="longtext"> If you’re into DIY projects, hacking tech, or just tinkering with new ideas, Hackaday is a goldmine. It’s all about building and modifying tech, which is perfect for me because I’m always trying to break things apart to understand how they work. Whether it's building your own VR headset, creating a custom haptic suit, or modding a piece of old tech into something new, this site has it all. Plus, the community is super hands-on, and there’s always some crazy new project being shared.</p>
+                            <p class="longtext"> 6. Reddit </p>
+                            <p class="longtext"> While Reddit can be a wild ride sometimes, it’s invaluable for discovering new tech and keeping up with trends in real-time. Subreddits like r/virtualreality, r/oculus, and r/tech allow me to connect with other VR enthusiasts and developers. People share their latest discoveries, updates on new devices, and crazy experiments they've done. It’s also a place where I can ask questions or help others out. Plus, the sheer volume of discussions on there means I can always get a fresh take on things I’m working on.</p>
+                            <p class="longtext"> 7. AnandTech </p>
+                            <p class="longtext"> If I’m really diving into the hardware side of things, AnandTech is where I go. They do insane deep dives into the latest processors, GPUs, and other tech hardware, often with benchmarks and performance tests. I love their thorough reviews, especially when it comes to high-end tech. If I’m considering new hardware for a project, whether it’s upgrading my VR setup or looking for a new GPU, AnandTech’s reviews help me make decisions based on real-world data.</p>
+                            <p class="longtext"> 8. YouTube </p>
+                            <p class="longtext"> Not technically a "website" in the traditional sense, but still crucial. YouTube is my go-to for tech unboxings, reviews, and explanations. Sometimes reading about something just doesn’t do it justice—seeing it in action is key. Channels like MKBHD for sleek gadget reviews, Linus Tech Tips for all things hardware, and The Verge for deeper analysis are all my go-to sources for visual content.</p>
                         </div>
-                        <button class="button-primary">
-                            <a class="headerlinks" href="../work_phase_2/index.html">Back</a>
-                        </button>
-                    </section>
+                        <br/>
+                        <i>2. What are your thoughts on community forums such as reddit and the social aspect of these sites?</i>
+                        <div class="answer">
+                            <p class="longtext"> Ah, community forums—that's where the magic happens, right? I love the social aspect of sites like Reddit. It's like the beating heart of the tech world, where everything from casual conversations to serious discussions unfold. Here’s why I think forums and social spaces are crucial for anyone, especially in the tech scene:</p>
+                            <p class="longtext"> 1. Real-Time Feedback & Collaboration:</p>
+                            <p class="longtext"> Reddit and similar platforms are where I get immediate feedback on ideas I’m working on. Like, I might post a question on r/virtualreality asking for tips on optimizing a VR project, and within hours, I’ll have advice from people who’ve already experimented with the same problem. The ability to get multiple perspectives in real-time is invaluable. It’s not just a place to consume info—it’s a place to collaborate, brainstorm, and improve things together.</p>
+                            <p class="longtext"> 2. Learning from Experts & Peers:</p>
+                            <p class="longtext"> One of the coolest things about community forums is the opportunity to learn from people who are way ahead of you (or who have different skill sets). I’ve had the chance to connect with experienced VR developers, animators, and tech enthusiasts who’ve helped me refine my <projects or pushed me to think in new ways. The social aspect makes the learning process so much more dynamic because you’re not just reading a book or watching a tutorial—you’re getting to discuss concepts with people who live and breathe tech just like you.</p>
+                            <p class="longtext"> 3. Unfiltered Access to Opinions:</p>
+                            <p class="longtext"> Sometimes, you get to see the real opinions about a product, tech trend, or development—no filter. That’s one of the big draws of places like Reddit. People on there don’t hold back, especially when it comes to dissecting new tech releases. You get a much clearer picture of what works, what doesn’t, and what needs improvement. It’s a space where passionate fans and sometimes even industry insiders get real. It’s not all sugarcoated.</p>
+                            <p class="longtext"> 4. Support & Motivation:</p>
+                            <p class="longtext"> The support on these forums is incredible. Whenever I hit a roadblock in my VR or coding projects, I know I can go to these spaces for help. I’ve asked for advice on everything from coding bugs to VR hardware issues, and the community always delivers. There’s this vibe where everyone is kind of rooting for each other to succeed, and that helps me stay motivated, especially when I’m working on something that feels like a huge challenge.</p>
+                            <p class="longtext"> 5. Diverse Perspectives & Ideas:</p>
+                            <p class="longtext"> Social spaces like Reddit are super diverse. I can be reading about the latest VR hardware one minute and then get lost in a conversation about VR art the next. It’s this cross-pollination of ideas that makes these communities so rich. I get exposed to different aspects of VR that I might not have thought about or encountered in my usual tech circles. Plus, you can always stumble upon some totally out-of-the-box ideas that inspire me to push my own creations further.</p>
+                            <p class="longtext"> 6. Creating a Digital Identity & Reputation:</p>
+                            <p class="longtext"> Forums and social spaces also let you build a kind of digital identity or reputation, where you can share your knowledge, projects, and experiences. When people start recognizing you as someone who’s helpful or who has a solid grasp of a subject, it creates a sense of community, and I think that’s important. It gives me the chance to be both a learner and a teacher in these spaces, and it feels pretty good to give back.</p>
+                            <p class="longtext"> 7. Staying Up-to-Date on Emerging Trends:</p>
+                            <p class="longtext"> If there’s a hot new tech announcement, there’s no better place than Reddit to find out what the community thinks—instantly. It’s like the pulse of the internet for new trends. People dissect new products, like a game-changing VR headset or an innovative coding tool, and the threads usually include links, discussions, and opinions that might not make it to mainstream media. It’s a great way to stay ahead of the curve.</p>
+                            <p class="longtext"> 8. Building Friendships & Networks:</p>
+                            <p class="longtext"> Ok, maybe not always friendships (sometimes people get a little heated in discussions), but I’ve met tons of like-minded people through Reddit and other forums. Some of these connections have even turned into collaborations on projects. It’s awesome because you find people who share the same level of passion and commitment, and sometimes those connections can lead to real-world opportunities or creative partnerships.</p>
+                            <p class="longtext"> But, I’ll be honest, it’s not always perfect. Sometimes the anonymity can lead to trolling or negativity, which can be a bit of a buzzkill. It’s a matter of navigating the noise and finding the right sub-communities where people are genuinely helpful. That’s why I’m really picky about where I spend my time. You know, you’ve got to be mindful of where the discussions are happening.</p>
+                            <p class="longtext"> Overall, I think the social aspect of these forums is one of the most powerful tools for anyone in the tech space. It’s like having a virtual workspace full of talented individuals, all eager to share, debate, and improve together. There’s just something about connecting with people who share the same drive to push tech forward that’s incredibly motivating.</p>
+                        </div>    
+                        <br/>
+                        <i>3. What do you look for in a website that displays information you are looking for?</i> 
+                        <div class="answer">
+                            <p class="longtext"> Ah, that’s a big one. When I’m searching for info—especially tech-related stuff like VR updates, coding tutorials, or hardware reviews—there are a few key things I look for in a website to make sure it’s actually useful and worth my time. Here’s my breakdown:</p>
+                            <p class="longtext"> 1. Clarity & Readability:</p>
+                            <p class="longtext"> First impression matters—if the website is messy, hard to navigate, or full of ads, I’m out. I need clear headings, well-organized content, and a clean design. When I’m researching a topic, I want the information to be easy to find and understand. I don’t want to be wading through a ton of irrelevant fluff to get to the point. This is especially important when I’m looking up coding tutorials or technical specs—having everything laid out logically with clean formatting makes a huge difference.</p>
+                            <p class="longtext"> 2. Depth of Content:</p>
+                            <p class="longtext"> I’m not just looking for the surface-level stuff. I need articles, reviews, or tutorials that actually go deep. If I’m reading about the latest VR headset, I want more than just "Hey, it’s cool!" I want to know why it’s cool, what makes it different from other headsets, and whether it’s worth my time or money. I love sites that give me technical details, breakdowns, comparisons, and real-world usage insights. If an article doesn’t dive deep enough or give me solid facts, it’s just not helpful to me.</p>
+                            <p class="longtext"> 3. Up-to-Date Information:</p>
+                            <p class="longtext"> Tech moves fast. If a website is showing outdated info, or the articles aren’t being updated regularly, it’s pretty much useless. I need a site that stays current with the latest trends, product releases, and breakthroughs. When I’m researching something like new VR technologies, I need to be confident that the website is pulling from relevant, up-to-date sources. Especially when you’re in a space as fast-paced as VR, outdated content can mislead you, and I’m not here for that.</p>
+                            <p class="longtext"> 4. Expertise and Credibility:</p>
+                            <p class="longtext"> I look for websites that have credibility in their niche. If it’s a tech review site, I want to see in-depth reviews from experts who really understand the technology they’re reviewing. I like when sites link out to sources or studies, show technical data, or highlight their experience and background. I’ve learned that you can’t always trust a random blog or clickbait headlines. So, I gravitate toward sites that show they know their stuff and back up claims with evidence. This also goes for user-generated content on forums—if someone’s posting something that seems off or too exaggerated, I want to be able to spot it.</p>
+                            <p class="longtext"> 5. Interactive & Engaging Features:</p>
+                            <p class="longtext"> When I’m on a site, I really appreciate interactive elements—whether it’s a comparison tool, embedded videos, or the ability to easily interact with the content (like commenting or asking questions). It’s all about engagement. If a site just dumps info without allowing me to interact with it, it feels like a one-way street. I want to be able to ask questions, leave comments, and engage with the content more actively. It makes the experience feel more dynamic. For example, forums or comment sections where I can see user feedback and ask for clarification are huge.</p>
+                            <p class="longtext"> 6. Search Functionality:</p>
+                            <p class="longtext"> If I’m browsing a huge site, having a solid search bar is essential. I need to be able to search quickly and easily for specific topics, articles, or discussions. If I have to dig around for five minutes just to find something, that’s a huge turn-off. A good website lets me jump to exactly what I’m looking for, whether that’s through category filters, topic tags, or a solid search engine. Especially when I’m researching something as specific as VR optimization techniques, I need to quickly find the most relevant resources.</p>
+                            <p class="longtext"> 7. Multimedia Support (Images, Videos, Diagrams):</p>
+                            <p class="longtext"> Tech stuff is often very visual, so I really appreciate it when websites include high-quality images, diagrams, and videos to explain concepts. A website that knows how to use visuals effectively can make complicated subjects like coding or hardware specs way more accessible. For example, if a VR headset review doesn’t include close-up images or video footage of the device in action, I’m left wondering how it really performs.</p>
+                            <p class="longtext"> 8. Community Engagement:</p>
+                            <p class="longtext"> For me, it’s not just about the content but also about the community around it. I love websites that allow users to comment, ask questions, or even contribute their own content. This social interaction is what helps me get different perspectives and insights that I might not have considered. For example, in forums or Reddit, when people share their personal experiences with new tech, that’s incredibly valuable for making decisions about which products or solutions to go with.</p>
+                            <p class="longtext"> 9. Speed and Mobile-Friendliness:</p>
+                            <p class="longtext"> If a website takes forever to load or doesn’t work well on mobile, it’s an automatic turn-off. A site that’s sluggish wastes my time, and in the world of tech, speed is everything. I also need a site that works well on mobile, especially if I want to quickly catch up on updates while I’m on the go. If it doesn’t load properly on my phone or isn’t optimized for smaller screens, I’m bouncing right out of there.</p>
+                            <p class="longtext"> 10. Personalization & Recommendations:</p>
+                            <p class="longtext"> If a website can give me personalized recommendations based on my browsing history, or surface content that’s closely related to what I’ve looked at before, I love that. It feels like the site “gets” me and can offer me more of what I want to see. For instance, if I’m reading about VR gaming, it’s nice when the site suggests related articles or upcoming tech news that might interest me.</p>
+                            <p class="longtext"> So yeah, when I’m browsing tech websites, it’s all about functionality, depth, and engagement. I want the site to be easy to use but packed with in-depth info that can help me learn and stay up to date. If it hits all those points, I’m sold.</p>
+                        </div>
+                        <br/>
+                        <i>4. What is the worst experience you've had with using a website to search for something that you wanted?</i> 
+                        <div class="answer">
+                            <p class="longtext"> Ugh, don’t even get me started on this. Honestly, the worst experiences usually happen when I’m trying to find specific, detailed information and I end up on a website that’s just totally unhelpful. I’ve had a few frustrating moments where I spent way too much time trying to find something that should have been simple to search for, only to come up empty-handed or annoyed. Here’s the one that still irks me:</p>
+                            <p class="longtext">The "Clickbait Hell" Experience:</p>
+                            <p class="longtext"> So, there I was, looking for detailed specs and a breakdown of a new VR headset that had just dropped. I mean, I want all the nitty-gritty details—processor speed, weight, field of view, frame rate, etc. You know, real technical specs that would help me decide if it's worth my time and money.</p>
+                            <p class="longtext"> I thought, “Cool, I’ll Google it.” But when I clicked on the link, I ended up on a website that seemed fine at first—it had a professional-looking layout and all. But as soon as I started scrolling, it became clear that the site was more focused on clickbait than actual information. I’m talking titles like, “Is This VR Headset Better Than the Rest? You Won’t Believe What Happens Next!” or “The 10 Secret Features No One is Talking About!”</p>
+                            <p class="longtext"> The whole page was filled with buzzwords, empty praise, and overly vague descriptions. No technical specs, no real analysis, just fluff. Worst of all? The specs I did find were either incomplete or inaccurate. There were no links to official sources, and I couldn’t find any meaningful comparison with other headsets on the market. It was frustrating because I knew the information I wanted was out there—I just couldn’t find it on this site. All that wasted time just for something that couldn’t even give me a solid answer.</p>
+                            <p class="longtext"> The kicker? I tried scrolling through the comments to see if anyone else had the same experience, and it was a bunch of spammy comments like, “This is the best headset ever! Buy it now!” with no real insight. Basically, it felt like a big sales pitch wrapped up in an article.</p>
+                            <p class="longtext"> What Went Wrong:</p>
+                            <p class="longtext">1. Inaccurate and Incomplete Information:</p>
+                            <p class="longtext"> I was looking for specifics, but the site didn’t provide what I needed. It had all the surface-level stuff, but zero depth.</p>
+                            <p class="longtext">2.  Poor Navigation:</p>
+                            <p class="longtext"> It was hard to navigate, with pop-up ads everywhere and endless scrolling to get to any meaningful content.</p>
+                            <p class="longtext">3. No Credibility:</p>
+                            <p class="longtext"> There was no sense of authority. No links to sources, no breakdown of the specs from official manufacturer sites, nothing. It just felt like they were trying to get clicks rather than offer real, valuable info.</p>
+                            <p class="longtext">4. Clickbait Overload:</p>
+                            <p class="longtext"> The whole thing was a clickbait nightmare. Every title was more concerned with getting me to keep reading (or clicking) than actually delivering on the promises it made.</p>
+                            <p class="longtext"> Result? I spent way too much time on that site, got frustrated, and ended up leaving without the info I needed. So, I had to go back to my search results and try another link, wasting even more time.</p>
+                            <p class="longtext"> Lessons Learned:</p>
+                            <p class="longtext"> Websites that rely heavily on clickbait are a huge red flag. If I can’t find what I’m looking for quickly, or if the site feels like it’s more focused on selling me something than educating me, I’m out.</p>
+                            <p class="longtext"> Clear navigation and credible sources are key. When I visit a website, I want to see the credentials of the authors, link-outs to verified sources, and specs that actually give me details I can use.</p>
+                        </div>
+                        <br/>
+                        <i>5. Rank these in order or least to most useful in finding information? Why did you put your first as the first and last as last. [1. Videos. 2. Articles. 3. Comment]</i>
+                        <div class="answer">
+                            <p class="longtext"> This is a really interesting question! For me, the usefulness of each depends on the type of information I’m searching for. But if I had to rank them from least to most useful, here's how I’d arrange it:</p>
+                            <p class="longtext"> 3. Comments (Least Useful)</p>
+                            <p class="longtext"> Why it's last: While comments can definitely be helpful for getting real-world opinions or troubleshooting advice, they’re the least useful for getting reliable, in-depth information. Comments often have mixed quality—sometimes they’re insightful, but other times they’re just personal opinions or full of irrelevant chatter. Plus, they can be hard to sift through, especially if the thread is long or poorly moderated. If I’m looking for technical details or solid facts, comments aren’t going to cut it for me, though they do serve a role when I’m trying to gauge community sentiment or check out user experiences.</p>
+                            <p class="longtext"> Why I put it last: Comments are usually more subjective and can be hit or miss, depending on the person posting. They’re great for feedback or seeing other people’s experiences, but they’re not my first choice when I need reliable, structured information.</p>
+                            <p class="longtext"> 2. Articles (Middle)</p>
+                            <p class="longtext"> Why it's in the middle: Articles are a much more reliable source of information than comments, and they tend to provide in-depth explanations, research, and analysis. Good articles are written by experts or experienced reviewers, and they often cite sources or include data that backs up their claims. They’re great for gathering facts, explanations, and more formal insights on a subject.</p>
+                            <p class="longtext"> Why I put it second: Articles usually cover the full scope of a topic, and they’re well-organized, so I can quickly get the info I need. The downside is that articles can sometimes feel a bit dry, especially if they’re too technical or long-winded. They’re super useful for understanding concepts or getting the general overview of something, but they don’t always offer the personal perspective or practical insights I might be looking for.</p>
+                            <p class="longtext"> 1. Videos (Most Useful)</p>
+                            <p class="longtext"> Why it's first: Videos are by far the most useful for me, especially when I’m trying to understand something visual or complex. VR reviews, product unboxings, coding tutorials, and tech demos are all examples where videos completely win over articles or comments. The ability to see something in action, hear explanations in real-time, and visually follow along with step-by-step guides makes videos an invaluable resource.</p>
+                            <p class="longtext"> Why I put it first: For tech-related topics, I often need to see how things work. Whether it's testing out new software, checking out the quality of a VR headset, or following a tutorial on a coding problem, videos provide immediate feedback and allow me to absorb the information much more effectively than text alone. Plus, videos often give a more dynamic and engaging experience, with demonstrations, walkthroughs, and even personal insights from the creators that can help me understand the material on a deeper level.</p>
+                            <p class="longtext"> Summary of Why I Ranked Them This Way:</p>
+                            <p class="longtext"> Videos come first because they bring information to life in a way text can’t. Visual learners (like me) thrive with videos, and they provide real-time demonstrations, making them super easy to understand.</p>
+                            <p class="longtext"> Articles are second because they’re great for structured, detailed explanations and research-backed facts, but they can feel a bit impersonal or less interactive.</p>
+                            <p class="longtext"> Comments are last because while they can offer useful feedback or perspectives, they’re often too subjective and not as reliable as articles or videos when I’m trying to get solid, factual information.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <h3>Elena</h3>
+                        <p>Age: 38</p>
+                        <p>Elena is a social media marketing expert who's all about connecting with people online. She's got a knack for creating engaging content that resonates with audiences, and her social media strategies are always on point. <br/>Elena is a true influencer, using her platform to promote positive <br/>change and empower others. She's also a passionate advocate for online safety and digital literacy.</p>
+                        <br/>
+                        <i>1. What is your favourites websites to browse for new technologies and what is the appeal of the site?</i>
+                        <div class="answer">
+                            <p class="longtext"> Ooh, I love talking about this! There are a few websites I absolutely love browsing to stay updated on new technologies. Here are some of my favorites and why they  to me:</p>
+                            <p class="longtext"> 1. TechCrunch</p>
+                            <p class="longtext"> TechCrunch is a go-to for breaking news on tech startups, gadgets, and big tech company updates. They have a section dedicated to new product launches and an entire focus on emerging technologies. I love how they dive deep into how startups are changing industries and what new innovations are coming down the pipeline.</p>
+                            <p class="longtext"> 2. The Verge</p>
+                            <p class="longtext"> The Verge offers a beautiful balance of technology, culture, and science. It’s not just about gadgets and tech news; it's about how those innovations intersect with our daily lives. Their long-form articles and in-depth reviews on things like AI, virtual reality, and tech trends make it a fun site to explore. Plus, their videos and explainer content are super engaging!</p>
+                            <p class="longtext"> 3. Wired</p>
+                            <p class="longtext"> Wired has a slightly more intellectual, thought-provoking approach to tech news. They dive deep into the “why” behind emerging technologies and the impact they have on society. I find their investigative pieces on things like cybersecurity, artificial intelligence, and the ethics of new tech especially fascinating. They keep me thinking about the bigger picture.</p>
+                            <p class="longtext"> 4. Ars Technica</p>
+                            <p class="longtext"> Ars Technica has a strong focus on in-depth technical analysis, often geared toward people who are a bit more hands-on with tech. If I want to geek out over the nitty-gritty details of something like new software developments or hardware specifications, this is the site. The clarity with which they break down complex tech topics makes it accessible without losing the depth.</p>
+                            <p class="longtext"> 5. Product Hunt</p>
+                            <p class="longtext"> Product Hunt is like a treasure chest of new apps, software, and tools. Every day, there’s a new list of startups and products getting launched, which makes it exciting to see what’s out there. The community voting system helps surface the most innovative tools, and I love the fact that it’s updated so frequently. It’s where I go when I’m looking for the next big thing in tech.</p>
+                            <p class="longtext"> 6. GitHub</p>
+                            <p class="longtext"> While GitHub is mostly a platform for developers, it's an incredible place for discovering cutting-edge open-source projects and software. I enjoy browsing through repositories to see what innovative tools developers are working on. It’s like peeking behind the curtain of tech development before those projects hit the mainstream. Plus, it’s a great resource for anyone wanting to get hands-on with new technologies.</p>
+                            <p class="longtext"> 7. Hacker News</p>
+                            <p class="longtext"> Hacker News is a community-driven site where people post news, discussions, and interesting tech articles. I love the variety here—it’s a mix of personal stories, industry news, and sometimes even deep philosophical discussions about technology. The user engagement and comments often spark new insights or lead me to other great sources I wouldn’t have found otherwise.</p>
+                            <p class="longtext"> 8. VentureBeat</p>
+                            <p class="longtext"> VentureBeat focuses on AI, machine learning, and big data, and it has a dedicated section for emerging technologies. I’m always keeping an eye on this site for updates on these game-changing innovations. They do a great job breaking down trends and also have some fantastic analysis on the future of tech.</p>
+                        </div>
+                        <br/>
+                        <i>2. What are your thoughts on community forums such as reddit and the social aspect of these sites?</i>
+                        <div class="answer">
+                            <p class="longtext">Oh, I love community forums like Reddit! They’re such an integral part of how I stay connected and informed in the tech world. The social aspect of these platforms is what makes them so special, and here’s why:</p>
+                            <p class="longtext">Real-time Discussions & Diverse Perspectives</p>
+                            <p class="longtext">Reddit, in particular, is amazing because of the wide variety of voices and perspectives you get. On a subreddit like r/technology, you’ll find everything from tech enthusiasts discussing the latest gadget drops to serious debates on privacy issues in AI. The constant influx of ideas from users around the world is so valuable, and it often opens my eyes to things I wouldn’t have thought about on my own.</p>
+                            <p class="longtext">Crowdsourced Knowledge</p>
+                            <p class="longtext">The beauty of these forums is the amount of knowledge you can access in an instant. If I’m looking for advice on a tech question or want feedback on a new tool I’m considering, there’s always someone who’s tried it and is happy to share their insights. Plus, you can follow up with more questions, and the discussions can evolve in ways that lead to deeper understanding. I love how it’s a collaborative, community-driven learning experience.</p>
+                            <p class="longtext">Authentic Conversations</p>
+                            <p class="longtext">Unlike the polished, corporate content on other platforms, Reddit and similar forums often have more authentic, unfiltered conversations. People on Reddit aren't afraid to get real, whether it’s sharing honest reviews or telling stories about their experiences. For someone like me, who advocates for online authenticity, this is a major draw.</p>
+                            <p class="longtext">Social Interaction & Community Building</p>
+                            <p class="longtext">I think Reddit (and many other forums) fosters this unique sense of community. I see people supporting one another, whether it’s through tech advice, venting about similar struggles, or just celebrating small wins. It’s less about the followers or likes and more about the shared interest in a topic. The way these forums build tight-knit groups around niche interests or tech innovations is really inspiring. I love that about social spaces like r/Cooking or r/SocialMedia, where people genuinely want to connect with like-minded folks.</p>
+                            <p class="longtext">Real-time Trendspotting</p>
+                            <p class="longtext">Since people are constantly posting on these forums, I get a real-time pulse on what’s trending in the tech world. Sometimes, I can spot a viral product, news story, or emerging tech trend before it even hits mainstream media. The early buzz is often a good indicator of what’s about to blow up.</p>
+                            <p class="longtext">Support for Digital Literacy and Safety</p>
+                            <p class="longtext">Community forums can also be great places to raise awareness about digital safety. There are tons of discussions around privacy settings, securing personal data, or staying safe while online. And because it’s often peer-led, it feels like a safe space to ask questions without judgment. I’m all for fostering online safety and literacy, and these spaces provide opportunities to share tips and resources with others.</p>
+                            <p class="longtext">Fun and Connection</p>
+                            <p class="longtext">The social aspect of these platforms isn’t all serious! I love scrolling through the funny memes on subreddits like r/techhumor or r/gadgets. It’s nice to break away from the constant stream of news and tech advice and just have a laugh with the community. It reminds me that at the end of the day, we’re all just people trying to enjoy the tech we use.</p>
+                            <p class="longtext">That said, while forums like Reddit have an amazing social aspect, there can be downsides, too—like misinformation or trolls. But, overall, the positives far outweigh the negatives for me. It’s a space where you can learn, share, and connect with others who are passionate about the same things. It’s so much more than just tech info—it’s about building relationships and having real conversations.</p>
+                            <p class="longtext">What do you think about community forums? Do you find them helpful, or is there another platform you like to explore to stay in the loop?</p>
+                            
+                        </div>
+                        <br/>
+                        <i>3. What do you look for in a website that displays information you are looking for? </i>
+                        <div class="answer">
+                            <p class="longtext">Great question! When I’m looking for information online, especially tech-related stuff, there are a few key factors I look for in a website to make sure I’m getting high-quality, reliable, and useful content:</p>
+                            <p class="longtext">1. Clear, Easy-to-Navigate Design</p>
+                            <p class="longtext">The user experience is huge. I want a website that’s clean, organized, and easy to navigate. I don’t have time to hunt down info or get lost in a cluttered layout. A well-organized site with a simple navigation menu, clear headings, and intuitive categories makes it super easy to find exactly what I’m looking for.</p>
+                            <p class="longtext">2. Up-to-Date Content</p>
+                            <p class="longtext">I’m a sucker for fresh, real-time information—especially when it comes to new technologies or trends. The last thing I want is to visit a site and find outdated or old news. It’s a major turn-off! I look for sites that are updated frequently, so I know I’m reading the latest info, reviews, or industry insights.</p>
+                            <p class="longtext">3. Credible, Authoritative Sources</p>
+                            <p class="longtext">Trust is key. I need to know that the content I’m reading comes from a credible source. This means I look for clear authorship (who’s writing the article?), references to research or sources, and credentials that show the content is coming from someone knowledgeable in the field. Whether it’s a tech review or an article about emerging technologies, I want to be sure the info is accurate and well-researched.</p>
+                            <p class="longtext">4. Clarity & Simplicity in Writing</p>
+                            <p class="longtext">I love a site that explains things clearly without being too technical or jargon-heavy. I don’t mind getting into the nitty-gritty details if I’m researching a topic, but I don’t want to feel like I need a PhD to understand it. Websites that break down complex topics into digestible chunks, use simple language, and avoid over-complicating things are always a win.</p>
+                            <p class="longtext">5. Engagement & Interactivity</p>
+                            <p class="longtext">As a social media expert, I really appreciate sites that offer a sense of community or allow me to interact in some way. Whether it’s through comments, discussion forums, or even social media integration, I love being able to ask questions, share thoughts, or connect with other people. It adds a layer of engagement that makes the experience feel less passive and more interactive.</p>
+                            <p class="longtext">6. Visual Appeal & Media Integration</p>
+                            <p class="longtext">We’re living in a visual world, and I think a website should make use of engaging visuals—like images, videos, or infographics—especially when explaining something complex. For example, a tech review that includes a hands-on video of the product in use or an infographic that simplifies a complicated process? Total game changer. It helps me absorb the information better and keeps me engaged.</p>
+                            <p class="longtext">7. Search Functionality</p>
+                            <p class="longtext">If I’m looking for something specific, I want a solid search function that helps me get to the right place quickly. Whether it’s a product review, a tutorial, or a guide, having an efficient search bar that lets me find the content I need without scrolling endlessly is a must-have for me.</p>
+                            <p class="longtext">8. Mobile-Friendly Design</p>
+                            <p class="longtext">Since I do a lot of my browsing on mobile, it’s essential that a site is mobile-optimized. Nothing worse than a site that looks great on a desktop but is a mess when trying to navigate on my phone. I need to be able to access content easily no matter what device I’m using.</p>
+                            <p class="longtext">9. No Pop-Up Overload</p>
+                            <p class="longtext">Pop-ups are annoying, right? They interrupt the flow, and sometimes they’re just overwhelming. A site that doesn’t bombard me with pop-up ads or sign-up requests is a huge plus. I don’t mind subscribing or signing up, but I don’t want my reading experience to be constantly interrupted.</p>
+                            <p class="longtext">10. Speed and Performance</p>
+                            <p class="longtext">No one likes a slow website, especially when I’m trying to quickly gather information. A fast-loading site is essential for a smooth, frustration-free browsing experience. I don’t want to be sitting around waiting for pages to load—speed matters!</p>
+                            <p class="longtext">11. Privacy & Security</p>
+                            <p class="longtext">As an advocate for online safety, I’m also cautious about my privacy. I always look for sites that are secure (https://) and transparent about their data policies. Sites that are open about how they use cookies or personal information, and give me control over my data, are much more trustworthy.</p>
+                            <p class="longtext">Bonus – A Personal Touch</p>
+                            <p class="longtext">As someone who’s very social media-driven, I like it when a website has a personality or a sense of connection to its audience. Whether it’s through an engaging writing style, a sense of humor, or even user-generated content, a little personality can go a long way in making me feel like I’m engaging with real people, not just a faceless company.</p>
+                            <p class="longtext">In short, I look for a site that’s clear, reliable, easy to navigate, and engaging. I also value up-to-date and trustworthy content that respects my time and privacy. Ultimately, a good website should make finding information feel like a seamless experience, not a chore.</p>                            
+                        </div>
+                        <br/>
+                        <i>4. What is the worst experience you've had with using a website to search for something that you wanted?</i>
+                        <div class="answer">
+                            <p class="longtext">Oh, I’ve definitely had a few frustrating experiences when it comes to searching for something online, and trust me, I’ve learned some valuable lessons about what I don’t want in a website! Here’s one that stands out:</p>
+                            <p class="longtext">The Overwhelming, Cluttered Experience</p>
+                            <p class="longtext">I was once searching for a detailed, up-to-date review of a tech gadget I was thinking about purchasing. It seemed like a relatively simple request, right? But when I landed on the website, it was a total disaster. Here's what happened:</p>
+                            <p class="longtext">Too Many Pop-Ups and Ads</p>
+                            <p class="longtext">As soon as I entered the site, I was bombarded with pop-up ads and subscription requests—everywhere. It was like navigating a maze of flashing banners and “Sign up now!” boxes. I couldn’t even read the content without closing 2–3 pop-ups every few seconds, which made it incredibly difficult to focus on what I was actually looking for.</p>
+                            <p class="longtext">Unclear Navigation</p>
+                            <p class="longtext">The website was so cluttered, I couldn’t find the review I wanted! There were endless categories, subcategories, and menus that didn’t make sense. The layout was so busy that even using the search bar didn’t help much, because I’d get bombarded with irrelevant results.</p>
+                            <p class="longtext">Outdated or Irrelevant Information</p>
+                            <p class="longtext">I finally managed to get to a review (after about 10 minutes of navigating), only to realize that it was outdated. The review was on an older version of the gadget, not the latest model, and the information was completely irrelevant. There were no clear indicators that it was outdated, so I wasted all that time. It’s super frustrating when you trust a site for the most up-to-date info, but it’s not accurate!</p>
+                            <p class="longtext">Slow Load Times</p>
+                            <p class="longtext">On top of everything, the site was slow as molasses. Every page took forever to load, and as I clicked around, it felt like I was wasting my time just waiting for the site to catch up. It was incredibly frustrating, especially when I was just trying to get simple, straightforward information.</p>
+                            <p class="longtext">What I Learned:</p>
+                            <p class="longtext">That experience taught me how essential it is for websites to prioritize user experience and content quality. A clean, fast, and user-friendly website can make all the difference between a pleasant browsing session and a stressful one.</p>
+                            <p class="longtext">After that, I became super picky about the sites I choose. I now avoid sites that bombard me with pop-ups or show irrelevant content. I want to get to the information I need quickly, without dealing with distractions or slow load times.</p>
+                            <p class="longtext">Have you ever had a similar frustrating experience, or maybe even worse? What do you think are the biggest website annoyances that totally ruin the search experience? </p>
+                        </div>
+                        <br/>
+                        <i>5. Rank these in order or least to most useful in finding information? Why did you put your first as the first and last as last. [1. Videos. 2. Articles. 3. Comment]</i>
+                        <div class="answer">
+                            <p class="longtext">This is a great exercise in understanding how different types of content contribute to the information-gathering process! Here’s how I’d rank them from least to most useful, along with why I placed each one where I did:</p>
+                            <p class="longtext">3. Comments (Least Useful)</p>
+                            <p class="longtext">Why it’s last:</p>
+                            <p class="longtext">While comments can definitely be insightful, they’re usually not the best starting point for finding reliable information. Comments can be subjective, and sometimes they can be filled with misinformation, personal opinions, or unrelated content. Sure, you can find valuable perspectives, but the quality is hit or miss. Comments are more useful for getting real-world experiences or clarifying certain points after you've already gathered the main information. But on their own, they’re not the most dependable or structured way to find clear and accurate information.</p>
+                            <p class="longtext">2. Videos</p>
+                            <p class="longtext">Why it's second:</p>
+                            <p class="longtext">Videos are great for visually explaining concepts, especially complex or technical ones. For example, a product demo or a tutorial can make it much easier to understand how something works. However, videos often require more time and attention to watch, and they can be less searchable compared to articles. It's also harder to skim through videos to find specific details. While I do love how engaging and educational videos can be, they tend to be more supplementary, as you have to watch the entire video to get the information you need.</p>
+                            <p class="longtext">1. Articles (Most Useful)</p>
+                            <p class="longtext">Why it's first:</p>
+                            <p class="longtext">Articles, in my opinion, are the most reliable and efficient way to get detailed, well-researched, and structured information. Articles allow for clear, concise explanations, step-by-step guides, and often cite sources to back up claims. They’re easy to scan and reference, making them ideal for quickly finding the exact information you're looking for. I can also control the pace at which I read and easily search for specific terms or sections within the article. While articles might lack the interactive or visual appeal of videos, they’re typically the most organized and comprehensive source for factual information.</p>
+                            <p class="longtext">Summary:</p>
+                            <p class="longtext">Comments: While useful for user perspectives and feedback, they’re not structured and can be unreliable.</p>
+                            <p class="longtext">Videos: Great for visual learning, but time-consuming and harder to search or skim for specifics.</p>
+                            <p class="longtext">Articles: Structured, searchable, and typically the most reliable and detailed source for in-depth information.</p>
+                            <p class="longtext">I put articles first because of their efficiency and ability to quickly deliver reliable, clear information. They’re like the backbone of finding information. Videos are second, as they add a great visual element but can be slower to digest. Comments, while sometimes helpful for personal opinions or additional clarity, are the least structured and most likely to be unverified, so I put them last.</p>
+                            
+                        </div>     
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <h3>Omar</h3>
+                            <p>Age: 55</p>
+                            <p>Omar is a retired engineer who's now using his skills to build a better future. He's a dedicated maker and tinkerer, always working on new projects that aim to improve the lives of others. <br/>Omar is a master of DIY and has a workshop in his garage that's overflowing with tools and gadgets. <br/>He's a big fan of open-source hardware and loves to share his knowledge with others. <br/>Omar is also an active member of his community, volunteering his time to local organizations and mentoring young people interested in STEM fields. He's a true inspiration, showing that it's never toolate to make a difference.</p>
+                            <br/>
+                            <i>1. What is your favourites websites to browse for new technologies and what is the appeal of the site?</i>
+                            <div class="answer">
+                                <p class="longtext">I have a few favorite websites that I visit regularly to keep up with new technologies. Each one has something unique that appeals to me, whether it’s the community, the technical content, or the way they foster creativity. Here are my top picks:</p>
+                                <p class="longtext">1. Hackaday (hackaday.com)</p>
+                                <p class="longtext">Hackaday is a haven for makers, engineers, and DIY enthusiasts. The site features daily projects, from simple electronics builds to complex engineering solutions. What I love about Hackaday is the real-world practicality of the projects—they’re often aimed at solving problems in an innovative way. The community aspect is strong here, with lots of discussion and open-source sharing of ideas.</p>
+                                <p class="longtext">It's a great place to see what other makers are up to and find inspiration for my own projects. There are also hardware hacks and software solutions that are often ahead of the curve in terms of real-world application.</p>
+                                <p class="longtext">2. Instructables (instructables.com)</p>
+                                <p class="longtext">Instructables is all about step-by-step guides for DIY projects across a wide range of topics, from electronics to home improvement. It’s fantastic for learning new techniques and getting hands-on with new technologies. The site is extremely beginner-friendly, and yet, it also has some incredibly advanced projects.</p>
+                                <p class="longtext">The wide variety of projects on Instructables makes it easy to find new, fun challenges to work on. The community is always active, and the ability to share and improve upon designs is very much in line with the open-source philosophy I value.</p>
+                                <p class="longtext">3. Arduino (arduino.cc)</p>
+                                <p class="longtext">Arduino is a cornerstone of the maker movement. It’s a fantastic resource for anyone interested in building interactive hardware. The website is packed with tutorials, project ideas, and detailed technical information on the Arduino platform. It’s also an excellent place to collaborate and find inspiration for new ways to use microcontrollers in projects.</p>
+                                <p class="longtext">I visit it for the wealth of tutorials and for access to the large library of open-source hardware and software that’s constantly evolving. Plus, the Arduino community is incredibly active, making it a great place to share ideas and troubleshoot.</p>
+                                <p class="longtext">4. GitHub (github.com)</p>
+                                <p class="longtext">GitHub is the go-to platform for developers, but it’s also invaluable for engineers and makers who work with open-source hardware and software. The site hosts repositories for countless projects, from robotics to IoT to new electronic designs. The collaborative nature of GitHub allows people to share code, make improvements, and contribute to the evolution of technology.</p>
+                                <p class="longtext">GitHub is where a lot of cutting-edge open-source projects live, and it’s great for keeping up with the latest advancements in software and hardware development. It also allows me to contribute and collaborate on projects I’m passionate about.</p>
+                                <p class="longtext">5. Make Magazine (makezine.com)</p>
+                                <p class="longtext">Make Magazine is a great resource for both beginners and experienced makers. It focuses on the intersection of technology, creativity, and engineering, offering both project ideas and how-to guides. The print magazine and the website both feature inspiring stories of DIYers, inventors, and innovators.</p>
+                                <p class="longtext">The projects on Make are often more polished and thought out than other sites, which makes it a great place to find high-quality, well-documented builds. I also enjoy the articles on new trends in the maker and DIY space.</p>
+                                <p class="longtext">6. EEVblog (eevblog.com)</p>
+                                <p class="longtext">EEVblog is a treasure trove of technical information on electronics. It’s run by Dave Jones, an experienced engineer who shares in-depth analysis, teardown videos, and reviews of various electronics. It’s a fantastic resource for understanding the inner workings of both common and obscure technologies.</p>
+                                <p class="longtext">The deep dives into electronics and detailed product reviews are invaluable to me as someone who likes to understand the nuances of new gadgets. Dave's humor and no-nonsense approach make it an enjoyable and informative experience.</p>
+                                <p class="longtext">7. Reddit (reddit.com)</p>
+                                <p class="longtext">Reddit is a huge hub for all sorts of discussions, and there are plenty of subreddits dedicated to technology, DIY, and engineering. Subreddits like r/Engineering, r/DIY, r/OpenSource, and r/arduino are goldmines for fresh projects, technical questions, and new tech discoveries.</p>
+                                <p class="longtext">The community-driven aspect of Reddit makes it a great place to see what’s trending in real-time, exchange ideas, and get feedback on projects. The variety of opinions and insights is unparalleled.</p>
+                                <p class="longtext">Each of these sites serves a different purpose, but they all keep me inspired and informed. Whether it’s through detailed tutorials, cutting-edge open-source projects, or hands-on experiments, they’re all great places to stay on top of new technologies and find new challenges to work on.</p>
+                                    
+                            </div>
+                            <br/>
+                            <i>2. What are your thoughts on community forums such as reddit and the social aspect of these sites?</i>
+                            <div class="answer">
+                                <p class="longtext">Ah, community forums like Reddit—now we're talking! I think they're one of the most valuable resources for staying connected to new technologies and learning from others. The social aspect of these sites really sets them apart from other types of tech content, and it’s something I deeply appreciate. Let me break it down:</p>
+                                <p class="longtext">The Power of Shared Knowledge</p>
+                                <p class="longtext">The real magic happens when people from all different backgrounds come together to share ideas. Whether it’s a question about a new tool, a project update, or troubleshooting a technical issue, community forums like Reddit allow for a level of collaboration that you just don’t get in traditional media. You can have someone halfway across the world offer a suggestion, and it might be the key to solving a problem. This sense of shared knowledge is invaluable, and it’s one of the core reasons I engage in those communities.</p>
+                                <p class="longtext">Diverse Perspectives</p>
+                                <p class="longtext">Reddit, in particular, is full of subreddits that cater to every imaginable interest, which means you're exposed to a diverse array of perspectives. Some people are absolute beginners, while others are seasoned pros. The conversations range from basic how-to questions to complex, cutting-edge technologies. I love reading through all the different takes—sometimes the most basic answer can trigger an "aha!" moment, or someone will share a technique you wouldn’t have thought of otherwise.</p>
+                                <p class="longtext">Problem Solving and Collaboration</p>
+                                <p class="longtext">When I run into issues or roadblocks on a project, I often turn to Reddit. Subreddits like r/DIY, r/Engineering, and r/OpenSource are full of people who are happy to offer advice, workarounds, or even links to helpful resources. There’s something rewarding about solving problems with the help of the community, and it helps me see things from angles I might have missed on my own.</p>
+                                <p class="longtext">Also, the feedback loops are quick. I can post something and get input, suggestions, or even critical advice from people who have experience with exactly what I'm trying to do. It’s a great way to learn new methods, refine techniques, or even find new inspiration for future projects.</p>
+                                <p class="longtext">Building Relationships and Mentoring</p>
+                                <p class="longtext">I think one of the most underrated aspects of these forums is the sense of community. Over time, you start recognizing familiar usernames and become part of a network. I've had the pleasure of mentoring a few younger people or offering advice to those just starting out in tech and engineering. It feels rewarding to give back in that way, and it’s always gratifying when someone comes back later and says, "Hey, your advice helped me solve this problem!"</p>
+                                <p class="longtext">On the flip side, I’ve also learned a lot from the younger crowd—technology is evolving fast, and sometimes it’s the newer generation that brings fresh perspectives to older, more traditional fields. The intergenerational dialogue is valuable.</p>
+                                <p class="longtext">Building Trust and Credibility</p>
+                                <p class="longtext">One thing that I find interesting about community forums is the social dynamic surrounding trust and credibility. On sites like Reddit, people build their reputations over time. Some users gain a lot of karma (a kind of reputation system) or become known for their expertise in certain areas. When you see a username you recognize, you know you’re probably getting solid advice. This social aspect creates a sense of reliability, even in a decentralized environment.</p>
+                                <p class="longtext">The Potential for Negativity</p>
+                                <p class="longtext">Of course, every community has its ups and downs. Sometimes, Reddit and other forums can get a little overwhelming or negative—especially when it comes to heated debates or trolls. But I find that, for the most part, the communities I engage with are supportive and constructive. People tend to rally around those who are genuinely seeking help, and it’s easy to filter out negativity.</p>
+                                <p class="longtext">A Gateway to Real-World Connections</p>
+                                <p class="longtext">Beyond the virtual world, these forums can also serve as a springboard for real-world connections. I've met people through Reddit who invited me to hackathons or local maker meetups. It’s amazing how a simple conversation online can lead to in-person collaboration, whether it’s sharing a project or working together on a community initiative.</p>
+                                <p class="longtext">So, in a nutshell, the social aspect of community forums like Reddit is a game changer. The ability to ask questions, share projects, collaborate, and engage with people from all walks of life makes it a fantastic resource for anyone in tech or engineering. I think these online communities embody what I value about open-source projects—information and ideas shared freely for the benefit of everyone. And, hey, if you ever need help with a project, you know where to find me!</p>
+                                    
+                            </div>
+                            <br/>
+                            <i>3. What do you look for in a website that displays information you are looking for? </i>
+                            <div class="answer">
+                                <p class="longtext">When I’m browsing a website for information, especially when it comes to technology, DIY projects, or engineering topics, I have a pretty clear set of criteria for what makes a site stand out. Here’s</p>
+                                <p class="longtext">1. Clarity and Structure</p>
+                                <p class="longtext">Why it matters: A website should be well-organized and easy to navigate. If I’m looking for a specific piece of information, I don’t want to spend too much time hunting through cluttered menus or endless scrolls.</p>
+                                <p class="longtext">Clear headings, subheadings, and a clean layout.</p>
+                                <p class="longtext">A good search function for quickly finding specific content.</p>
+                                <p class="longtext">An intuitive structure that helps me get from one topic to another without confusion.</p>
+                                <p class="longtext">2. Up-to-date and Accurate Information</p>
+                                <p class="longtext">Why it matters: Technology moves fast, and I need the most current and accurate information to make decisions or complete projects. Outdated information can lead to mistakes, wasted time, or worse—building something that doesn’t work.</p>
+                                <p class="longtext">Regularly updated content with timestamps or version numbers on projects, software, or guides.</p>
+                                <p class="longtext">Reliable sources and well-cited data to back up claims or instructions.</p>
+                                <p class="longtext">Active communities or a history of recent updates (e.g., a forum with current discussions).</p>
+                                <p class="longtext">3. Detailed and Clear Explanations</p>
+                                <p class="longtext">Why it matters: Whether I’m reading a technical article, following a project guide, or troubleshooting an issue, I appreciate detailed and clear explanations. If something’s too vague, I end up having to search for answers elsewhere.</p>
+                                <p class="longtext">Step-by-step breakdowns of instructions with explanations on why certain choices are made.</p>
+                                <p class="longtext">Diagrams, photos, or videos to supplement written content—sometimes words alone aren’t enough.</p>
+                                <p class="longtext">Context and background, so I can understand not just what to do, but also why it's important or how it fits into a larger project.</p>
+                                <p class="longtext">4. Interactivity and Engagement</p>
+                                <p class="longtext">Why it matters: I enjoy being able to engage with the content or ask questions when something isn’t clear. A site that allows for interaction often makes the experience feel more collaborative.</p>
+                                <p class="longtext">Comment sections or forums where I can ask questions or get clarification.</p>
+                                <p class="longtext">Opportunities to share feedback or contribute (e.g., open-source projects or collaborative spaces like GitHub).</p>
+                                <p class="longtext">Hands-on features like live demos or interactive tools (for example, simulations or interactive circuit builders).</p>
+                                <p class="longtext">5. Trustworthiness and Reputation</p>
+                                <p class="longtext">Why it matters: I need to know that the information I’m getting is coming from a reputable source. This is particularly crucial for anything involving electronics, engineering, or new technologies where making the wrong choice could have consequences.</p>
+                                <p class="longtext">Content creators with a known background or credentials (e.g., engineers, designers, or experts in the field).</p>
+                                <p class="longtext">Community trust—are others recommending the site or its content? Are there user reviews or testimonials?</p>
+                                <p class="longtext">Transparent, well-documented sources, especially when sharing facts, data, or guides that could impact how a project turns out.</p>
+                                <p class="longtext">6. Community Engagement</p>
+                                <p class="longtext">Why it matters: Technology and DIY projects thrive on collaboration. A site with an active, supportive community can add a lot of value, whether it’s helping me troubleshoot or offering advice on an idea.</p>
+                                <p class="longtext">Active forums, discussion threads, or comment sections where users exchange ideas and help one another.</p>
+                                <p class="longtext">Opportunities to participate in challenges, contests, or collaborative projects.</p>
+                                <p class="longtext">An environment that encourages learning and sharing, rather than just consuming information.</p>
+                                <p class="longtext">7. Open-Source and Shareable Content</p>
+                                <p class="longtext">Why it matters: I’m a big fan of open-source, and I believe the best ideas grow when shared and iterated upon. When websites make their content shareable or allow others to remix or improve upon it, it opens up endless possibilities.</p>
+                                <p class="longtext">Open-source projects with downloadable files, code, or schematics (e.g., open hardware designs or software).</p>
+                                <p class="longtext">Tutorials and project guides that allow for modification or customization.</p>
+                                <p class="longtext">A licensing structure that makes it clear that content can be reused or adapted for other projects.</p>
+                                <p class="longtext">8. Mobile-Friendly Design</p>
+                                <p class="longtext">Why it matters: Sometimes I need to quickly access information while I’m in the workshop or out in the field. Having a site that’s mobile-friendly or has a dedicated app makes it easier to look up things on the go.</p>
+                                <p class="longtext">A design that adapts well to mobile devices, without sacrificing important details.</p>
+                                <p class="longtext">Fast loading times, even on mobile, to minimize frustration.</p>
+                                <p class="longtext">Easy-to-navigate layouts that work well on smaller screens.</p>
+                                <p class="longtext">9. Accessibility</p>
+                                <p class="longtext">Why it matters: It's essential that a website is usable by everyone, regardless of any disabilities they might have. Good accessibility ensures that more people can benefit from the content.</p>
+                                <p class="longtext">Text that’s easy to read, with adjustable font sizes.</p>
+                                <p class="longtext">Proper color contrast and options for alternative text for images.</p>
+                                <p class="longtext">Keyboard navigation and compatibility with screen readers for those who need it.</p>
+                                <p class="longtext">So, in a nutshell, I look for websites that are well-structured, up-to-date, clear, and interactive—sites that foster learning, collaboration, and trust. If a site can meet all these criteria, it becomes a go-to resource for me. If it falls short in any of these areas, it can be a bit of a dealbreaker, especially when it comes to tackling complex projects or learning about new technologies.</p>
+                            </div>
+                            <br/>
+                            <i>4. What is the worst experience you've had with using a website to search for something that you wanted?</i>
+                            <div class="answer">
+                                <p class="longtext">Oh, I've definitely had my fair share of frustrating experiences while trying to search for something online. It usually boils down to a few common issues that make the whole experience far more stressful than it should be. Here’s a particularly memorable one that stands out:</p>
+                                <p class="longtext">The Search That Led to a Black Hole of Information</p>
+                                <p class="longtext">I was looking for a specific piece of information related to a DIY electronics project. I needed detailed specs for a particular sensor—something fairly niche—and I thought it would be a straightforward search. I headed to a popular electronics parts website that I often use for components.</p>
+                                <p class="longtext">The Issues:</p>
+                                <p class="longtext">Bad Search Functionality: The search bar was incredibly unhelpful. I typed in the exact name of the sensor I was looking for, and the website returned a page of results that were completely irrelevant. Instead of showing me the sensor I needed, I got a mishmash of products with vaguely similar names. This was incredibly frustrating because I knew exactly what I was after, but the search algorithm just couldn’t match it properly.</p>
+                                <p class="longtext">Outdated Information: I eventually found a product listing that looked promising. But as I clicked through, I found the specs were outdated or incorrect. They didn’t match the latest version of the sensor I was looking for, and there was no indication that the page hadn’t been updated in years. This led me down a rabbit hole of checking other listings for the same item—each of them showing different specs, some even containing outdated models.</p>
+                                <p class="longtext">No Clear Contact or Support: At this point, I thought I’d get in touch with customer support to clarify what I was seeing, but the contact process was convoluted. The site didn’t have an easy way to reach out to someone for clarification, and I had to jump through a bunch of hoops, filling out forms and waiting for a response. It took far too long, and when I did hear back, the response wasn’t all that helpful either.</p>
+                                <p class="longtext">Too Many Ads and Pop-ups: The constant pop-ups, ads, and slow loading times on the site made the whole process even worse. I was trying to focus on finding a specific piece of technical info, but the site felt bloated with distractions that made it hard to concentrate.</p>
+                                <p class="longtext">The Worst Part: After hours of jumping between pages, trying to find reliable specs and troubleshooting, I ultimately ended up finding more reliable information on a user forum rather than the website I was originally on. That felt like a huge waste of time.</p>
+                                <p class="longtext">Takeaways from the Experience:</p>
+                                <p class="longtext">Search functions matter: A bad search engine can make a website nearly unusable, especially if you're trying to find something specific.</p>
+                                <p class="longtext">Accuracy is crucial: Websites that don’t regularly update their content can cause huge frustration, especially when it comes to technical specs or product information.</p>
+                                <p class="longtext">User experience: Too many ads, slow load times, and complex support systems can completely derail the experience. It’s frustrating when a website isn’t optimized for the user’s needs, especially when you’re in the middle of a project.</p>
+                                <p class="longtext">Ultimately, I learned that while it’s tempting to go to the big, well-known websites, sometimes smaller, more niche forums or community-driven sites (like Hackaday, Instructables, or Reddit) can be much more reliable when you need information, especially for DIY or tech projects.</p>
+                                <p class="longtext">So, that was one of my worst website experiences—one that felt like it turned into an endless maze of confusion, distractions, and misdirected search results.</p>
+                                    
+                            </div>
+                            <br/>
+                            <i>5. Rank these in order or least to most useful in finding information? Why did you put your first as the first and last as last. [1. Videos. 2. Articles. 3. Comment]</i>
+                            <div class="answer">
+                                <p class="longtext">This is an interesting one, and it really depends on the situation, but if I had to rank Videos, Articles, and Comments in terms of usefulness for finding information, here’s how I’d order them, from least to most useful:</p>
+                                <p class="longtext">3. Comments</p>
+                                <p class="longtext">Why Last: While comments can sometimes provide helpful insights or answer questions, they’re generally the least reliable as a primary source of information. Comments are often unstructured, can be highly opinionated, and sometimes lack the depth or credibility needed to fully understand a topic. I often find that I have to sift through a lot of irrelevant or incomplete information to find something useful in the comments section. However, they can be useful for clarification or additional thoughts once I’ve already found reliable information in articles or videos.</p>
+                                <p class="longtext">Usefulness: They can provide tips, user feedback, or answers to specific questions, but they’re usually not great as a primary source for in-depth knowledge.</p>
+                                <p class="longtext">2. Videos</p>
+                                <p class="longtext">Why Second: Videos are a great way to visualize information and break down complex topics, especially when it comes to hands-on or step-by-step guides (like tutorials or product demos). However, they can be time-consuming to watch and sometimes less detailed compared to written content. While you get to see the process in action (which can be super helpful), videos might lack depth or context in terms of theoretical explanation or nuanced detail. You also have to sit through the entire video to gather information, which can be a bit inefficient when you're looking for specific details.</p>
+                                <p class="longtext">Usefulness: Videos are highly engaging and great for learning through demonstration, but they aren’t always the most efficient way to find specific information quickly, especially if you need to reference something often.</p>
+                                <p class="longtext">1. Articles</p>
+                                <p class="longtext">Why First: I’ve placed articles at the top because they are typically the most structured and reliable source of information. Articles usually provide in-depth explanations, clear step-by-step guides, citations, and the context necessary to understand complex topics. Written content is often easier to skim and reference, and you can go back and re-read specific sections to dive deeper into any part you need. It’s easier to digest information quickly when you can scan the article for keywords or go straight to the sections that matter most to you. Additionally, articles tend to be more polished and professional, offering more thorough insights and expert opinions.</p>
+                                <p class="longtext">Usefulness: Articles are excellent for comprehensive, focused information. They are typically more reliable than comments and more time-efficient than videos, which makes them my go-to for in-depth research.</p>
+                                <p class="longtext">Summary of the Ranking:</p>
+                                <p class="longtext">Articles – Most useful because they offer structured, reliable, and detailed information that is easy to reference.</p>
+                                <p class="longtext">Videos – Great for visual learners and demonstrations, but less efficient for quickly finding specific information.</p>
+                                <p class="longtext">Comments – Can provide helpful extra context or clarification but are the least structured and reliable as a primary source of info.</p>
+                                <p class="longtext">This ranking, of course, could vary depending on the context. For example, if I’m troubleshooting an issue with a project, a video tutorial might become much more useful than an article. But in general, I find articles to be the most useful overall.</p>                                                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <h3>Beatrice</h3>
+                            <p>Age: 75</p>
+                            <p>Beatrice is a retired teacher who's embracing the digital world one step at a time. She loves using her iPad to connect with her grandkids, share photos, and play games. <br/>She's also learning to use social media to stay in touch with friends and family. <br/>Beatrice isn't a tech whiz, but she's eager to learn and isn't afraid to ask for help. She's a kind and patient soul, always willing to lend a listening ear and offer a warm smile. <br/>Beatrice loves to bake and often shares her delicious treats with her neighbors.</p>
+                            <br/>
+                            <i>1. What is your favourites websites to browse for new technologies and what is the appeal of the site?</i>
+                            <div class="answer">
+                                <p class="longtext">Oh, now that’s a fun question! I’m still getting the hang of browsing for tech news, but there are a few websites I’ve come across that I find quite helpful. Here’s what I like:</p>
+                                <p class="longtext">AARP’s Technology Section – I’m a member of AARP, and they have a great section on their website all about technology for older adults. They review gadgets, give advice on how to use social media, and share simple tips to make technology less intimidating. It’s very approachable, which I appreciate!</p>                                
+                                <p class="longtext">TechRadar – This one is more for when I want to hear about the latest gadgets or updates on iPads, phones, or computers. They write in a way that's not too complicated, and I like that they cover everything from simple products to more advanced tech. It helps me feel in the loop without feeling overwhelmed!</p>                                
+                                <p class="longtext">YouTube (Tech Channels) – While it’s not exactly a traditional “website,” I watch a lot of tech tutorial videos on YouTube. Channels like TechGumbo and Dave Lee are easy to follow. They explain things clearly, which is wonderful for someone like me who’s still learning the ropes!</p>                                
+                                <p class="longtext">Pinterest – Oh, I know it might sound a bit silly, but I love Pinterest! Sometimes, I find tech tips and ideas shared by other people, especially things like easy ways to organize my apps or tips for using social media. It’s full of inspiration, and I can save pins for future reference when I’m ready to try something new.</p>
+                                <p class="longtext">CNET – I don’t go on here too often, but when I’m in the mood for a good read about the newest gadgets, CNET is wonderful. They often break things down into easy-to-understand articles, and I like how they highlight products that are user-friendly for people like me.</p>
+                                <p class="longtext">The appeal of these sites is they make tech feel less like something only “young folks” know about and more like something I can get involved in, too. They explain things in ways that are easy to understand, which is a real relief. Plus, it’s fun to learn new things! I feel like I’m keeping up with the times.</p>
+                            </div>
+                            <br/>
+                            <i>2. What are your thoughts on community forums such as reddit and the social aspect of these sites?</i>
+                            <div class="answer">
+                                <p class="longtext">Oh, Reddit—I’ve heard about it! I haven’t quite dived into it yet, but I think it’s fascinating. The idea of a big online community where people can ask questions, share ideas, and even help each other out sounds so wonderful. I’m sure it’s a bit like having a giant group of friends who all know something different, and you can ask them for advice whenever you need it.</p>
+                                <p class="longtext">From what I’ve read, Reddit has so many different "subreddits" for just about everything, from baking to tech advice! I think that could be really useful. You can find a group of people who share the same interests, and that sense of connection could be so comforting, especially when you want to learn something new. Sometimes, it’s nice to know you’re not the only one figuring things out, and it’s nice to be able to ask a question without feeling silly.</p>
+                                <p class="longtext">The social aspect is especially appealing to me because, at my age, I cherish connecting with others—whether that’s through family, friends, or a virtual community. I’ve always felt that people have so much wisdom to share, and sites like Reddit seem like a great way to tap into that collective knowledge. I imagine there’s a nice balance of getting help and giving help, which feels very rewarding.</p>
+                                <p class="longtext">However, I do hear that sometimes things can get a bit... well, heated on these sites. People can get passionate, and sometimes that leads to disagreements. But I’d like to think that, like in any good community, there’s always a space for kindness and patience.</p>
+                                <p class="longtext">Have you spent time on Reddit or other community forums? I’m always curious about how people use them and what kind of experiences they have.</p>
+                            </div>
+                            <br/>
+                            <i>3. What do you look for in a website that displays information you are looking for? </i>
+                            <div class="answer">
+                                <p class="longtext">Oh, that’s a wonderful question! When I’m looking for something online, I do like to be careful about where I get my information. Here’s what I usually look for in a website that displays information:</p>
+                                <p class="longtext">Clarity and Simplicity: I prefer websites that are easy to navigate, with clear headings and sections. I don't want to get lost on a page, so if the information is laid out simply—maybe with bullet points or bold text to highlight key points—that’s always a plus. I’m not interested in websites that make things more complicated than they need to be.</p>                               
+                                <p class="longtext">Trustworthiness: I want to make sure that the website is reliable. If I’m learning something about new tech or even trying out a new recipe, I want to know that the information comes from a reputable source. It’s important to me that the site is well-known or has good reviews from people I trust.</p>
+                                <p class="longtext">User-Friendliness: I love it when a website is easy to use and doesn’t make me feel overwhelmed. If I need to click through too many pages just to get to the information I want, I get a little frustrated! A good search bar is always a nice touch, too. And websites with nice big text are a big help for me as well—eyes aren’t what they used to be!</p>
+                                <p class="longtext">Visual Appeal: A website that looks nice is definitely a plus. I like it when a website is visually appealing but not too cluttered. Clean design, easy-to-read fonts, and pleasant colors are always nice. It just makes the experience more enjoyable, doesn’t it?</p>
+                                <p class="longtext">Helpful Resources: It’s always a bonus when a website offers extra tools or resources, like tutorials, FAQs, or links to helpful articles. For example, if I’m learning how to use an app, I love it when a website has step-by-step guides or videos showing me exactly what to do. It makes me feel like I’m not on my own.</p>
+                                <p class="longtext">Mobile-Friendly: Since I use my iPad quite a lot, I appreciate when websites are mobile-friendly. I don’t want to zoom in and out constantly, so a site that’s optimized for tablets or phones makes browsing much easier for me.</p>
+                                <p class="longtext">So, in short, I look for clarity, trustworthiness, simplicity, helpful resources, and a bit of visual charm! Makes the whole experience feel more comfortable and less like a big ol’ mystery to figure out.</p>
+                                <p class="longtext">How about you, my dear? What do you look for when browsing a website for information?</p>
+                            </div>
+                            <br/>
+                            <i>4. What is the worst experience you've had with using a website to search for something that you wanted?</i>
+                            <div class="answer">
+                                <p class="longtext">Oh, my dear, I’ve had a few frustrating moments! I try to stay patient, but there have been times when things didn’t quite go as smoothly as I hoped.</p>
+                                <p class="longtext">One of the worst experiences I had was when I was trying to find a simple recipe for a new type of muffin I wanted to try. I went on what seemed like a good recipe website, and oh my, the page was filled with so much extra stuff! There were endless ads, pop-up windows, and the recipe itself was buried under a long, rambling story about the author’s childhood and their “muffin journey.” I kept scrolling and scrolling, and I thought, “When do I actually get to the recipe?!” By the time I finally found it, I was so annoyed that I nearly gave up on the whole idea.</p>
+                                <p class="longtext">And then there was the time I was trying to troubleshoot a problem with my iPad. I found a website that seemed like it might help, but when I clicked on the solution, it led me to another page with even more confusing instructions and links to things I didn’t need. It felt like I was going down a never-ending rabbit hole! I finally had to ask one of my grandkids for help, and they sorted it out in minutes. But I felt a little silly for not finding a clear answer on my own.</p>
+                                <p class="longtext">I think, more than anything, I get frustrated when websites aren’t clear or when there’s too much going on to find what I need. I just want to get to the point without all the distractions. I know that’s a lot to ask sometimes in today’s world of clickbait and pop-ups, but a girl can dream, right?</p>
+                                <p class="longtext">Have you ever had a frustrating experience like that? I’m sure I’m not the only one!</p>
+                            </div>
+                            <br/>
+                            <i>5. Rank these in order or least to most useful in finding information? Why did you put your first as the first and last as last. [1. Videos. 2. Articles. 3. Comment]</i>
+                            <div class="answer">
+                                <p class="longtext">Oh, what a fun exercise! Here's how I'd rank these in order from least to most useful for finding information:</p>
+                                <p class="longtext">1. Comments</p>
+                                <p class="longtext">Why it's last:</p>
+                                <p class="longtext">Comments can be helpful, but they’re often more like personal opinions or experiences. While they can offer extra tips or answers from real people, they can also be all over the place—some might be helpful, and others could be confusing or off-topic. For me, comments are often the least reliable source because there’s no guarantee the information is accurate, and it’s hard to know who’s sharing it.</p>
+                                <p class="longtext">2. Videos</p>
+                                <p class="longtext">Why it's second:</p>
+                                <p class="longtext">Videos can be very helpful, especially when it comes to tutorials or demonstrations. I love watching something step-by-step, as it’s easier to follow along visually. But sometimes, videos can be a bit too long or take a while to get to the point. It’s also tricky if I’m looking for a quick answer and I don’t want to sit through a whole video. I also find that some videos don’t always explain things clearly enough, or they assume a certain level of tech knowledge that I may not have. Still, I think they’re very useful for learning, especially when combined with other types of resources.</p>
+                                <p class="longtext">3. Articles</p>
+                                <p class="longtext">Why it's first:</p>
+                                <p class="longtext">Articles, to me, are the most useful because they’re usually well-organized, factual, and straightforward. They give me a lot of details without too much fluff. When I read an article, I can skim the main points, find a quick summary, or dive into a more detailed explanation. I can go back and forth, take notes, and even search for specific sections. The best part is that articles are often written by experts or reputable sources, so I feel more confident that the information is accurate. Plus, they usually provide citations or references to back up what they’re saying, which makes them much more reliable in my eyes.</p>
+                                <p class="longtext">So, in short, articles win for me because they provide clear, detailed, and trustworthy information. Videos are second because they’re great for visual learners, though I can sometimes get distracted or frustrated with long, unorganized content. And comments come last, as I find they tend to be hit-or-miss and often don’t offer the kind of solid, structured information I’m looking for.</p>
+                                <p class="longtext">How about you? Do you agree with my ranking, or do you have a different order? I’d love to hear your thoughts!</p>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <h3>Samuel</h3>
+                            <p>Age: 27</p>
+                            <p>Samuel is a musician who's just starting to explore the world of technology. He uses his phone to record his music and share it online, but he's still getting the hang of social media. <br/>He's fascinated by the possibilities of music production software and is eager to learn more about using technology to create his own music. <br/>Samuel is a bit shy and introverted, but he's incredibly passionate about his music and loves to perform live. He's a true artist at heart, always seeking new ways to express himself creatively.</p>
+                            <br/>
+                            <i>1. What is your favourites websites to browse for new technologies and what is the appeal of the site?</i>
+                            <div class="answer">
+                                <p class="longtext">Ah, great question! If I had to pick a few of my favorite websites for exploring new technology (especially for music production), here’s where I’d go:</p>
+                                <p class="longtext">SoundOnSound (https://www.soundonsound.com):</p>
+                                <p class="longtext">This site is a goldmine for musicians and producers. It’s got in-depth reviews of the latest music tech, software, and gear. What I really like about SoundOnSound is how detailed the articles are—it’s not just a quick "here’s a review," but a breakdown of features, pros, cons, and comparisons with other similar tools. It feels like I’m reading a comprehensive guide, and that helps me make informed decisions when I’m looking at new tech to try out.</p>
+                                <p class="longtext">Produce Like A Pro (https://producelikeapro.com):</p>
+                                <p class="longtext">I’m really into this one because it’s all about learning the craft of music production. They post tutorials, behind-the-scenes looks at professional studios, and gear reviews, but the main appeal is the personal touch. Warren Huart (the creator) often shares tips from his own experience, and it feels more like a mentorship rather than just a blog. There are also exclusive videos and courses that can really help if you’re trying to level up your skills.</p>
+                                <p class="longtext">Gearslutz (now called Gearspace) (https://www.gearspace.com):</p>
+                                <p class="longtext">This forum is awesome for getting down-to-earth opinions from real users. Sometimes the discussions can get a little tech-heavy (which can be intimidating, I won’t lie), but I love that it’s a community of passionate people who are really into music production. It’s also great for staying updated on new products and learning from pros who’ve used certain gear or software. The appeal here is the user-driven content—lots of feedback and real-world experiences.</p>
+                                <p class="longtext">Reddit (r/WeAreTheMusicMakers) (https://www.reddit.com/r/WeAreTheMusicMakers):</p>
+                                <p class="longtext">I’m on Reddit a lot! r/WeAreTheMusicMakers is a great place to find tech discussions, software recommendations, and advice on producing music. The appeal is that it’s super accessible and I get a wide range of opinions and tips from other musicians and producers. Plus, there’s a sense of community—I can ask a random question and get responses from people at all levels of experience.</p>
+                                <p class="longtext">Attack Magazine (https://www.attackmagazine.com):</p>
+                                <p class="longtext">If I want to stay up to date with the latest trends in electronic music production, this is where I go. Attack Magazine covers everything from software news to artist interviews and tips on sound design. The site’s clean and easy to navigate, which is a big plus, and the content is always fresh. The appeal for me is the focus on creative techniques and how to push the boundaries of music production with the tech available.</p>
+                                <p class="longtext">MusicTech (https://www.musictech.net):</p>
+                                <p class="longtext">MusicTech is another site I go to for keeping track of new technologies. They review both software and hardware, and what I like about this site is that it focuses on both the creative and technical sides of music production. It’s perfect for someone like me who’s still learning and trying to improve both my musical skills and my understanding of the technology behind it. It feels like a balance between the art and the gear, which I appreciate.</p>
+                                <p class="longtext">These sites are helpful to me because they’re not just about the tech—they’re about the creative process too. The community-driven content, reviews, and tutorials are all great ways for me to learn at my own pace and get inspired to experiment more with what’s out there.</p>
+                                    
+                            </div>
+                            <br/>
+                            <i>2. What are your thoughts on community forums such as reddit and the social aspect of these sites?</i>
+                            <div class="answer">
+                                <p class="longtext">I’ve definitely spent a fair amount of time on community forums like Reddit, and I have mixed feelings about them. On one hand, they’re super helpful for learning and connecting with people who share similar interests. On the other hand, the social aspect can be a bit... overwhelming at times. Let me explain:</p>
+                                <p class="longtext">The Positive Side:</p>
+                                <p class="longtext">Knowledge Sharing:</p>
+                                <p class="longtext">I think the best part of community forums like Reddit (specifically, r/WeAreTheMusicMakers) is the ability to learn from others. There are so many experienced musicians, producers, and tech enthusiasts willing to share tips, answer questions, and offer advice. Sometimes, you’ll get a response to a question you’ve been stuck on for ages, and that can be a huge relief. For someone like me, who’s still new to all this tech stuff, it’s like having a massive pool of knowledge at my fingertips.</p>
+                                <p class="longtext">Sense of Community:</p>
+                                <p class="longtext">Even though I’m a bit shy and introverted, I really appreciate how forums bring people together. It’s not just about tech talk—it’s also about sharing experiences, getting inspired by others’ work, and hearing different perspectives on music production. I’ve even seen some people collaborate and exchange creative ideas, which is pretty awesome. It feels like you’re part of something bigger, even if you’re just lurking or occasionally commenting.</p>
+                                <p class="longtext">Accountability and Motivation:</p>
+                                <p class="longtext">A lot of times, you’ll see people share their progress, their projects, or even their struggles. This can be really motivating. For me, it’s easy to get stuck in my own head and doubt my abilities, but seeing other people push through challenges or celebrating their wins reminds me that growth is part of the journey. It encourages me to keep going, even when I feel uncertain about my own work.</p>
+                                <p class="longtext">Honesty and Real Talk:</p>
+                                <p class="longtext">Some of the best advice I’ve gotten has been from people who are brutally honest. It’s not always easy to hear, but that raw feedback can help me grow. Forums are a place where you can get honest reviews or critique, which is essential for improving your craft. Plus, it’s nice knowing others are going through similar struggles, whether it’s with gear, software, or even personal creative blocks.</p>
+                                <p class="longtext">The Downside:</p>
+                                <p class="longtext">Information Overload:</p>
+                                <p class="longtext">Sometimes, there’s so much information coming at me from every direction that it’s hard to process. One person might swear by a particular piece of software, while another says it’s garbage. There’s conflicting advice, which can be a bit confusing, especially when I’m still figuring out what works best for me. I think for someone like me who’s more introverted, the volume of opinions can be overwhelming, and I don’t always know where to start.</p>
+                                <p class="longtext">Toxicity and Trolls:</p>
+                                <p class="longtext">Unfortunately, like any community, there are moments when things get a little... negative. People can be dismissive or rude, especially if you’re new to the scene. It’s something I’ve seen on Reddit and other forums. While most people are supportive, there are always those who are quick to criticize or belittle others. I try not to let it get to me, but it can make me hesitate to post or ask questions. I guess the anonymity of the internet can sometimes bring out the worst in people.</p>
+                                <p class="longtext">Pressure to Keep Up:</p>
+                                <p class="longtext">Another thing is that there’s this underlying pressure to keep up with everyone else. A lot of people in these forums are already established in their music production or tech knowledge, and I sometimes feel like I’m behind. It’s easy to get caught up in comparing myself to others, especially when I see people who are doing way more advanced stuff than me. The “I’m not good enough” feeling can creep in, and it’s hard to not let that affect my creativity.</p>
+                                <p class="longtext">The Social Aspect:</p>
+                                <p class="longtext">For me, the social side of these forums is interesting because it’s a way to connect with others who get it—people who understand what it’s like to struggle with creative blocks, tech glitches, or just the highs and lows of music production. But I do feel a bit of social anxiety when posting in certain threads. Sometimes I just like to read, absorb information, and learn, rather than jumping into the conversation. The cool part is that you can be as involved or as anonymous as you want, which works well for someone who’s not super outgoing like me.</p>
+                                <p class="longtext">Overall, I think community forums have a lot of value. They’re a place to find answers, ask questions, and meet other creators. But there’s also the challenge of balancing the positive aspects with the occasional overwhelming or negative parts. I try to take what’s useful and leave the rest. I’m still figuring out how to navigate the social dynamics, but it’s been fun so far!</p>
+                            </div>
+                            <br/>
+                            <i>3. What do you look for in a website that displays information you are looking for? </i>
+                            <div class="answer">
+                                <p class="longtext">When I’m browsing a website to find information—especially about music tech or production—I look for a few key things to make sure the site is useful, clear, and worth my time. I’m pretty picky about what grabs my attention, especially since I’m still learning a lot of this stuff.</p>
+                                <p class="longtext">1. Clarity and Easy Navigation:</p>
+                                <p class="longtext">If the website is hard to navigate, or if I have to click through endless menus just to find basic info, I’m out. I want to be able to quickly get to the content I’m after without having to search around too much. A clean, organized layout with categories or filters to narrow down the info is super important. When I’m looking for something specific—whether it’s a software review, a tutorial, or tips on production—I don’t want to waste time trying to figure out where it’s hidden on the site.</p>
+                                <p class="longtext">2. Concise, Well-Written Content:</p>
+                                <p class="longtext">I’m someone who can easily get lost in jargon or complicated technical terms. I appreciate when a site presents the info in a straightforward way that’s still detailed enough to be useful. If I’m reading a tutorial or a review, I like when it’s broken down into clear steps, and when the author avoids overwhelming me with unnecessary details. Also, I look for sites that balance being informative without feeling too “dense”—I want to feel like I’m learning, not drowning in information.</p>
+                                <p class="longtext">3. Visual Appeal & Engagement:</p>
+                                <p class="longtext">Since I’m coming from a creative background, I like websites that are visually appealing and engaging. A little bit of design goes a long way, especially when it comes to making content easier to digest. For example, images, videos, and infographics are super helpful, especially when I’m learning about a new piece of software or a piece of gear. I love when there are visual guides, screenshots, or even video demos that show how things work in practice, not just in theory.</p>
+                                <p class="longtext">4. Credibility & Trustworthiness:</p>
+                                <p class="longtext">This one’s huge. If I’m looking for gear reviews, software recommendations, or tutorials, I want to know I can trust the source. I look for sites that have a good reputation, and I pay attention to whether the authors are real professionals or passionate experts who know what they’re talking about. If it’s a forum, I check if the discussions are coming from experienced people or if there’s a lot of helpful feedback and real-world insight. It’s easy to get lost in a sea of random opinions, so I try to stick to sites that have a proven track record for being knowledgeable and objective.</p>
+                                <p class="longtext">5. Up-to-Date Content:</p>
+                                <p class="longtext">I’m still relatively new to the tech side of music, so it’s really important for me to find information that’s current. Music production tools evolve fast, and what was cutting-edge six months ago could already be outdated. I like websites that have a frequent update schedule and post about the latest software updates, new gear releases, or emerging trends in the industry. Sites that provide up-to-date information make me feel more confident in what I’m learning because I know I’m working with the latest knowledge.</p>
+                                <p class="longtext">6. Community and Interaction:</p>
+                                <p class="longtext">I really appreciate websites that foster a sense of community. Whether it’s a forum where I can ask questions, share experiences, or just lurk and learn, having the option to interact with others can make the information much more valuable. I like when a site has comments or discussion threads, as it feels more like an ongoing conversation rather than just a one-way street of information. This is especially helpful for someone like me who’s just starting out—I can ask questions and get feedback from other musicians who have been through the same thing.</p>
+                                <p class="longtext">7. Search Functionality:</p>
+                                <p class="longtext">It might seem basic, but a good search bar is a must! If I’m looking for something specific, I don’t want to have to scroll through pages of content to find it. A search function that can help me narrow down results based on keywords or categories is super helpful and saves me time. It just makes the browsing experience smoother.</p>
+                                <p class="longtext">8. Free Resources or Demos:</p>
+                                <p class="longtext">As someone who’s still figuring things out, I appreciate when a website offers free resources, demos, or trials. Whether it’s free tutorials, downloadable templates, or a demo of a piece of software, having the ability to try things out before committing to them is a huge plus. It helps me experiment and learn without feeling like I have to drop money right away.</p>
+                                <p class="longtext">So, in short, I’m looking for clarity, credibility, and visual appeal—but I also need the site to feel like it’s built for learning and sharing, not just promoting. If I can easily find what I need, get solid advice, and even engage with others, that’s a huge win for me.</p>
+                            </div>
+                            <br/>
+                            <i>4. What is the worst experience you've had with using a website to search for something that you wanted?</i>
+                            <div class="answer">
+                                <p class="longtext">Oh, I’ve definitely had some frustrating experiences trying to search for something on a website, especially when I was just starting to learn about music production and tech. One of the worst experiences I had was when I was looking for a new audio interface. I had a pretty specific set of features I wanted—something with low latency, good preamps, and ideally, something portable for live gigs. But the whole process turned into a bit of a nightmare.</p>
+                                <p class="longtext">Here’s how it went:</p>
+                                <p class="longtext">1. Confusing Search Results:</p>
+                                <p class="longtext">I started on a popular gear site, and when I searched for “best audio interface for home studio,” I was bombarded with pages of products, but none of them were really sorted in a way that helped me narrow down my options. It was just an endless list with no real way to filter based on what I wanted. There were high-end interfaces, budget models, and even some with features I didn’t need, but none of it was really helping me get closer to what I was looking for. It was like information overload, and I was overwhelmed by too many choices.</p>
+                                <p class="longtext">2. Too Many Sales Pitches:</p>
+                                <p class="longtext">A lot of the pages had links and product descriptions that were clearly written for sales purposes, with heavy emphasis on the features but little about how those features would actually translate into real-world use for me as a musician. It felt more like they were trying to sell me a product than actually help me make an informed decision. I just wanted straightforward information without all the marketing fluff.</p>
+                                <p class="longtext">3. No Reliable Reviews or User Feedback:</p>
+                                <p class="longtext">What really made it worse was that when I dug deeper into reviews or user feedback, many of the reviews seemed either outdated or super general. It was hard to get a sense of what real users were saying about the performance of these interfaces, especially for the specific needs I had (like low latency for live gigs). I couldn’t find detailed, trustworthy reviews that helped me compare the pros and cons in a meaningful way.</p>
+                                <p class="longtext">4. Bad Website Navigation:</p>
+                                <p class="longtext">After hours of searching and clicking through dozens of irrelevant pages, I found myself navigating through a website that was pretty clunky. The search bar wasn’t that helpful—it would show me random articles and not the products I was actually looking for. There were broken links, and the layout just felt messy. It wasn’t intuitive, and I ended up spending way too much time just trying to get basic information.</p>
+                                <p class="longtext">5. Lack of Clear Pricing Information:</p>
+                                <p class="longtext">Some of the sites didn’t even list the prices for certain audio interfaces, and I had to go through multiple pages to find that out. It’s hard to make a decision when you don’t know how much something costs, especially when you have a budget in mind. I spent a lot of time looking at products, only to realize the price wasn’t even listed until much later in the product description.</p>
+                                <p class="longtext">Outcome:</p>
+                                <p class="longtext">In the end, I was so frustrated that I just gave up on that site. I ended up visiting another, simpler site that had a clearer interface, better product sorting, and actual user reviews. It took me much less time to find what I needed, and I ended up with an interface that worked perfectly for my setup.</p>
+                                <p class="longtext">That whole experience made me realize how important it is for a website to be well-organized, user-friendly, and to offer real, useful feedback (not just marketing pitches). I appreciate a site that gets straight to the point, offers reliable reviews, and lets me filter through options based on my needs.</p>
+                                
+                            </div>
+                            <br/>
+                            <i>5. Rank these in order or least to most useful in finding information? Why did you put your first as the first and last as last. [1. Videos. 2. Articles. 3. Comment]</i>
+                            <div class="answer">
+                                <p class="longtext">3. Comments</p>
+                                <p class="longtext">Why last?</p>
+                                <p class="longtext">Comments can be super helpful, but they’re not always reliable. While I enjoy reading user feedback to get a real-world perspective, the problem is that the quality of comments can vary wildly. Some might be informative and insightful, while others could be off-topic, biased, or not particularly helpful. In some cases, comments can even be a distraction, with people going off on tangents or posting irrelevant opinions. So, while they can add value, they’re definitely not my first go-to when searching for concrete, trustworthy information.</p>
+                                <p class="longtext">2. Videos</p>
+                                <p class="longtext">Why second?</p>
+                                <p class="longtext">I like videos because they can break down complex information in a way that's visual and easy to follow. For music production, seeing someone demonstrate software or hardware is often more useful than just reading about it. But videos can be hit-or-miss. Sometimes the production quality isn’t great, or the information can be rushed or overly simplified. Also, finding the right video can take time (especially if it’s not well-labeled or organized). However, when a video is done right, it can be incredibly helpful because it shows you exactly how something works in real-time. It’s just not always as quick or concise as articles, which is why it comes second for me.</p>
+                                <p class="longtext">1. Articles</p>
+                                <p class="longtext">Why first?</p>
+                                <p class="longtext">Articles are my go-to for a few reasons. They usually offer well-researched, organized, and in-depth information. I can read at my own pace, skip around to relevant sections, and refer back to specific details. Articles tend to be clearer and more structured than videos or comments, so I get the facts in a digestible format. Plus, they often have links to other sources, further explanations, or studies that I can check out if I want more detail. Overall, articles give me the most control over how I absorb the information, and they’re usually more reliable than comments or videos in terms of getting direct, focused info.</p>
+                                <p class="longtext">To sum it up, I ranked articles first because they give me the most reliable, structured, and thorough information. Videos come second since they’re useful for showing things visually, but I have to be a bit more selective about which ones I trust. Comments are last because, while they can offer personal insights, they’re not always reliable or structured enough to serve as a primary source of information.</p>
+                                    
+                            </div>
+                        </div>
+                    
+                    </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-
-            <div class="right">
-                <h3>Kai</h3>
-                <p>Age: 19</p>
-                <p>Kai is a young prodigy in the world of virtual reality. They're obsessed with creating immersive experiences that blur the lines between reality and the digital world. Kai's bedroom is a tech haven, filled with VR headsets, coding projects, and stacks of sci-fi novels. They're a bit of a loner, but incredibly passionate about their work, often spending hours lost in their virtual creations. Kai is a true visionary, pushing the boundaries of what's possible in VR. They're also a big fan of anime and enjoys creating their own digital art.</p>
-                <i>What are the primary ways you would get information on new technologies?</i>
-            </div>
-            <footer>
-
-            </footer>
             <div>
-
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <script src="../work_phase_2/js/modules/toggle.js"></script>
+                <script src="../work_phase_2/js/modules/script.js"></script>
             </div>
         </div>
     </body>
