@@ -1,11 +1,9 @@
 function toggle() {
     var x = document.getElementById("menu");
 
-    // Check if the screen width is large enough (desktop size, e.g., 1024px and above)
     if (window.innerWidth >= 800) {
-        x.style.display = "block"; // Always show menu on desktop
+        x.style.display = "block"; 
     } else {
-        // Toggle based on current display state for smaller screens
         if (x.style.display === "" || x.style.display === "none") {
             x.style.display = "block";
         } else {
