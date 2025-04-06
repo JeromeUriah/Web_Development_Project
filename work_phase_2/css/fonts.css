@@ -11,13 +11,13 @@ h2{
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1;
     margin-top: 0.5vw;
 }
 
 h4{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1;
     font-weight: bold;
 }
@@ -69,6 +69,10 @@ i {
     margin-left: 1vw;
     line-height: 1;
     word-break: break-word;
+}
+
+.Principles h3{
+    color: var(--contrast);
 }
 
 @media (max-width:800px) {

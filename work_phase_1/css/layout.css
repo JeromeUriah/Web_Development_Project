@@ -179,6 +179,7 @@ body{
     word-wrap: break-word;
     margin-bottom: 1vw;
     margin-top: 1vw;
+    vertical-align: top;
 }
 
 
