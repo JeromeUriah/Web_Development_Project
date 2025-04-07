@@ -6,6 +6,7 @@
     background-color: var(--dark);
     word-wrap: break-word;
     align-items: center;
+
 }
 
 .right{
@@ -13,7 +14,7 @@
     width: 65%;
     float: right;
     background-color: var(--dark);
-    word-wrap: break-word;
+    word-break: normal;
 }
 
 .header{

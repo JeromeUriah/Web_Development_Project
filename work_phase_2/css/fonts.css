@@ -61,8 +61,9 @@ ol{
 }
 
 i {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1;
+
 }
 
 .longtext {
@@ -74,6 +75,13 @@ i {
 .Principles h3{
     color: var(--contrast);
 }
+
+
+.solution {
+    font-size: 0.8rem;
+    padding-left: 2%;
+}
+
 
 @media (max-width:800px) {
     .headerlinks {

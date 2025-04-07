@@ -1,5 +1,5 @@
 :root {
-    --dark: rgb(36 72 85);
+    --dark: rgb(1, 6, 8);
     --bright: rgb(230 72 51);
     --contrast:rgb(135 79 65);
     --light:rgb(144 174 173);
@@ -7,6 +7,11 @@
     --altbackground: rgb(36, 86, 75);
     --textfont: "EB Garamond", sans-serif;
     --navbar: rgb(51, 51, 51);
+    --color1: #F7374F;
+    --color2: #578E7E;
+    --color3: #C07F00;
+    --color4: #005B41;
+    --highlights: #913175;
 }
 
 body{
@@ -39,6 +44,18 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
     color: var(--bright);
 }
 
+.logotext:hover{
+    color: var(--text);
+}
+
+.intextlinks {
+    display: inline;
+    font-size: 1rem;
+}
+
+.intextlinks:hover {
+    color: var(--highlights);
+}
 .gap1 {
     padding-left: 1%;
 }

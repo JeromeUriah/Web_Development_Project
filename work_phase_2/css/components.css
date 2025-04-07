@@ -25,22 +25,89 @@
 
 /* making link look like a card */
 .link-card {
-    background-color: var(--altbackground);
-    border: 1px solid #ddd;
+    background-color: var(--color1);
+    border: 0.5rem solid #ddd;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
-    height: 100%;
-    width: fit-content;
-    max-width: 350px;
+    min-height: 100%;
+    width: 50%;
     flex-direction: column; 
     align-items: center;
+    text-align: center;
     margin-top: 0.5vw;
+    margin-bottom: 2%;
     display: block  ;
 }
 
 .link-card:hover{
-    background-color: var(--contrast);
+    transform: scale(1.1);
+    border: none;
+}
+
+/* making link look like a card */
+.link-card2 {
+    background-color: var(--color2);
+    border: 0.5rem solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-height: 100%;
+    width: 50%;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+    margin-bottom: 2%;
+    display: block  ;
+}
+
+.link-card2:hover{
+    transform: scale(1.1);
+    border: none;
+}
+
+/* making link look like a card */
+.link-card3 {
+    background-color: var(--color3);
+    border: 0.5rem solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-height: 100%;
+    width: 50%;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+    margin-bottom: 2%;
+    display: block  ;
+}
+
+.link-card3:hover{
+    transform: scale(1.1);
+    border: none;
+}
+
+.link-card4 {
+    background-color: var(--color4);
+    border: 0.5rem solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    min-height: 100%;
+    width: 50%;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+    margin-bottom: 2%;
+    display: block  ;
+}
+
+.link-card4:hover{
+    transform: scale(1.1);
+    border: none;
 }
 
 
@@ -74,8 +141,12 @@
     transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
 }
 
+.interactive-highlight:hover::after {
+    opacity: 1;
+}
+
 .flip-card {
-    width: 65%;
+    width: 100%;
     height: 180px;
     perspective: 1000px; /* Adds depth to make the flip look 3D */
     cursor: pointer; /* Adds indication of interactivity */
@@ -102,13 +173,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    word-break: normal;
     text-align: center;
-    border-radius: 10px;
     padding: 10px;
     font-size: 1rem;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     background: var(--altbackground);
-    word-break: break-all;
+    word-break: normal;
 }
 
 /* set the colour for the front */
@@ -126,13 +197,14 @@
 
 /* Flip Card Inner */
 .flip-card-inner {
-    width: 100%;
+    width: 60%;
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in-out;
     border: 1px solid var(--text);
     background-color: var(--cardbackground);
+    word-break: normal;
 }
 
 .flip-containers {
@@ -140,13 +212,10 @@
     width: 100%;
     height: 100%;
     align-items: center;
+    word-break: normal;
 }
 
-/* Show Number on Tap (Mobile) */
-.interactive-highlight:focus::after,
-.interactive-highlight:active::after {
-    opacity: 1;
-}
+
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -185,12 +254,12 @@
 
 
 
-/* Show Number on Hover (Desktop) */
 @media (hover: hover) and (max-width:800px) {
-    .interactive-highlight:hover::after {
-        opacity: 1;
-    }
 
+    .interactive-highlight:focus::after,
+    .interactive-highlight:active::after {
+    opacity: 1;
+}
     .flip-containers {
         margin-top: 2%;
         width: 100%;
@@ -212,5 +281,18 @@
     .scrollmenu {
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+    }
+
+    .link-card {
+        min-height: 100%;
+        width: 100%;
+    }
+    .link-card2 {
+        min-height: 100%;
+        width: 100%;
+    }
+    .link-card3 {
+        min-height: 100%;
+        width: 100%;
     }
 }
