@@ -23,10 +23,9 @@
     width: 100%;
 }
 
-/* making link look like a card */
 .link-card {
-    background-color: var(--color1);
-    border: 0.5rem solid #ddd;
+    background-color: var(--altbackground);
+    border: 0.2rem solid #ddd;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
@@ -45,185 +44,175 @@
     border: none;
 }
 
-/* making link look like a card */
-.link-card2 {
-    background-color: var(--color2);
-    border: 0.5rem solid #ddd;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    min-height: 100%;
-    width: 50%;
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
-    margin-top: 0.5vw;
-    margin-bottom: 2%;
-    display: block  ;
-}
-
-.link-card2:hover{
-    transform: scale(1.1);
-    border: none;
-}
-
-/* making link look like a card */
-.link-card3 {
-    background-color: var(--color3);
-    border: 0.5rem solid #ddd;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    min-height: 100%;
-    width: 50%;
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
-    margin-top: 0.5vw;
-    margin-bottom: 2%;
-    display: block  ;
-}
-
-.link-card3:hover{
-    transform: scale(1.1);
-    border: none;
-}
-
-.link-card4 {
-    background-color: var(--color4);
-    border: 0.5rem solid #ddd;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
-    min-height: 100%;
-    width: 50%;
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
-    margin-top: 0.5vw;
-    margin-bottom: 2%;
-    display: block  ;
-}
-
-.link-card4:hover{
-    transform: scale(1.1);
-    border: none;
-}
-
-
-/* INTERACTIVE HIGHLIGHTING */
-/* Base Highlight Style */
 .interactive-highlight {
-    position: relative; /* Allows for positioning of extra elements (e.g., tooltip numbers) */
-    background-color: rgba(255, 215, 0, 0.3); /* Light yellow highlight with 30% transparency */
-    cursor: pointer; /* Changes cursor to indicate interactivity */
-    padding: 0.1px 0.1px; /* Adds small space inside the highlight for better readability */
-    border-radius: 5px; /* Rounds the corners slightly for a softer look */
-    transition: background 0.3s ease; /* Smooth transition effect when background changes */
+    position: relative; 
+    background-color: rgba(255, 215, 0, 0.3); 
+    cursor: pointer; 
+    padding: 0.1px 0.1px; 
+    border-radius: 5px; 
+    transition: background 0.3s ease; 
 }
 
-/* Tooltip Styling for Highlighted Text */
 .interactive-highlight::after {
-    content: attr(data-card); /* See the explanation */
-    position: absolute; /* Positions the tooltip relative to the highlighted text */
-    top: -30%; /* Moves the tooltip slightly above the highlighted text */
-    right: -0; /* Moves the tooltip slightly to the right of the highlighted text */
+    content: attr(data-card); 
+    position: absolute; 
+    top: -30%; 
+    left: -0; 
     color: white;
-    background-color: black;
+    background-color: var(--color3);
+    padding: 1px;
     font-size: 0.8rem;
-    width: fit-content; /* Sets a fixed width for the tooltip */
-    height: content; /* Sets a fixed height, making the tooltip a perfect circle */
-    display: flex; /* Uses Flexbox to center the text inside the circle */
-    align-items: center; /* Vertically centers the text inside the tooltip */
-    justify-content: center; /* Horizontally centers the text inside the tooltip */
-    border-radius: 5%; /* Creates rounded corners */
-    opacity: 0; /* Initially hides the tooltip */
-    transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
 }
 
 .interactive-highlight:hover::after {
     opacity: 1;
 }
 
+.interactive-highlight1 {
+    position: relative; 
+    background-color: rgba(0, 255, 21, 0.3); 
+    cursor: pointer; 
+    padding: 0.1px 0.1px; 
+    border-radius: 5px; 
+    transition: background 0.3s ease; 
+}
+
+.interactive-highlight1::after {
+    content: attr(data1-card); 
+    position: absolute; 
+    top: -30%; 
+    right: -0; 
+    color: white;
+    background-color: var(--color4);
+    padding: 1px;
+    font-size: 0.8rem;
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.interactive-highlight1:hover::after {
+    opacity: 1;
+}
+
+.interactive-highlight2 {
+    position: relative; 
+    background-color: rgba(255, 30, 0, 0.3); 
+    cursor: pointer; 
+    padding: 0.1px 0.1px; 
+    border-radius: 5px; 
+    transition: background 0.3s ease; 
+}
+
+.interactive-highlight2::after {
+    content: attr(data2-card); 
+    position: absolute; 
+    top: -30%; 
+    right: -0; 
+    color: white;
+    background-color: var(--color1);
+    padding: 1px;
+    font-size: 0.8rem;
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.interactive-highlight2:hover::after {
+    opacity: 1;
+}
+
+.interactive-highlight_userstory {
+    position: relative; 
+    background-color: rgba(255, 215, 0, 0.3); 
+    cursor: pointer; 
+    padding: 0.1px 0.1px; 
+    border-radius: 5px; 
+    transition: background 0.3s ease; 
+}
+
+.interactive-highlight_userstory::after {
+    content: attr(userdata-card); 
+    position: absolute; 
+    top: -30%; 
+    left: -0; 
+    color: white;
+    background-color: var(--color3);
+    padding: 1px;
+    font-size: 0.8rem;
+    width: 20vw; 
+    height: fit-content; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    padding: 1%
+}
+
+.interactive-highlight_userstory:hover::after {
+    opacity: 1;
+}
+
 .flip-card {
+    background-color: transparent;
     width: 100%;
-    height: 180px;
-    perspective: 1000px; /* Adds depth to make the flip look 3D */
-    cursor: pointer; /* Adds indication of interactivity */
-    outline: none; /* Removes default focus outline */
+    height: 10vw;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-/* Flip Card Inner - the rotating part of the card */
+  /* This container is needed to position the front and back side */
 .flip-card-inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d; /* creates a 3D space */
-    transition: transform 0.5s ease-in-out;
-    background: var(--contrast);
-}
-
-/* Front & Back Common Styles */
-.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
-    display: flex; /* we are using flex inside our cards */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    word-break: normal;
-    text-align: center;
-    padding: 10px;
-    font-size: 1rem;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    background: var(--altbackground);
-    word-break: normal;
-}
-
-/* set the colour for the front */
-.flip-card-front {
-    background: var(--altbackground);
-    color: white;
-}
-
-/* set the colour for the back */
-.flip-card-back {
-    background: var(--altbackground);
-    color: white;
-    transform: rotateY(180deg);
-}
-
-/* Flip Card Inner */
-.flip-card-inner {
-    width: 60%;
-    height: 100%;
-    position: relative;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
-    transition: transform 0.5s ease-in-out;
-    border: 1px solid var(--text);
-    background-color: var(--cardbackground);
-    word-break: normal;
-}
-
-.flip-containers {
-    margin-top: 2%;
-    width: 100%;
-    height: 100%;
+    text-align: center;
     align-items: center;
-    word-break: normal;
+    transform-origin: 45%; 
 }
 
-
-
+  /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    word-break: normal;
+}
 
-/* INTERACTIVE HIGHLIGHTING */
-/* Base Highlight Style */
+.flip-card-front {
+    background-color: var(--altbackground);
+}
+
+  /* Style the back side */
+.flip-card-back {
+    background-color: var(--altbackground);
+    color: white;
+    transform: rotateY(180deg);
+}
+
 .interactive-highlight_users {
     position: relative; /* Allows for positioning of extra elements (e.g., tooltip numbers) */
     background-color: rgba(255, 215, 0, 0.3); /* Light yellow highlight with 30% transparency */
@@ -253,46 +242,25 @@
 }
 
 
-
-@media (hover: hover) and (max-width:800px) {
-
+@media (hover: hover) {
     .interactive-highlight:focus::after,
     .interactive-highlight:active::after {
     opacity: 1;
+    }
+
 }
-    .flip-containers {
-        margin-top: 2%;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-rows: auto auto;
-        align-items: center;
-    }
 
-    .flip-card-inner {
-    border-radius: 2%;
-    }
+@media (max-width:800px) {
 
-    .scrollmenu::-webkit-scrollbar {
-        display: none;
-    }
-    
-      /* Hide scrollbar for IE, Edge and Firefox */
-    .scrollmenu {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-    }
 
     .link-card {
         min-height: 100%;
         width: 100%;
     }
-    .link-card2 {
-        min-height: 100%;
-        width: 100%;
-    }
-    .link-card3 {
-        min-height: 100%;
-        width: 100%;
+
+    .cardscontainer {
+        display: block;
+        grid-template-columns: none;
+        grid-template-rows: auto, auto, auto;
     }
 }
