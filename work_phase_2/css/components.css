@@ -263,4 +263,16 @@
         grid-template-columns: none;
         grid-template-rows: auto, auto, auto;
     }
+
+    .flip-card {
+        width: 100%;
+        height: 25vw;
+        perspective: 1000px;
+        margin-bottom: 2%;
+        vertical-align: middle;
+    }
+
+    .flip-card-inner{
+        vertical-align: middle;
+    }
 }

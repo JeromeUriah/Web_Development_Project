@@ -20,28 +20,32 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <section>
-            <div class="swiper mySwiper container">
-                <div class="swiper-wrapper content">
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <p>TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide card">
-                        <div class="card-content">
-                            <p>TEST1</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <h3>Kai</h3>
+                <p>Age: 19</p>
+                <p>Kai is a young prodigy in the world of virtual reality. They're obsessed with creating immersive experiences that blur the lines between reality and the digital world.<br/> Kai's bedroom is a tech haven, filled with VR headsets, coding projects, and stacks of sci-fi novels. They're a bit of a loner, but incredibly passionate about their work, often spending hours lost in their virtual creations.<br/> Kai is a true visionary, pushing the boundaries of what's possible in VR. They're also a big fan of anime and enjoys creating their own digital art.</p>
+                <br/>
+                <i>1. What is your favourites websites to browse for new technologies and what is the appeal of the site?</i>
             </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+            </div>
+            <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-        </section>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
 
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

@@ -73,8 +73,11 @@
     word-wrap: normal;
 }
 
+
 .swiper {
     margin-right: 5%;
+    width: 100vw;
+    position: static;
 }
 
 .swiper-pagination {
@@ -113,6 +116,14 @@
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 10px);
     right: auto;
+}
+
+.swiper-slide{
+    flex-direction: column;
+}
+
+.swiper-wrapper content{
+    width: 100%;
 }
 
 .criteria-text {
@@ -273,10 +284,6 @@
         display: block;
     }
 
-    .swiper-slide {
-        display: inline-block;
-    }
-
     .link-card {  
         border: 1px solid #ddd;
         border-radius: 8px;
@@ -304,5 +311,17 @@
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
         white-space: wrap; 
+    }
+
+    .swiper-wrapper content{
+        width: 20%;
+    }
+
+    .swiper-slide card swiper-slide-active {
+        width: 100%;
+    }
+
+    .swiper {
+        position: static;
     }
 }
