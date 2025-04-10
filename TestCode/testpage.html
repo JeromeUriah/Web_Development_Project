@@ -4,52 +4,85 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <!-- Link Swiper's CSS -->
         <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css"
-        />
-
-        <!-- Fontawesome CDN Link -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        />
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="/style.css">
 
         <!-- CSS -->
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- Slider main container -->
-        <div class="swiper">
+        <div id="my-swiper">
+            <h1 class="swiper-heading">User</h1>
+    
+            <div class="divider"></div>
+            <!-- Slider main container -->
+            <div class="swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-                <h3>Kai</h3>
-                <p>Age: 19</p>
-                <p>Kai is a young prodigy in the world of virtual reality. They're obsessed with creating immersive experiences that blur the lines between reality and the digital world.<br/> Kai's bedroom is a tech haven, filled with VR headsets, coding projects, and stacks of sci-fi novels. They're a bit of a loner, but incredibly passionate about their work, often spending hours lost in their virtual creations.<br/> Kai is a true visionary, pushing the boundaries of what's possible in VR. They're also a big fan of anime and enjoys creating their own digital art.</p>
-                <br/>
-                <i>1. What is your favourites websites to browse for new technologies and what is the appeal of the site?</i>
+                <div class="swiper-textbox">
+                    <p class="longtext"> Ah, you want the inside scoop, huh? Alright, here are the websites I can’t live without. Each one has its own unique vibe, and honestly, they’ve become almost like digital havens for me. Let’s dive in:</p>
+                    <p class="longtext"> 1. Road to VR </p>
+                    <p class="longtext"> It’s like a VR enthusiast’s dreamland. I’m constantly checking out Road to VR because it’s laser-focused on everything related to virtual reality—headsets, apps, development trends, news, and reviews. They’ve got super in-depth articles and even hands-on reviews that go beyond the surface level. </p>
+                    <p class="longtext"> Plus, they dive into topics that don’t even hit mainstream media, like VR haptics, motion capture tech, or upcoming indie VR games. It’s perfect for me because it’s tailored to the kind of immersive tech I’m obsessed with.</p>
+                    <p class="longtext"> 2. The Verge </p>
+                    <p class="longtext"> I check The Verge pretty much every day. They cover everything from the latest tech trends to deep dives into how tech shapes our culture. The reason I love it? It doesn’t just throw out headlines—it tells you why the new tech is important. Their articles are thoughtful and often have great perspectives on things like AI, virtual reality, and futuristic tech. Plus, the layout is clean, and it’s <span class="interactive-highlight_userstory" userdata-card="As a learner, i want a simple website that allows me to find information easily so that i can learn about new IT related news">easy to navigate through their sections on gadgets, software, and more</span> . It keeps me informed about the tech world while sparking fresh ideas for my projects.</p>
+                    <p class="longtext"> 3. GitHub </p>
+                    <p class="longtext"> I can’t even explain how much I love GitHub. It’s not just a site—it’s a community of developers, coders, and tech enthusiasts. GitHub is my go-to when I’m looking to build something new. I get access to tons of open-source code, and there’s always a cool project or framework to explore. It’s like a never-ending stream of creative inspiration. I also love that I can see how other people solve problems and how they structure their projects. It’s the perfect <span class="interactive-highlight_userstory" userdata-card="As a commuinity member, i to be able to connect with other users so that i can share my opinion and see other's opinion as well">place to learn, share, and collaborate</span>.</p>
+                    <p class="longtext"> 4. TechCrunch </p>
+                    <p class="longtext"> TechCrunch is super solid when it comes to breaking news on tech startups, innovation, and the latest trends in emerging technologies. What makes it special for me is that it covers not just the products but the business side of tech too—investments, acquisitions, new companies disrupting the scene. They cover VR a lot, especially in the context of big tech companies trying to push the space forward. Plus, it’s fast—if something new drops, you’ll see it there almost instantly.</p>
+                    <p class="longtext"> 5. Hackaday </p>
+                    <p class="longtext"> If you’re into <span class="interactive-highlight_userstory" userdata-card="As a creator, i would like a place where i can share creations or get inspiration to create something new">DIY projects, hacking tech, or just tinkering with new ideas</span>, Hackaday is a goldmine. It’s all about building and modifying tech, which is perfect for me because I’m always trying to break things apart to understand how they work. Whether it's building your own VR headset, creating a custom haptic suit, or modding a piece of old tech into something new, this site has it all. Plus, the community is super hands-on, and there’s always some crazy new project being shared.</p>
+                    <p class="longtext"> 6. Reddit </p>
+                    <p class="longtext"> While Reddit can be a wild ride sometimes, it’s invaluable for discovering new tech and keeping up with trends in real-time. Subreddits like r/virtualreality, r/oculus, and r/tech allow me to <span class="interactive-highlight_userstory" userdata-card="As a VR enthusiasts, i want to connect with other enthusiasts to interact and form a communities or create new programs">connect with other VR enthusiasts and developers</span>. People share their latest discoveries, updates on new devices, and crazy experiments they've done. It’s also a place where I can ask questions or help others out. Plus, the sheer volume of discussions on there means I can always get a fresh take on things I’m working on.</p>
+                    <p class="longtext"> 7. AnandTech </p>
+                    <p class="longtext"> If I’m really diving into the hardware side of things, AnandTech is where I go. They do insane deep dives into the latest processors, GPUs, and other tech hardware, often with benchmarks and performance tests. I love their thorough reviews, especially when it comes to high-end tech. If I’m considering new hardware for a project, whether it’s upgrading my VR setup or looking for a new GPU, AnandTech’s reviews help me make decisions based on real-world data.</p>
+                    <p class="longtext"> 8. YouTube </p>
+                    <p class="longtext"> Not technically a "website" in the traditional sense, but still crucial. YouTube is my go-to for tech unboxings, reviews, and explanations. Sometimes reading about something just doesn’t do it justice. <span class="interactive-highlight_userstory" userdata-card="As a learner, i want a website that would have video resources so that i can digest new information more easily conmpared to articles">Seeing it in action is key</span>. Channels like MKBHD for sleek gadget reviews, Linus Tech Tips for all things hardware, and The Verge for deeper analysis are all my go-to sources for visual content.</p>
+                    <br/>                   
+                </div>
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide">
+                <div class="swiper-textbox">
+                    <p class="swiper-text-large">Nature at Its Best</p>
+                    <p class="swiper-text-small">We take you places</p>
+                </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-slide">
+                <div class="swiper-textbox">
+                    <p class="swiper-text-large">Into The Wild</p>
+                    <p class="swiper-text-small">Discover the New You</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-textbox">
+                    <p class="swiper-text-large">Small Groups</p>
+                    <p class="swiper-text-small">Travel with friends</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-textbox">
+                    <p class="swiper-text-large">Experience Nature</p>
+                    <p class="swiper-text-small">A completely new perspective</p>
+                </div>
+            </div>
         </div>
-
-        <!-- Swiper JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <script src="./script.js"></script>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    </div>
+    
+        </section>
+    
+    </div>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="../TestCode/script.js"></script>
     </body>
 </html>

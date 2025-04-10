@@ -17,6 +17,7 @@
 
 body{
     background-color: var(--dark);
+    word-break: normal;
 }
 
 h1,h2,h3,h4,h5,p,a,li,ol,i{
@@ -26,7 +27,7 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
 
 .content{
     padding: 0.5%;
-    word-break: break-all;
+    word-break: normal;
 }
 
 .header{

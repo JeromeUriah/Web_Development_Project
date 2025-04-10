@@ -1,21 +1,40 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'vertical',
+const imgSwiperOne = new Swiper('.swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 40,
+    centeredSlides: true,
+    grabcursor: true,
     loop: true,
+    preloadImages: true,
+    
 
-    // If we need pagination
-    pagination: {
-    el: '.swiper-pagination',
+
+    breakpoints: {
+        
+        300: {
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+        },
+
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+
+        1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+
+        1920: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+        }
+
     },
 
-    // Navigation arrows
     navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    },
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
 
-    // And if we need scrollbar
-    scrollbar: {
-    el: '.swiper-scrollbar',
-    },
-});
+})
