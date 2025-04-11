@@ -1,0 +1,119 @@
+h1{
+    line-height: 1;
+    font-size: 4rem;
+    align-self: start;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+h3{
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-top: 0.5vw;
+}
+
+h4{
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: bold;
+}
+
+h5{
+    font-size: 1.2rem;
+    line-height: 1;
+    font-style: italic;
+    margin-top: 0.5vw;
+}
+
+p{
+    font-size: 1rem;
+    margin-top: 0.5vw;
+    line-height: 1.1;
+}
+
+a{
+    font-size: 1rem;
+    display: block;
+    color: var(--bright);
+    font-weight: bold;
+    
+}
+a:hover{
+    color: black;
+}
+
+i {
+    font-size: 1rem;
+    line-height: 1;
+
+}
+
+.logotext{
+    text-decoration: none;
+}
+
+.pagelink1{
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.pagelink1:hover{
+    color: var(--highlights);
+    text-decoration: underline;
+}
+
+.pagelink2{
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--color2);
+    text-decoration: none;
+}
+
+.pagelink2:hover{
+    color: var(--highlights);
+    text-decoration: underline;
+}
+
+.pagelink3{
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--color3);
+    text-decoration: none;
+}
+
+.pagelink3:hover{
+    color: var(--highlights);
+    text-decoration: underline;
+}
+
+.pagelink4{
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--color4);
+    text-decoration: none;
+}
+
+.pagelink4:hover{
+    color: var(--highlights);
+    text-decoration: underline;
+}
+
+@media (max-width:800px) {
+    .headerlinks {
+        font-size: 1rem;
+        color:  var(--background);
+        float: none;
+        margin-right: 0;
+    }
+
+    h2{
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+}
