@@ -243,6 +243,54 @@
     transition: opacity 0.3s ease; /* Smoothly fades in the tooltip by changing the opacity */
 }
 
+.swiper {
+    margin-right: 5%;
+    width: 100vw;
+    position: static;
+    padding: 2%;
+    word-break: break-all;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.7;
+    color: var(--bright);
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+    color: var(--bright);
+}
+
+.swiper-slide-active {
+    transform: scale(1.05);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-family: swiper-icons;
+    font-size: 1rem;
+    text-transform: none !important;
+    letter-spacing: 0;
+    font-variant: initial;
+    line-height: 1;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 10px);
+    right: auto;
+}
+
+.swiper-slide{
+    flex-direction: column;
+}
+
+.swiper-wrapper content{
+    width: 100%;
+}
+
 
 @media (hover: hover) {
     .interactive-highlight:focus::after,
@@ -277,4 +325,40 @@
     .flip-card-inner{
         vertical-align: middle;
     }
+
+    .criteria-text {
+        display: block;
+    }
+
+    .scrollmenu::-webkit-scrollbar {
+        display: none;
+    }
+    
+      /* Hide scrollbar for IE, Edge and Firefox */
+    .scrollmenu {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        white-space: wrap; 
+    }
+
+    .swiper-wrapper content{
+        width: 20%;
+    }
+
+    .swiper {
+        position: static;
+    }
+
+    .swiper-button-next,
+.swiper-button-prev {
+    opacity: 0.7;
+    background: none;
+
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 0.7;
+    color: var(--bright);
+}
 }

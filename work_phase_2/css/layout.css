@@ -73,55 +73,6 @@
     word-wrap: normal;
 }
 
-
-.swiper {
-    margin-right: 5%;
-    width: 100vw;
-    position: static;
-    padding: 2%;
-    word-break: break-all;
-}
-
-
-.swiper-button-next,
-.swiper-button-prev {
-    opacity: 0.7;
-    color: var(--bright);
-    background: white;
-    transition: all 0.3s ease;
-}
-
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-    opacity: 1;
-    color: var(--bright);
-}
-
-.swiper-slide-active {
-    transform: scale(1.05);
-}
-
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-family: swiper-icons;
-    font-size: 1rem;
-    text-transform: none !important;
-    letter-spacing: 0;
-    font-variant: initial;
-    line-height: 1;
-}
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 10px);
-    right: auto;
-}
-
-.swiper-slide{
-    flex-direction: column;
-}
-
-.swiper-wrapper content{
-    width: 100%;
-}
-
 .criteria-text {
     width: 90%;
     height: 100%;
