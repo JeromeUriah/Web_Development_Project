@@ -1,0 +1,83 @@
+:root {
+    --dark: rgb(1, 6, 8);
+    --bright: rgb(230 72 51);
+    --contrast:rgb(135 79 65);
+    --light:rgb(144 174 173);
+    --text:rgb(251 233 208);
+    --altbackground: #2A2A2A;
+    --textfont: "EB Garamond", sans-serif;
+    --navbar: rgb(51, 51, 51);
+    --color1: #F7374F;
+    --color2: #44318E;
+    --color3: #C07F00;
+    --color4: #005B41;
+    --color5:#2D9CCB;
+    --highlights: #913175;
+}
+
+body{
+    background-color: var(--dark);
+    word-break: normal;
+}
+
+h1,h2,h3,h4,h5,p,a,li,ol,i{
+    color: var(--text);
+    font-family: var(--textfont)
+}
+
+.content{
+    padding: 0.5%;
+    word-break: normal;
+}
+
+.header{
+    height: 10%;
+    width: 100%;
+}
+
+.logo{
+    width: fit-content;
+    padding: 5px 20px;
+}
+
+.logotext{
+    font-family:"EB Garamond", sans-serif;
+    font-size: 2rem;
+    color: var(--bright);
+}
+
+.logotext:hover{
+    color: var(--text);
+}
+
+.intextlinks {
+    display: inline;
+    font-size: 1rem;
+}
+
+.intextlinks:hover {
+    color: var(--highlights);
+}
+.gap1 {
+    padding-left: 1%;
+}
+
+.gap2 {
+    padding-left: 3%;
+}
+
+.color1 {
+    color: var(--color1);
+}
+.color2 {
+    color: var(--color2);
+}
+.color3 {
+    color: var(--color3);
+}
+.color4 {
+    color: var(--color4);
+}
+.color5 {
+    color: var(--color5);
+}
