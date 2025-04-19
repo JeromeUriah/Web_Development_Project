@@ -56,10 +56,11 @@ i {
 }
 
 .pagelink1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1;
     color: var(--color1);
     text-decoration: none;
+    text-align: left;
 }
 
 .pagelink1:hover{
@@ -68,10 +69,11 @@ i {
 }
 
 .pagelink2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1;
     color: var(--color2);
     text-decoration: none;
+    text-align: left;
 }
 
 .pagelink2:hover{
@@ -80,10 +82,11 @@ i {
 }
 
 .pagelink3{
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1;
     color: var(--color3);
     text-decoration: none;
+    text-align: left;
 }
 
 .pagelink3:hover{
@@ -92,10 +95,11 @@ i {
 }
 
 .pagelink4{
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1;
     color: var(--color4);
     text-decoration: none;
+    text-align: left;
 }
 
 .pagelink4:hover{
@@ -114,6 +118,10 @@ i {
     h2{
         font-size: 2rem;
         line-height: 1;
+    }
+
+    h1{
+        font-size: 3rem;
     }
 
 }

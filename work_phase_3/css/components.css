@@ -8,7 +8,7 @@ html {
 }
 
 .maincontent{
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
 }
 
@@ -122,7 +122,6 @@ html {
     height: 40px;
     border-radius: 50%;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); 
-    margin-right: 100px;
 }
 
 .swiper-button-prev::after, 
@@ -166,6 +165,11 @@ li a:hover {
 
 .navbuttons:hover{
     background-color: var(--altbackground);
+}
+
+.mobile-navbuttons:hover{
+    background-color: var(--altbackground);
+    color: var(--bright);
 }
 
 @media (max-width:800px) {
