@@ -12,7 +12,7 @@
 
 .right{
     height: 100%;
-    width: 80%;
+    width: 85%;
     float: right;
     word-wrap: break-word;
 }
@@ -24,6 +24,7 @@
         width: 100%;
         float: none;
         word-wrap: break-word;
+        text-align: center;
     }
 
     #left-desktop{
