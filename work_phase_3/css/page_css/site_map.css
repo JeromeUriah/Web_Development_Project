@@ -1,0 +1,4 @@
+.accordion-header {
+    background-color: var(--highlights);
+    color: white;
+}

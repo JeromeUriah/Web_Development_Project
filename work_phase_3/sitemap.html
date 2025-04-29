@@ -23,6 +23,7 @@
         <link rel="stylesheet" href="../work_phase_3/css/fonts.css">
         <link rel="stylesheet" href="../work_phase_3/css/components.css">
         <link rel="stylesheet" href="../work_phase_3/css/component_skeletons/accordion.css">
+        <link rel="stylesheet" href="../work_phase_3/css/page_css/site_map.css">
         <!--Importing Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,6 +52,28 @@
                 <h1>Website Site Map</h1>
                 <img src="../work_phase_3/Images/sitemap (2).png" alt="Sitemap">
                 <p>The purpose of this exercise is to create a user-friendly navigation system structure. Each box contains a page with its components and features.</p>
+
+                <section class="accordioncontainer">
+                    <!-- Accordion content will go here -->
+                    <button class="accordion">Website Vision</button>
+                    <div class="panel">
+                        <p>A central platform that connects tech enthusiasts or anyone interested in technology in a minimalistic and simple to use site to gather or share knowledge.</p>
+                        <br>
+                        <p>"Annotation that explains the content of this page linked back to the client and user needs we identified in A2."</p>
+                        <button class="accordion">Welcome Page</button>
+                        <div class="panel">
+                            <p>
+                                Test
+                            </p>
+                                <div class="nestedpanel">
+                                    <button class="accordion">Home Page</button>
+                                    <div class="panel">
+                                        <p>Test</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
             </div>
 
             <nav id="left-mobile">
@@ -61,14 +84,12 @@
                 <a class="mobile-navbuttons" href="../work_phase_3/genai.html">GenAI</a>
             </nav>
             
-            <div class="footer">
-                <p>Test</p>
-            </div>
 
             <div>
                 <script src="../work_phase_2/js/modules/toggle.js"></script> 
                 <script type="module" src="../work_phase_2/js/index.js"></script>
                 <script src="../work_phase_3/js/site_map.js"></script> 
+                <script type="module" src="../work_phase_3/js/modules/accordion.js"></script>
             </div>
     </body>
 </html>
