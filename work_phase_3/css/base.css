@@ -6,7 +6,7 @@
     --text:rgb(251 233 208);
     --altbackground: #2A2A2A;
     --greybackground: rgb(217, 217, 217);
-    --textfont: "EB Garamond", sans-serif;
+    --textfont: "Instrument Serif", serif;
     --navbar: rgb(51, 51, 51);
     --color1: #F7374F;
     --color2: #44318E;
@@ -14,11 +14,20 @@
     --color4: #005B41;
     --color5:#2D9CCB;
     --highlights: #913175;
+    --ebony: #555D50;
+    --forest: #2C3227;
+    --ash: #666362;
+    --charcoal: #36454F;
+    --oil: #3B3131;
 }
 
 body{
     background-color: var(--dark);
     word-break: normal;
+}
+
+a:hover{
+    background-color: var(--text);
 }
 
 h1,h2,h3,h4,h5,p,a,li,ol,i{

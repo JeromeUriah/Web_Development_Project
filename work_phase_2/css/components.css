@@ -6,7 +6,6 @@
     border: none;
     cursor: pointer;
     background-color: var(--bright);
-    font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--text);
     display: block;
     margin-top: 0.5vw;

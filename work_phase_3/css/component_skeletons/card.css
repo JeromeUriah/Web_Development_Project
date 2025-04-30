@@ -1,0 +1,6 @@
+.card {
+    width: 50%;
+    height: 20%;
+    border: 1px solid var(--text);
+    background-color: var(--ash);
+}

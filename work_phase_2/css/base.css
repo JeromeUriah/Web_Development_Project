@@ -41,7 +41,7 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
 }
 
 .logotext{
-    font-family:"EB Garamond", sans-serif;
+    font-family: var(--textfont);
     font-size: 2rem;
     color: var(--bright);
 }

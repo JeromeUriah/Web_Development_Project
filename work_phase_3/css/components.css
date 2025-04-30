@@ -1,4 +1,6 @@
-@import '../component_skeletons/accordion.css';
+@import '../css/component_skeletons/accordion.css';
+@import '../css/component_skeletons/card.css';
+
 * {
     padding: 0;
     margin: 0
@@ -67,6 +69,7 @@ html {
 }
 
 .swiper-slide {
+    background-color: var(--oil);
     position: relative;
     max-width: 100%;
     height: 100%;
@@ -164,6 +167,8 @@ li a:hover {
 
 .navbuttons:hover{
     background-color: var(--altbackground);
+    color: var(--text);
+    text-decoration: underline;
 }
 
 .mobile-navbuttons:hover{
