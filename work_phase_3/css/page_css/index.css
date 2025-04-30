@@ -1,0 +1,55 @@
+.pagelink1{
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color1);
+    text-decoration: none;
+    text-align: left;
+}
+
+.pagelink1:hover{
+    color: var(--highlights);
+    text-decoration: underline;
+    background-color: var(--oil);
+}
+
+.pagelink2{
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color2);
+    text-decoration: none;
+    text-align: left;
+}
+
+.pagelink2:hover{
+    color: var(--highlights);
+    text-decoration: underline;
+    background-color: var(--oil);
+}
+
+.pagelink3{
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color3);
+    text-decoration: none;
+    text-align: left;
+}
+
+.pagelink3:hover{
+    color: var(--highlights);
+    text-decoration: underline;
+    background-color: var(--oil);
+}
+
+.pagelink4{
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--color4);
+    text-decoration: none;
+    text-align: left;
+}
+
+.pagelink4:hover{
+    color: var(--highlights);
+    text-decoration: underline;
+    background-color: var(--oil);
+}

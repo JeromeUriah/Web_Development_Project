@@ -1,28 +1,28 @@
 h1{
     line-height: 1;
-    font-size: 4rem;
+    font-size: 11.08rem;
     align-self: start;
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 6.854rem;
     line-height: 1;
 }
 
 h3{
-    font-size: 1.8rem;
+    font-size: 4.236rem;
     line-height: 1;
     margin-top: 0.5vw;
 }
 
 h4{
-    font-size: 1.5rem;
+    font-size: 2.618rem;
     line-height: 1;
     font-weight: bold;
 }
 
 h5{
-    font-size: 1.2rem;
+    font-size: 1.618rem;
     line-height: 1;
     font-style: italic;
     margin-top: 0.5vw;
@@ -35,11 +35,10 @@ p{
 }
 
 a{
-    font-size: 1rem;
+    font-size: 2.618rem;
     display: block;
     color: var(--bright);
     font-weight: bold;
-    
 }
 a:hover{
     color: black;
@@ -55,56 +54,8 @@ i {
     text-decoration: none;
 }
 
-.pagelink1{
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--color1);
-    text-decoration: none;
-    text-align: left;
-}
-
-.pagelink1:hover{
-    color: var(--highlights);
-    text-decoration: underline;
-}
-
-.pagelink2{
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--color2);
-    text-decoration: none;
-    text-align: left;
-}
-
-.pagelink2:hover{
-    color: var(--highlights);
-    text-decoration: underline;
-}
-
-.pagelink3{
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--color3);
-    text-decoration: none;
-    text-align: left;
-}
-
-.pagelink3:hover{
-    color: var(--highlights);
-    text-decoration: underline;
-}
-
-.pagelink4{
-    font-size: 2rem;
-    line-height: 1;
-    color: var(--color4);
-    text-decoration: none;
-    text-align: left;
-}
-
-.pagelink4:hover{
-    color: var(--highlights);
-    text-decoration: underline;
+.logotext:hover{
+    background-color: var(--dark) ;
 }
 
 .footertext{
@@ -120,13 +71,38 @@ i {
         margin-right: 0;
     }
 
+    h1{
+        font-size: 4rem;
+    }
+    
     h2{
-        font-size: 2rem;
+        font-size: 2.47rem;
         line-height: 1;
     }
-
-    h1{
-        font-size: 3rem;
+    
+    h3{
+        font-size: 2rem;
+        line-height: 1;
+        margin-top: 0.5vw;
+    }
+    
+    h4{
+        font-size: 1.5rem;
+        line-height: 1;
+        font-weight: bold;
+    }
+    
+    h5{
+        font-size: 1.2rem;
+        line-height: 1;
+        font-style: italic;
+        margin-top: 0.5vw;
+    }
+    
+    p{
+        font-size: 1rem;
+        margin-top: 0.5vw;
+        line-height: 1.1;
     }
 
 }

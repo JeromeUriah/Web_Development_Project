@@ -18,15 +18,7 @@
     font-size: 1.5rem;
     font-family: var(--textfont);
 }
-.accordion.level2.active, .accordion.level2:hover {
-    background-color: var(--oil);
-    color: var(--text);
-}
 
-.accordion.level3.active, .accordion.level3:hover {
-    background-color: var(--charcoal);
-    color: var(--text);
-}
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {
@@ -41,7 +33,7 @@
     width: 98%;
     display: none;
     overflow: hidden;
-    text-align: left;;
+    text-align: left;
 }
 
 .accordion-item.open .accordion-content {
@@ -64,15 +56,6 @@
 .nestedpanel {
     border-left: solid var(--bright) 1px;
 }
-
-.panel.level3{
-    background-color: var(--forest);
-}
-
-.panel.level2{
-    background-color: var(--ash);
-}
-
 
 @media (max-width:800px) {
     .accordioncontainer {

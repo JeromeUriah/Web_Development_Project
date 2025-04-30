@@ -16,12 +16,13 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Style Guide</title>
+        <title>Viceral Design</title>
         <link rel="stylesheet" href="../work_phase_3/css/reset.css">
         <link rel="stylesheet" href="../work_phase_3/css/base.css">
         <link rel="stylesheet" href="../work_phase_3/css/layout.css">
         <link rel="stylesheet" href="../work_phase_3/css/fonts.css">
         <link rel="stylesheet" href="../work_phase_3/css/components.css">
+        <link rel="stylesheet" href="../work_phase_3/css/vd.css">
         <!--Importing Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,30 +37,34 @@
             </div>
         </div>
 
-        <div class="maincontent">
-            <nav id="left-desktop">
-                <a class="navbuttons" href="../work_phase_3/index.html">Home</a>
-                <a class="navbuttons" href="../work_phase_3/sitemap.html">Site Map</a>
-                <a class="navbuttons" href="../work_phase_3/styleguide.html">Style Guide</a>
-                <a class="navbuttons" href="../work_phase_3/ethicsresponse.html">Ethics</a>
-                <a class="navbuttons" href="../work_phase_3/genai.html">GenAI</a>
-            </nav>
-            
-
-            <div class="right">
-
+        <div class="subcontent"> 
+            <ul class="breadcrumb">
+                <li><a href="../work_phase_3/index.html">Home</a></li>
+                <li><a href="../work_phase_3/styleguide.html">Style Guide</a></li>
+                <li>Viceral Design</li>
+            </ul>
+            <h1>Viceral Design</h1>
+            <h3>In the context of Don Norman's three levels of emotional design, it refers to the initial, instinctive, and subconscious reactions a user has to a product or experience</h3>   
+            <div class="divider"></div>
+            <h4 class="dividertext">Gallery</h4>
+            <div class="full-img" id="fullimgbox">
+                <img src="" id="fullimg">
+                <span id="closebtn">X</span>
             </div>
-
-            <nav id="left-mobile">
-                <a class="mobile-navbuttons" href="../work_phase_3/index.html">Home</a>
-                <a class="mobile-navbuttons" href="../work_phase_3/sitemap.html">Site Map</a>
-                <a class="mobile-navbuttons" href="../work_phase_3/styleguide.html">Style Guide</a>
-                <a class="mobile-navbuttons" href="../work_phase_3/ethicsresponse.html">Ethics</a>
-                <a class="mobile-navbuttons" href="../work_phase_3/genai.html">GenAI</a>
-            </nav>
-
-            <div>
-            </div>
+            <div class="img-gallery">
+                <img src="../work_phase_3/Images/sitemap (2).png" alt="Thumbnail 1">
+                <img src="../work_phase_3/assets/input.png" alt="Thumbnail 2">
+                <img src="../work_phase_3/Images/sitemap (2).png" alt="Thumbnail 3">
+            </div> 
         </div>
-    </body>
+        <nav id="left-mobile">
+            <a class="mobile-navbuttons" href="../work_phase_3/index.html">Home</a>
+            <a class="mobile-navbuttons" href="../work_phase_3/sitemap.html">Site Map</a>
+            <a class="mobile-navbuttons activepage" href="../work_phase_3/styleguide.html">Style Guide</a>
+            <a class="mobile-navbuttons" href="../work_phase_3/ethicsresponse.html">Ethics</a>
+            <a class="mobile-navbuttons" href="../work_phase_3/genai.html">GenAI</a>
+        </nav>
+        <div>
+            <script type="module" src="../work_phase_3/js/modules/openimg.js"></script>
+        </div>
 </html>

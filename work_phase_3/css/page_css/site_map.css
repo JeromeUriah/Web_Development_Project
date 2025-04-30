@@ -1,0 +1,17 @@
+.accordion.level2.active, .accordion.level2:hover {
+    background-color: var(--oil);
+    color: var(--text);
+}
+
+.accordion.level3.active, .accordion.level3:hover {
+    background-color: var(--charcoal);
+    color: var(--text);
+}
+
+.panel.level3{
+    background-color: var(--forest);
+}
+
+.panel.level2{
+    background-color: var(--ash);
+}

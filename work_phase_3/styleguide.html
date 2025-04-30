@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="../work_phase_3/css/layout.css">
         <link rel="stylesheet" href="../work_phase_3/css/fonts.css">
         <link rel="stylesheet" href="../work_phase_3/css/components.css">
+        <link rel="stylesheet" href="../work_phase_3/css/page_css/styleguide.css">
         <!--Importing Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,25 +41,42 @@
             <nav id="left-desktop">
                 <a class="navbuttons" href="../work_phase_3/index.html">Home</a>
                 <a class="navbuttons" href="../work_phase_3/sitemap.html">Site Map</a>
-                <a class="navbuttons" href="../work_phase_3/styleguide.html">Style Guide</a>
+                <a class="navbuttons activepage" aria-current="page" href="../work_phase_3/styleguide.html">Style Guide</a>
                 <a class="navbuttons" href="../work_phase_3/ethicsresponse.html">Ethics</a>
                 <a class="navbuttons" href="../work_phase_3/genai.html">GenAI</a>
             </nav>
             
 
             <div class="right">
-                <div class="card">
-                    <a href="../work_phase_3/viceral_design.html">Viceral Design</a>
-                </div>
+                <h1>Style Guide</h1>
+                <h3>This is the style guide for the [Sitename] website created as a concept for the "Connected Communities Initiative"</h3>
+                <div class="card-container">
+                    <a href="../work_phase_3/viceral_design.html" class="card viceral">
+                            <p>Description</p>
+                            <h3>Viceral Design</h3> 
+                    </a>
+                    <a href="../work_phase_3/behavioural_design.html" class="card behavioral">
+                        <p>Description</p>
+                        <h3>Behavioural Design</h3> 
+                    </a>    
+                    <a href="../work_phase_3/reflective_design.html" class="card reflective">
+                        <p>Description</p>
+                        <h3>Reflective Design</h3>
+                    </a>
+                </div>    
             </div>
 
             <nav id="left-mobile">
                 <a class="mobile-navbuttons" href="../work_phase_3/index.html">Home</a>
                 <a class="mobile-navbuttons" href="../work_phase_3/sitemap.html">Site Map</a>
-                <a class="mobile-navbuttons" href="../work_phase_3/styleguide.html">Style Guide</a>
+                <a class="mobile-navbuttons activepage" aria-current="page" href="../work_phase_3/styleguide.html">Style Guide</a>
                 <a class="mobile-navbuttons" href="../work_phase_3/ethicsresponse.html">Ethics</a>
                 <a class="mobile-navbuttons" href="../work_phase_3/genai.html">GenAI</a>
             </nav>
+
+            <div>
+                <script type="module" src="../work_phase_3/js/activepage.js"></script>
+            </div>
 
         </div>
     </body>
