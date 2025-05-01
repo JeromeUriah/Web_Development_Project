@@ -71,7 +71,11 @@ li a:hover {
 }
 
 .activepage::before {
-    content: "\2756";
+    content: "\2771";
+}
+
+.activepage::after {
+    content: "\2770";
 }
 
 .mobile-navbuttons:hover{

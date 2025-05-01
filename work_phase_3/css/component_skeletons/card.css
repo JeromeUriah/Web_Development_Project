@@ -1,11 +1,12 @@
 .card-container {
     display: flex;
-    flex-direction: row; /* Stack cards vertically on mobile */
-    align-items: center; /* Center cards */
-    gap: 1rem; /* Add space between cards */
+    flex-direction: row;
+    align-items: center; 
+    gap: 1rem; 
     padding: 1rem;
     word-break: break-all;
     height: 80%;
+    justify-content: center;
 }
 
 .card {
