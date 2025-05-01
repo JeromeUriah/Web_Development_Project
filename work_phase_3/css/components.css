@@ -83,16 +83,6 @@ li a:hover {
     color: var(--bright);
 }
 
-.sitemapimg {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    max-width: 50%;
-    max-height: 50%;
-    align-items: center;
-    margin-top: 1%;
-}
-
 .breadcrumb{
     height: fit-content;
     margin-bottom: 1%;

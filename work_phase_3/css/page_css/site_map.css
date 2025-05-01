@@ -1,17 +1,39 @@
 .accordion.level2.active, .accordion.level2:hover {
-    background-color: var(--oil);
-    color: var(--text);
-}
-
-.accordion.level3.active, .accordion.level3:hover {
+    
     background-color: var(--charcoal);
     color: var(--text);
 }
 
-.panel.level3{
+.accordion.level3.active, .accordion.level3:hover {
     background-color: var(--forest);
+    color: var(--text);
 }
 
-.panel.level2{
-    background-color: var(--ash);
+.nestedpanel.level2 {
+    border: dotted var(--bright) 1px;
+}
+
+.img-gallery {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  auto;
+}
+
+.full-img img {
+    width: 50%;
+}
+
+.img-gallery img{
+    width: 50%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;;
+    margin: auto;
+}
+
+.img-gallery img:hover{
+    transform: none;
+    border-radius: 0;
 }

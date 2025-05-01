@@ -14,11 +14,12 @@
     --color4: #005B41;
     --color5:#2D9CCB;
     --highlights: #913175;
-    --ebony: #555D50;
-    --forest: #2C3227;
+    --ebony: #474E68;
+    --forest: #18230F;
     --ash: #666362;
     --charcoal: #36454F;
     --oil: #3B3131;
+    --mark: #9863be;
 }
 
 body{
@@ -65,8 +66,8 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
     margin-top: 1%;
 }
 
-.gap2 {
-    padding-left: 3%;
+.gap-btm {
+    margin-bottom: 1%;
 }
 
 .color1 {
@@ -83,4 +84,9 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
 }
 .color5 {
     color: var(--color5);
+}
+
+mark {
+    color: var(--mark);
+    background-color: transparent;
 }
