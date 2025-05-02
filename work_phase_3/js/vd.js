@@ -8,7 +8,7 @@ import { setupImageModalViewer } from '../../work_phase_3/js/modules/openimg.js'
  * CONSTANTS
  * Define values that don't change e.g. page titles, URLs, etc.
  */
-const PAGE_TITLE = "Site Map";
+const PAGE_TITLE = "Viceral Design";
 
 /**
  * VARIABLES

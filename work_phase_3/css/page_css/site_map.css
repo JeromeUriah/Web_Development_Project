@@ -20,12 +20,8 @@
     grid-template-columns:  auto;
 }
 
-.full-img img {
-    width: 50%;
-}
-
 .img-gallery img{
-    width: 50%;
+    width: 30%;
     cursor: pointer;
     border: 1px solid #ddd;
     border-radius: 4px;

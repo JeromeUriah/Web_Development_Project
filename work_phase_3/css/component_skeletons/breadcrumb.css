@@ -1,0 +1,42 @@
+.breadcrumb{
+    height: fit-content;
+    margin-bottom: 1%;
+}
+ul.breadcrumb {
+    list-style: none;
+    background-color: transparent;
+}
+
+ul.breadcrumb li {
+    display: inline-block;
+    font-size: 1.5rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+ul.breadcrumb li a{
+    display: inline;
+    padding: 0;
+}
+
+ul.breadcrumb li+li:before {
+    color: var(--text);
+    content: "\276F";
+    margin-left: 0.01%;
+}
+
+ul.breadcrumb li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text);
+    width: fit-content;
+    height: fit-content;
+    font-weight: normal;
+}
+
+  /* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: var(--highlights);
+    text-decoration: underline;
+    background-color: var(--dark);
+}

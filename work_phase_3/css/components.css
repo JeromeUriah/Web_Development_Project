@@ -2,6 +2,7 @@
 @import '../css/component_skeletons/card.css';
 @import '../css/component_skeletons/swiper.css';
 @import '../css/component_skeletons/imagegallery.css';
+@import '../css/component_skeletons/breadcrumb.css';
 
 * {
     padding: 0;
@@ -10,16 +11,6 @@
 
 html {
     box-sizing: border-box;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: var(--textfont);
-    width: 100vw;
-    height: 100vh;
-    
 }
 
 .divider {
@@ -59,19 +50,23 @@ li a:hover {
 }
 
 .navbuttons{
-    padding: 1%;
-    text-align: center;
+    padding: 5%;
+    text-align: left;
     text-decoration: none;
+    margin: 5%;
+    font-weight: normal;
 }
 
-.activepage, .navbuttons:hover{
+.navbuttons:hover{
     background-color: var(--altbackground);
     color: var(--text);
-    text-decoration: underline;
+    border-radius: 5px;
 }
 
-.activepage::before {
-    content: "\2771";
+.activepage{
+    background-color: var(--ash);
+    color: var(--text);
+    border-radius: 5px;
 }
 
 .activepage::after {
@@ -83,48 +78,9 @@ li a:hover {
     color: var(--bright);
 }
 
-.breadcrumb{
-    height: fit-content;
-    margin-bottom: 1%;
-}
-
-ul.breadcrumb {
-    list-style: none;
-    background-color: transparent;
-}
-
-ul.breadcrumb li {
-    display: inline-block;
-    font-size: 1.5rem;
-    height: fit-content;
-    width: fit-content;
-}
-
-ul.breadcrumb li a{
-    display: inline;
-    padding: 0;
-}
-
-ul.breadcrumb li+li:before {
-    color: var(--text);
-    content: "\276F";
-    margin-left: 0.01%;
-}
-
-ul.breadcrumb li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: var(--text);
-    width: fit-content;
-    height: fit-content;
-    font-weight: normal;
-}
-
-  /* Add a color on mouse-over */
-ul.breadcrumb li a:hover {
-    color: var(--highlights);
-    text-decoration: underline;
-    background-color: var(--dark);
+.material-icons-round {
+    margin-right: 5%;
+    vertical-align: bottom;
 }
 
 @media (max-width:800px) {
@@ -138,7 +94,12 @@ ul.breadcrumb li a:hover {
         text-align: center;
         border-top: solid 1px var(--text);
         background-color: var(--altbackground);
-        font-size: 1rem;
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+    .material-icons-round {
+        vertical-align: middle;
     }
 
     .activepage, .navbuttons:hover{
@@ -150,11 +111,4 @@ ul.breadcrumb li a:hover {
     .activepage::before {
         content: "";
     }
-
-    img {
-        min-width: 90%;
-        display: block;
-        margin: auto;
-    }
-
 }

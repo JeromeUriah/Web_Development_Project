@@ -9,7 +9,7 @@
     --textfont: "Instrument Serif", serif;
     --navbar: rgb(51, 51, 51);
     --color1: #F7374F;
-    --color2: #44318E;
+    --color2: #624db8;
     --color3: #C07F00;
     --color4: #005B41;
     --color5:#2D9CCB;
@@ -39,9 +39,8 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
 
 .logo{
     width: fit-content;
-    padding-left: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top:10px;
+    padding-left: 10px;
 }
 
 .logotext{
@@ -88,5 +87,15 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
 
 mark {
     color: var(--mark);
+    background-color: transparent;
+}
+
+mark.secondmark {
+    color: var(--color3);
+    background-color: transparent;
+}
+
+mark.thirdmark {
+    color: var(--color1);
     background-color: transparent;
 }

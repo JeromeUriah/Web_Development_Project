@@ -8,18 +8,17 @@
 
 .img-gallery img{
     width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
 .img-gallery img:hover{
-    transform: scale(0.8) rotate(-12deg);
-    border-radius: 5%;
-    transition: ease-out;
+    opacity: 0.5;
 }
 
 .full-img{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: rgba(0,0,0,0.9);
     position: fixed;
     top: 0;
@@ -31,7 +30,8 @@
 }
 
 .full-img img {
-    width: 45%;
+    max-height: 90%;
+    max-width: 90%;
 }
 
 .full-img span{
@@ -43,10 +43,33 @@
     cursor: pointer;
 }
 
+#caption {
+    color: var(--text);
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: var(--textfont);
+    margin: auto;
+    border: var(--text) 1px solid;
+    padding: 10px;
+    background-color: var(--altbackground);
+    max-width: 30%;
+}
+
+.imgcontainer {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
 @media (max-width:800px) {
 
     .img-gallery{
         width: 90%;
+    }
+
+    #caption {
+        max-width: 100%;
+        padding: 0;
     }
 
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Viceral Design</title>
         <!-- Adding Icons to pages-->
         <!-- iPhone -->
         <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png"/>
@@ -16,7 +17,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Viceral Design</title>
         <link rel="stylesheet" href="../work_phase_3/css/reset.css">
         <link rel="stylesheet" href="../work_phase_3/css/base.css">
         <link rel="stylesheet" href="../work_phase_3/css/layout.css">
@@ -27,6 +27,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <!--Importing Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     </head>
 
     <body>
@@ -37,34 +39,51 @@
             </div>
         </div>
 
-        <div class="subcontent"> 
-            <ul class="breadcrumb">
-                <li><a href="../work_phase_3/index.html">Home</a></li>
-                <li><a href="../work_phase_3/styleguide.html">Style Guide</a></li>
-                <li>Viceral Design</li>
-            </ul>
-            <h3>Viceral Design</h3>
-            <h4>In the context of Don Norman's three levels of emotional design, it refers to the initial, instinctive, and subconscious reactions a user has to a product or experience</h4>   
-            <div class="divider"></div>
-            <h4 class="dividertext">Gallery</h4>
-            <div class="full-img" id="fullimgbox">
-                <img src="" id="fullimg">
-                <span id="closebtn">X</span>
+        <div class="maincontent"> 
+            <nav id="left-desktop">
+                <a class="navbuttons" href="../work_phase_3/index.html"><span class="material-icons-round">home</span>Home</a>
+                <a class="navbuttons"  href="../work_phase_3/sitemap.html"><span class="material-icons-round">map</span>Site Map</a>
+                <a class="navbuttons activepage" aria-current="page" href="../work_phase_3/styleguide.html"><span class="material-icons-round">style</span>Style Guide</a>
+                <a class="navbuttons" href="../work_phase_3/ethicsresponse.html"><span class="material-icons-round">gavel</span>Ethics</a>
+                <a class="navbuttons" href="../work_phase_3/genai.html"><span class="material-icons-round">smart_toy</span>GenAI</a>
+            </nav>
+            
+            <div class="right">
+                <ul class="breadcrumb">
+                    <li><a href="../work_phase_3/index.html">Home</a></li>
+                    <li><a href="../work_phase_3/styleguide.html">Style Guide</a></li>
+                    <li>Viceral Design</li>
+                </ul>
+                <h3>Viceral Design</h3>
+                <h5>In the context of Don Norman's three levels of emotional design, it refers to the initial, instinctive, and subconscious reactions a user has to a product or experience</h5>   
+                <div class="divider"></div>
+                <h4 class="dividertext">Gallery</h4>
+                <div class="full-img" id="fullimgbox">
+                    <div class="imgcontainer">
+                        <img src="" id="fullimg">
+                        <div id="caption"></div>
+                    </div>
+                    <span id="closebtn">X</span>
+                </div>
+                <div class="img-gallery">
+                    <img src="../work_phase_3/assets/Mhomepage.jpg" alt="The visceral design elements of the mobile homepage align with the Client mission to foster social cohesion and empower diverse communities. 
+                    The clean, uncluttered layout and mobile-friendly format make the interface accessible and welcoming, which supports client’s commitment to inclusivity and ethical design. 
+                    The use of familiar visual cues such as rounded cards, clear typography, and topic tags creates an immediate sense of trust and approachability, encouraging users to engage with the platform. 
+                    These aesthetic choices evoke a positive emotional response that helps users feel comfortable sharing their stories and connecting with others. 
+                    Additionally, the visual emphasis on community-generated content—through clear labels, topic tags, and author attribution—reinforces representation and visibility, core to client’s goal of celebrating the unique identities of communities.">
+                    <img src="../work_phase_3/assets/Msharedspace.jpg" alt="This design supports the mission and client needs outlined by the client. Viscerally, the layout is clean, structured, and familiar, which encourages engagement and trust. Key visual features such as clearly labeled posts, visible authorship, content previews, tags, and interaction buttons provide users with an immediate sense of community activity and participation. This reinforces client’s goal of fostering meaningful connections and supporting community expression. The presence of both text and image/video post types accommodates diverse storytelling formats, aligning with the need to celebrate unique identities. Navigation is intuitive and mobile-optimized, supporting accessibility for all users. The emotional appeal of this design lies in its approachability and usability, helping users feel comfortable interacting and sharing within the platform—directly promoting client’s vision of an inclusive, empowering digital space.">
+                    <img src="../work_phase_3/assets/Mprofilepage.jpg" alt="This design  aligns with the client mission by emphasizing individual identity, contribution, and interaction, all key to fostering community engagement and visibility. Viscerally, the customizable background, profile and hero images, and clear display of metrics like posts, followers, and events participated in, all create an inviting and personal space that users can relate to emotionally. These elements contribute to a sense of ownership and pride in one’s participation—promoting representation and self-expression, crucial to client’s values. The inclusion of recent posts and a user wall for comments encourages storytelling and dialogue, reinforcing connection and community-building. Social media links further support visibility and broader outreach. This profile structure serves not only as a personal hub but also a window into the community’s diversity, supporting client’s vision of inclusivity, empowerment, and shared experience">
+                </div>
             </div>
-            <div class="img-gallery">
-                <img src="../work_phase_3/Images/sitemap (2).png" alt="Thumbnail 1">
-                <img src="../work_phase_3/assets/input.png" alt="Thumbnail 2">
-                <img src="../work_phase_3/Images/sitemap (2).png" alt="Thumbnail 3">
-            </div> 
         </div>
         <nav id="left-mobile">
-            <a class="mobile-navbuttons" href="../work_phase_3/index.html">Home</a>
-            <a class="mobile-navbuttons" href="../work_phase_3/sitemap.html">Site Map</a>
-            <a class="mobile-navbuttons activepage" href="../work_phase_3/styleguide.html">Style Guide</a>
-            <a class="mobile-navbuttons" href="../work_phase_3/ethicsresponse.html">Ethics</a>
-            <a class="mobile-navbuttons" href="../work_phase_3/genai.html">GenAI</a>
+            <a class="mobile-navbuttons" href="../work_phase_3/index.html"><span class="material-icons-round">home</span><br>Home</a>
+            <a class="mobile-navbuttons activepage" aria-current="page" href="../work_phase_3/sitemap.html"><span class="material-icons-round">map</span><br>Site Map</a>
+            <a class="mobile-navbuttons" href="../work_phase_3/styleguide.html"><span class="material-icons-round">style</span><br>Style Guide</a>
+            <a class="mobile-navbuttons" href="../work_phase_3/ethicsresponse.html"><span class="material-icons-round">gavel</span><br>Ethics</a>
+            <a class="mobile-navbuttons" href="../work_phase_3/genai.html"><span class="material-icons-round">smart_toy</span><br>GenAI</a>
         </nav>
         <div>
-            <script type="module" src="../work_phase_3/js/modules/openimg.js"></script>
+            <script type="module" src="../work_phase_3/js/vd.js"></script>
         </div>
 </html>

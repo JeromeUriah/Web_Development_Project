@@ -27,10 +27,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+        <!--Importing Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
     </head>
+        <!-- Adding Logo to each page-->
 
     <body>
-        <!-- Adding Logo to each page-->
         <div class="header">
             <div class="logo">
                 <a href="../journal.html" class="logotext">[SITENAME]</a>
@@ -39,42 +42,43 @@
 
         <div class="maincontent">
             <nav id="left-desktop">
-                <a class="navbuttons" href="../work_phase_3/index.html">Home</a>
-                <a class="navbuttons activepage" aria-current="page" href="../work_phase_3/sitemap.html">Site Map</a>
-                <a class="navbuttons" href="../work_phase_3/styleguide.html">Style Guide</a>
-                <a class="navbuttons" href="../work_phase_3/ethicsresponse.html">Ethics</a>
-                <a class="navbuttons" href="../work_phase_3/genai.html">GenAI</a>
+                <a class="navbuttons" href="../work_phase_3/index.html"><span class="material-icons-round">home</span>Home</a>
+                <a class="navbuttons activepage" aria-current="page" href="../work_phase_3/sitemap.html"><span class="material-icons-round">map</span>Site Map</a>
+                <a class="navbuttons" href="../work_phase_3/styleguide.html"><span class="material-icons-round">style</span>Style Guide</a>
+                <a class="navbuttons" href="../work_phase_3/ethicsresponse.html"><span class="material-icons-round">gavel</span>Ethics</a>
+                <a class="navbuttons" href="../work_phase_3/genai.html"><span class="material-icons-round">smart_toy</span>GenAI</a>
             </nav>
-            
-
             <div class="right">
                 <h1 class="gap-btm">Website Site Map</h1>
                 <div class="full-img" id="fullimgbox">
-                    <img src="" id="fullimg">
+                    <div class="imgcontainer">
+                        <img src="" id="fullimg">
+                        <div id="caption"></div>
+                    </div>
                     <span id="closebtn">X</span>
                 </div>
                 <div class="img-gallery">
-                    <img src="../work_phase_3/assets/site_map.jpg" alt="Thumbnail 1">
+                    <img src="../work_phase_3/assets/site_map.jpg" alt="Site-Map">
                 </div> 
+                <br>
                 <p class="gap-btm">The purpose of this exercise is to create a user-friendly navigation system structure. Each box contains a page with its components and features.</p>
 
                 <section class="accordioncontainer">
-                    <!-- Accordion content will go here -->
                     <button class="accordion">Website Vision</button>
                     <div class="panel">
-                        <p>A central platform that connects tech enthusiasts or anyone interested in technology in a minimalistic and simple to use site to <mark>gather or share knowledge</mark>. This site will <mark>foster and support meaningful connections and interactions</mark> between users. As a hub it allows for community members, tech-users, exlorers and learners to convene in a shared inclusive platform allowing for each and every individual to <mark>connect, showcase their own unique identities and share their stories and experiences</mark></p>
+                        <p>A central platform that connects tech enthusiasts or anyone interested in technology in a minimalistic and simple to use site to <mark class="thirdmark">gather or share knowledge</mark>. This site will <mark class="thirdmark">foster and support meaningful connections and interactions</mark> between users. As a hub it allows for community members, tech-users, exlorers and learners to convene in a shared inclusive platform allowing for each and every individual to <mark class="thirdmark">connect, showcase their own unique identities and share their stories and experiences</mark></p>
                         <br>
                         <div class="nestedpanel">   
                             <button class="accordion level2">Welcome Page</button>
                             <div class="panel">
                                 <p>
-                                    -Client and User Needs-
-                                    A Welcome page with 5 daily recommended posts allowing users to constantly <mark>learn new and interesting things</mark>. The belows boxs contains the design priciples and accessibility considerations of each function.
+                                    The welcome page serves as the first point of contact for all visitors, offering an introduction to the community and setting the tone for the entire website. <mark class="secondmark">This directly supports the client’s goal of representing and celebrating the identity of the chosen community</mark>. By including meaningful imagery, community stories, and a concise explanation of the community’s mission or focus, the welcome page helps users feel connected and included from the outset.
                                 </p>
                                 <br>
                                     <div class="nestedpanel level2">
                                         <button class="accordion level3">1. Trending</button>
                                         <div class="panel">
+                                            <p>"A trending page showcases the most active, discussed, or viewed content within the community. This feature fosters meaningful connections by highlighting what community members are currently engaging with, whether it’s a recent project, article, or event. It also supports ongoing interaction and relevance, <mark class="secondmark">aligning with the client’s aim of building vibrant, dynamic hubs of activity that reflect the evolving interests of the community</mark>."</p>
                                             <p><strong>-VISUAL IMPACT-</strong></p>
                                             <p>Trending posts will the first thing a user sees, making their visual presentation important. Having the treding posts the arranged and prominently displayed in the middle of the screen will create an immediate<mark> visual and emotional</mark> response</p>
                                             <p><strong>-ENGAGEMENT-</strong></p>
@@ -86,6 +90,7 @@
                                     <div class="nestedpanel level2">
                                         <button class="accordion level3">2. Topic collection</button>
                                         <div class="panel">
+                                            <p>"Organising content into themed topic collections—such as AI, robotics, or coding—ensures that users can easily find information that is relevant to their interests. <mark class="secondmark">This directly addresses the client's need to provide clear, accessible information and resources</mark>. Topic collections also support inclusivity by catering to different levels of expertise and various sub-interests within the community, ensuring that no user is overlooked."</p>
                                             <p><strong>-PERSONALIZATION-</strong></p>
                                             <p>Subscribed topics create a sense of <mark>belonging</mark> and personalize the user experience. Users feel like they are part of a community with <mark>shared interests</mark>, which can lead to positive emotions.</p>
                                             <p><strong>-RELEVANCE-</strong></p>
@@ -97,6 +102,7 @@
                                     <div class="nestedpanel level2">
                                         <button class="accordion level3">3. Search</button>
                                         <div class="panel">
+                                        <p>"The search function enhances accessibility by allowing users to locate specific content quickly and efficiently. This is especially important for users who rely on assistive technologies or have cognitive or time constraints. By supporting seamless interaction for all users, the search function <mark class="secondmark">upholds the client’s principles of ethical, inclusive, and accessible design</mark>."</p>
                                         <p><strong>-USE AND CONTROL-</strong></p>
                                         <p> A prominent and functional search bar provides a sense of control and empowerment. Users knows they can quickly find what they're looking for, reducing frustration and creating a feeling of <mark>efficiency</mark>.</p>
                                         <p><strong>-ANTICIPATION-</strong></p>
@@ -111,11 +117,12 @@
                         <div class="nestedpanel">  
                             <button class="accordion level2">Shared Space</button>
                             <div class="panel">
-                                <p>A shared space where new posts regarding certain topics are shown and users are able to comment, like and share various posts.</p>
+                                <p>A shared space page with features like text, video, and photo posts; likes, comments, and shares; and tags and topics fits well with the client’s goals. <mark class="secondmark">It builds on the mission of fostering connection, celebrating identity, and supporting engagement</mark>.</p>
                                 <br>
                                 <div class="nestedpanel level2">
                                     <button class="accordion level3">1. Text, Photo and Video Posts</button>
                                     <div class="panel">
+                                        <p>"This feature allows community members to share their stories, knowledge, and experiences in diverse formats. It <mark class="secondmark">supports the client’s mission of empowering communities to express their identities in authentic ways</mark>. By enabling multimedia content, the website becomes a vibrant, inclusive platform that reflects the richness and diversity of voices within the community."</p>
                                         <p><strong>-PERSONALIZATION-</strong></p>
                                         <p>Displaying the author's name and profile picture humanizes the content, creating a sense of <mark>connection and trust</mark>. This builds a positive emotional association with the website.</p> 
                                         <p><strong>-READABILITY-</strong></p>
@@ -130,6 +137,7 @@
                                 <div class="nestedpanel level2">
                                     <button class="accordion level3">2. Likes, Comment and Shares</button>
                                     <div class="panel">
+                                        <p>"These interactive elements foster engagement and community connection. They encourage users to interact with each other’s content, offer support or feedback, and feel heard. This directly <mark class="secondmark">aligns with the goal of building meaningful connections and support within the community, creating a sense of belonging and dialogue</mark>."</p>
                                         <p><strong>-SOCIAL VALIDATION-</strong></p>
                                         <P>Seeing likes, shares, and comments indicates that others have found the content valuable or engaging. This creates a sense of <mark>social validation</mark> and encourages the user to participate.</P>
                                         <p><strong>-EMOTIONAL CONNECTION-</strong></p>
@@ -141,6 +149,7 @@
                                 <div class="nestedpanel level2">
                                     <button class="accordion level3">3. Tags and Topics</button>
                                     <div class="panel">
+                                        <p>"Tags and topics help organise content in a way that’s user-friendly and accessible. They allow users to explore content by interest areas, improving discoverability. <mark class="secondmark">This supports the client's need for clarity, accessibility, and inclusiveness</mark>, helping both community members and the general public easily navigate and understand the contributions of the community."</p>
                                         <p><strong>-ORGANIZATION-</strong></p>
                                         <p>Organized topics help users quickly find content that interests them. This reduces cognitive load and creates a sense of <mark>efficiency and control</mark>.</p>
                                         <p><strong>-RELEVANCE-</strong></p>
@@ -155,56 +164,236 @@
                         <div class="nestedpanel">  
                             <button class="accordion level2">Community</button>
                             <div class="panel">
-                                <p>A shared space where new posts regarding certain topics are shown and users are able to comment, like and share various posts.</p>
+                                <p>A community page that includes rules, values, announcements, and a way to report posts strongly <mark class="secondmark">supports the Connect Communities Initiative’s (CCI) commitment to ethical, inclusive, and supportive community spaces</mark>.</p>
                                 <br>
                                 <div class="nestedpanel level2">
                                     <button class="accordion level3">1. Rules</button>
                                     <div class="panel">
+                                        <p>"Clearly stated community rules help set expectations for respectful behaviour, safety, and constructive participation. This promotes a healthy online environment where all users feel welcome, especially those from underrepresented or marginalised groups. Which supports the <mark class="secondmark">client need for ethical, inclusive, and culturally sensitive design principles</mark>."</p>
                                         <p><strong>-APPROACHABILITY-</strong></p>
                                         <p>Rules are presented in plain language and broken down into easily digestible sections. This influences how users feel about the community. Clear, concise, and friendly rules create a sense of <mark>welcome and safety</mark>. Rules are writen in a conversational tone and positive framing.</p>
                                         <p><strong>-VISUAL-</strong></p>
                                         <p>
-                                            The visual design of the rules section influences its perceived importance and approachability. Rules are designed in a section with clear headings, bullet points, and visual cues makeing the rules <mark>easier to understand and less intimidating</mark>. Fonts are clear and consistent with ample white space, and a visually appealing layout. Rules are easily accessible as they are in a dedicated section.
+                                            The visual design of the rules section influences its perceived importance and approachability. Rules are designed in a section with clear headings, bullet points, and visual cues making the rules <mark>easier to understand and less intimidating</mark>. Fonts are clear and consistent with ample white space, and a visually appealing layout. Rules are easily accessible as they are in a dedicated section.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="nestedpanel level2">
                                     <button class="accordion level3">2. Values</button>
                                     <div class="panel">
-
+                                        <p>"Articulating the community’s shared values (such as inclusion, innovation, respect, and collaboration) helps reinforce the identity and purpose of the platform. It gives users a sense of belonging and encourages alignment with the community's mission. This aligns with the <mark class="secondmark">client need of representing and celebrating the identity of the chosen community</mark>."</p>
+                                        <p><strong>-AUTHENTICITY-</strong></p>
+                                        <p>The values of the community shape its identity and create a sense of shared purpose. Values are clearly articulated and genuinely reflected in the community's behavior, users feel a sense of <mark>belonging and trust</mark>. If the values are vague or contradicted by community actions, users will experience confusion and distrust. Clearly defining the community's core values and using them to guide content moderation and community interactions. The values are prominently displayed and regularly reinforced through announcements and community events.</p>
+                                        <p><strong>-CONNECTION-</strong></p>
+                                        <p> Well-defined values can evoke positive emotions and create a strong sense of identity. This can lead to a feeling of <nark>pride and connection</nark> to the community values are framed in a way that resonates with the target audience with language that is inspiring and motivating.</p>
+                                    </div>
                                 </div>
                                 <div class="nestedpanel level2">
                                     <button class="accordion level3">3. Announcements</button>
                                     <div class="panel">
-
+                                        <p>"A space for announcements keeps the community informed about important updates, upcoming events, and opportunities. This supports engagement and helps maintain an active, dynamic environment. This supports the <mark class="secondmark">client need of fostering meaningful connections and support within the community</mark>."</p>
+                                        <p><strong>-TIMELINES-</strong></p>
+                                        <p>Announcements that are relevant, timely, and well-presented create a sense of value and keep users informed. This fosters a feeling of being "in the know" and <mark>connected</mark> to the community. Irrelevant or outdated announcements can lead to frustration and disengagement. The date and time of each announcement are clearly stated and important announcements are prioritized and made easily visible.
+                                        </p>
+                                        <p><strong>-FORMATTING-</strong></p>
+                                        <p>The visual design of announcements influences their perceived importance and readability. Announcements are designed with clear headings, bolding, and visual cues making it more likely to be <mark>noticed</mark> and read. A consistent format for all announcements is used in a dedicated feed for announcements.</p>
                                     </div>
                                 </div>
                                 <div class="nestedpanel level2">
-                                    <button class="accordion level3">4. Report Post</button>
+                                    <button class="accordion level3">4. Report Posts</button>
                                     <div class="panel">
-
+                                        <p>"Providing a way to report inappropriate or harmful content is essential for maintaining safety and inclusivity. It empowers users to help moderate the space and reinforces a commitment to ethical design and digital wellbeing which aligns to the <mark class="secondmark">client need of ensuring ethical, inclusive, and culturally sensitive design principles are upheld</mark>."</p>
+                                        <p><strong>-SECURITY-</strong></p>
+                                        <p>A well-designed report post function provides users with a sense of <mark>safety and control</mark>. Knowing they can easily report inappropriate content fosters trust and encourages participation. The report button is made easily accessible and clearly labeled with a simple and intuitive reporting process. Offers clear feedback to users who submit reports.</p>
+                                        <p><strong>-TRUST-</strong></p>
+                                        <p>Transparency about how reports are handled builds trust and reinforces the community's <mark>commitment to safety</mark>. A lack of transparency can lead to suspicion and distrust. Information about the reporting process are provided as well. Update users who submit reports on status of their reports.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <br>
+                        <div class="nestedpanel">  
+                            <button class="accordion level2">Resource Hub</button>
+                            <div class="panel">
+                                <p>A resource hub featuring software and driver links, file downloads, and file uploads <mark class="secondmark">directly supports the Connect Communities Initiative’s (CCI) goal of providing clear, accessible information and resources while fostering meaningful support within tech and innovation communities</mark>.</p>
+                                <br>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">1. Software and Driver Links</button>
+                                    <div class="panel">
+                                        <p>"The resource hub is a practical tool that empowers community members—especially developers, makers, and learners—to access the essential tools they need for their work or learning. This directly aligns with the <mark class="secondmark">client’s aim to enhance visibility and influence by equipping users with the resources that support participation and contribution</mark>."</p>
+                                        <p><strong>-TRUST-</strong></p>
+                                        <p>Users need to <mark>trust</mark> that the software and drivers they download are safe and legitimate. The way these links are presented significantly influences this trust. Links will have descriptive and accurate labels. Other information included are: </p>
+                                        <p>> Version Information: Clearly displayed version numbers and release dates to instill confidence in the currency of the resources.</p>
+                                        <p>> Source Verification: Source of the software is included</p>
+                                        <p>> Visual Cues: Trust-building visual cues like verified badges or icons for verified downloads.</p>
+                                        <p><strong>-EASE OF NAVIGATION-</strong></p>
+                                        <p>Finding the right software or driver quickly <mark>reduces frustration</mark> and enhances the user experience. Therefore, links are organized by category, a robust search function that allows users to quickly find what they need and filters  based on operating system, hardware type, or other relevant criteria is implemented.</p>
+                                        <p><strong>-VISUAL-</strong></p>
+                                        <p>The visual design influences the user's perception of the links. A clean, well-organized presentation is more <mark>appealing and trustworthy</mark>. A consistent format for all links, ample white space to prevent the page from feeling cluttered and headings, subheadings, and bolding to guide the user's eye will be implemented.</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">2. File Downloads</button>
+                                    <div class="panel">
+                                        <p>"File downloads, such as guides, templates, or open-source code, help share community-generated knowledge and reduce barriers to entry for newcomers. This reinforces inclusivity and knowledge-sharing, addressing the <mark class="secondmark">client’s commitment to accessible and culturally sensitive design principles</mark>."</p>
+                                        <p><strong>-EASE OF USE-</strong></p>
+                                        <p>A smooth and transparent download process creates a <mark>positive experience</mark>. This is implemented with the use of a prominent and easily identifiable download button. A progress bar or percentage to provide feedback during the download. And a clear confirmation message after the download is complete.</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">3. File Uploads</button>
+                                    <div class="panel">
+                                        <p>"Allowing file uploads enables members to contribute back—whether through tutorials, documentation, or project files—promoting collaboration and co-creation. This supports the <mark class="secondmark">client’s goal to foster meaningful connections and builds a sense of shared ownership and peer-to-peer support within the community</mark>."</p>
+                                        <p><strong>-EASE OF USE-</strong></p>
+                                        <p>An intuitive upload process reduces frustration and makes the user <mark>feel in control</mark>. Users are allowed to drag and drop files for easy uploading and a a progress bar or percentage during the upload will be displayed. Clear instructions on how to upload files are also included. Pop-up displayed after upload is completed. </p>
+                                        <p><strong>-VISUAL-</strong></p>
+                                        <p>The visual design of the upload area influences the user's perception of the <mark>functionality</mark>. A prominent and easily identifiable upload button is implemented.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="nestedpanel">  
+                            <button class="accordion level2">User Wall</button>
+                            <div class="panel">
+                                <p>A resource hub that includes profile photos, user descriptions, customisable backgrounds, social links, direct messaging, and wall comments adds a powerful social and personal dimension to the platform, directly supporting the <mark class="secondmark">Connect Communities Initiative’s (CCI) goal of fostering meaningful connections and community support</mark>.</p>
+                                <br>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">1. Profile Photos</button>
+                                    <div class="panel">
+                                        <p>"Allowing users to upload profile photos gives individuals a visual presence on the platform, helping to humanise online interactions and foster recognition among others. This aligns with <mark class="secondmark">CCI’s goal to celebrate unique identities and make community members more visible within a digital environment that values representation and belonging</mark>."</p>
+                                        <p><strong>-CONNECTION-</strong></p>
+                                        <p>Profile photos immediately humanize the experience and foster a sense of <mark>connection between users</mark>. Seeing a face creates an immediate sense of recognition and can trigger positive emotions. Clear guidelines on photo size, format, and content are provided. A cropping and editing tool to help users optimize their photos and a set of attractive default avatars for users who don't upload their own photos are provided.</p>
+                                        <p><strong>-VISUAL-</strong></p>
+                                        <p>A well-chosen profile photo can convey <mark>personality</mark> and create a positive first impression. Rounded corners for profile photos to create a softer, more approachable look and hover effects to make profile photos more engaging are implmented</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">2. User Descriptions</button>
+                                    <div class="panel">
+                                        <p>"Providing space for user descriptions enables individuals to share personal stories, interests, or areas of expertise. This supports the <mark class="secondmark">client’s aim to offer clear, accessible information while allowing members to express themselves beyond just their contributions—helping to build understanding, respect, and collaboration within the community</mark>."</p>
+                                        <p><strong>-SELF-EXPRESSION-</strong></p>
+                                        <p>User descriptions allow users to express themselves and share their <mark>personality</mark>. This fosters a sense of identity and allows users to connect with others who share similar interests. Basic formatting options to enhance readability and users are allowed to control over who can see their descriptions.</p>
+                                        <p><strong>-DISCOVERY-</strong></p>
+                                        <p>User descriptions can help users find others with similar interests, leading to more <mark>meaningful connections</mark>. To do this, users are allowerd to tag their descriptions with keywords or hashtags. User descriptions are also searchable.</p>
+                                        <p><strong>-VISUALS-</strong></p>
+                                        <p>The way user descriptions are displayed influences their <mark>readability and appeal</mark>. A clear and easy-to-read font is used with ample white space to separate the description from other elements. Bolding or other visual cues to highlight key information are implemented.</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">3. Customisable Backgrounds</button>
+                                    <div class="panel">
+                                        <p>"Customisable backgrounds enhance personalisation, giving users a sense of ownership over their space within the platform. This not only encourages engagement but also supports the <mark class="secondmark">client’s mission of empowering individuals through digital tools that reflect their voice and values</mark>."</p>
+                                        <p><strong>-SELF-EXPRESSION-</strong></p>
+                                        <p>Customizable backgrounds allow users to personalize their profile and express their <mark>individuality</mark>. This creates a sense of ownership and makes the user wall feel more like "their space". A library of pre-selected backgrounds is provided or additional backgrounds can be unlocked based on number of comments or posts. Users can also upload their own background banners. </p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">4. Social Links</button>
+                                    <div class="panel">
+                                        <p>Social links allow users to connect their profiles to external platforms or personal websites. This supports the <mark class="secondmark">client’s aim to enhance visibility</mark> and influence by helping users share their work and expand their networks beyond [SITENAME]."</p>
+                                        <p><strong>-CONNECTIONS-</strong></p>
+                                        <p>Social links allow users to connect with each other and share their other online profiles. This fosters a <mark>sense of community</mark> and allows users to expand their social network. The use recognizable icons for each social media platform. Users are able to control which social links are displayed.</p>
+                                        <p><strong>-VISUAL-</strong></p>
+                                        <p>The way social links are integrated into the profile influences their <mark>appeal</mark>. There is a consistent style for all social link icons. Social links are in a prominent and easily accessible location. There are hover effects to make social link icons more engaging.</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">5. Direct Messaging</button>
+                                    <div class="panel">
+                                        <p>"Direct messaging enables private, real-time communication between users, which fosters meaningful one-on-one connections and collaboration—key to the <mark class="secondmark">client’s goal of building supportive, interactive communities</mark>."</p>
+                                        <p><strong>-CONNECTION-</strong></p>
+                                        <p>Direct messaging allows users to communicate privately and build closer relationships. This fosters a sense of <mark>intimacy and connection</mark>. There is a simple and intuitive messaging interface with clear notifications for new messages. Additionally there is read receipts to provide feedback and improve communication.</p>
+                                        <p><strong>-VISUAL-</strong></p>
+                                        <p>The visual design of the messaging interface influences the user's experience. There is a clear and easy-to-follow conversation thread format with integrated profile photos into the messaging interface.</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">6. Wall Comments</button>
+                                    <div class="panel">
+                                        <p>"Wall comments encourage open dialogue and community participation. They offer a casual, social layer that helps maintain a sense of community, even outside structured content areas. This promotes ongoing engagement and reinforces the <mark class="secondmark">client’s commitment to inclusive, ethical, and culturally sensitive interaction</mark>."</p>
+                                        <p><strong>-ENGAGEMENT-</strong></p>
+                                        <p>Wall comments allow users to interact with each other and create a <mark>sense of community</mark>. This fosters engagement and encourages users to return to the platform. There is a threaded comment system to make conversations easier to follow. Users can like and reply to encourage engagement.</p>
+                                        <p><strong>-SAFETY-</strong></p>
+                                        <p>Moderation tools help to create a <mark>safe and positive environment</mark>. There is a reporting button for users to report inappropriate content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="nestedpanel">  
+                            <button class="accordion level2">Events Space</button>
+                            <div class="panel">
+                                <p>An events space that features event hosting, event sign-up, an event calendar, and a local event map directly addresses several core needs outlined by the <mark class="secondmark">Connect Communities Initiative (CCI), particularly around community engagement, visibility, and inclusivity</mark>.</p>
+                                <br>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">1. Event Hosting</button>
+                                    <div class="panel">
+                                        <p>"By enabling event hosting, the platform empowers community members and organisers to share opportunities—such as workshops, meetups, hackathons, or webinars—that reflect the interests and strengths of the community. This supports the <mark class="secondmark">client’s mission to celebrate community identity while giving members a stage to showcase their contributions and initiatives</mark>."</p>
+                                        <p><strong>-CREATION-</strong></p>
+                                        <p>Making it easy for users to create and manage events <mark>empowers them and reduces frustration</mark>. A sense of control is key. The website provides a streamlined, user-friendly interface for event creation. Users can easily input event details through a guided, step-by-step form that includes fields for title, description, date, time, location, and media uploads. A preview function allows users to review the full event listing before publishing. After an event is published, users can edit or update details using intuitive management tools available through their dashboard.</p>
+                                        <p><strong>-VISUALS-</strong></p>
+                                        <p> Attractive event listings are more likely to <marks>attract</marks> attendees. To enhance visual appeal and engagement, the event listings support high-quality image and video uploads. Users can choose from pre-designed templates or layout options to customize their event appearance. Events are presented with a clear visual hierarchy, making information easy to scan and understand across all devices.
+                                        </p>
+                                        <p><strong>-INTERACTION-</strong></p>
+                                        <p>Facilitating interaction between hosts and attendees can foster a sense of <mark>community</mark>. Each event includes a dedicated comment section to facilitate discussions between hosts and attendees. Event hosts have profile pages that showcase their bio, past events, and optional social links, making it easier for attendees to connect with them and build trust.</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">2. Event Sign-Up</button>
+                                    <div class="panel">
+                                        <p>"Event sign-up functionality ensures that participation is accessible and well-organised. It encourages involvement from both community members and the general public, directly fulfilling the <mark class="secondmark">client’s aim to foster meaningful connections and promote inclusive access to resources and opportunities</mark>."</p>
+                                        <p><strong>-SIMPLIFIED-</strong></p>
+                                        <p>A streamlined sign-up process reduces friction and encourages <mark>participation</mark>. The sign-up process has been optimized for ease of use. Users can register for events with a single click using existing accounts (e.g., Google or Facebook). Sign-up forms are intentionally minimal, collecting only the most essential information. Upon successful registration, users receive a clear confirmation message and, where applicable, follow-up reminders.</p>
+                                        <p><strong>-ANTICIPATION-</strong></p>
+                                        <p>Creating a sense of <mark>anticipation</mark> can encourage sign-ups. To generate interest and drive registrations, event pages feature countdown timers and real-time availability indicators showing how many spots remain. Event previews, such as teaser videos or images, are used to spark anticipation and excitement among prospective attendees.</p>
+                                        <p><strong>-SOCIAL PROOF-</strong></p>
+                                        <p>Seeing that others have signed up can encourage <marks>participation</marks>. Attendee numbers are publicly displayed on event pages to create a sense of momentum and popularity. Where privacy settings permit, users can view other attendees’ profiles to foster familiarity and encourage participation.</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">3. Event Calendar</button>
+                                    <div class="panel">
+                                        <p>"An event calendar provides a clear, centralised view of upcoming events, making it easy for users to stay informed and engaged. This aligns with the <mark class="secondmark">client's goal to provide clear, accessible information and supports a dynamic and active community presence</mark>."</p>
+                                        <p><strong>-FLEXIBILITY-</strong></p>
+                                        <p>A well-designed calendar makes it easy for users to find events that <mark>interest</mark> them. The event calendar offers multiple viewing modes, including monthly, weekly, and daily formats. Users can filter events by category, keyword, location, and date. Visual indicators such as color-coded tags and icons help distinguish between event types, improving usability.</p>
+                                        <p><strong>-ENGAGEMENT-</strong></p>
+                                        <p>A visually appealing calendar is more likely to capture the user's <mark>attention</mark>. The calendar interface is designed with a clean, minimal aesthetic. Event previews are shown on hover or click, providing key details without requiring navigation away from the calendar. Interactive elements add to a dynamic user experience without compromising clarity.</p>
+                                    </div>
+                                </div>
+                                <div class="nestedpanel level2">
+                                    <button class="accordion level3">4. Local Events Map</button>
+                                    <div class="panel">
+                                        <p>"A local event map allows users to discover nearby opportunities, which strengthens in-person connection and collaboration. This not only <mark class="secondmark">encourages broader social cohesion—one of CCI’s central missions—but also supports outreach beyond digital interaction</mark>, helping to integrate community members into the wider social fabric of their region."</p>
+                                        <p><strong>-INTEGRATION-</strong></p>
+                                        <p>A map makes it easy for users to <mark>discover</mark> events in their area. An interactive map, powered by Google Maps, allows users to explore events geographically. Users can pan, zoom, and click on map markers to view basic event information. Filtering options are available to narrow results by category, date, and location.</p>
+                                        <p><strong>-VISUALISATION-</strong></p>
+                                        <p> A visually appealing map provides context and makes it easier for users to <mark>understand</mark> the location of events.Map markers are visually distinct and categorized by event type. The integration of Google Street View allows users to preview event locations in more detail. The map also highlights nearby amenities such as public transport, parking, and food outlets for added convenience.</p>
+                                        <p><strong>-PERSONALISATION-</strong></p>
+                                        <p>Personalizing the map experience can enhance user <mark>engagement</mark>. The website recommends events based on the user's saved or current location. Users can bookmark or save events, which are then pinned on their personalized map view for quick reference and planning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>    
                 </div>
             </section>
         </div>
 
             <nav id="left-mobile">
-                <a class="mobile-navbuttons" href="../work_phase_3/index.html">Home</a>
-                <a class="mobile-navbuttons activepage" aria-current="page" href="../work_phase_3/sitemap.html">Site Map</a>
-                <a class="mobile-navbuttons" href="../work_phase_3/styleguide.html">Style Guide</a>
-                <a class="mobile-navbuttons" href="../work_phase_3/ethicsresponse.html">Ethics</a>
-                <a class="mobile-navbuttons" href="../work_phase_3/genai.html">GenAI</a>
+                <a class="mobile-navbuttons" href="../work_phase_3/index.html"><span class="material-icons-round">home</span><br>Home</a>
+                <a class="mobile-navbuttons activepage" aria-current="page" href="../work_phase_3/sitemap.html"><span class="material-icons-round">map</span><br>Site Map</a>
+                <a class="mobile-navbuttons" href="../work_phase_3/styleguide.html"><span class="material-icons-round">style</span><br>Style Guide</a>
+                <a class="mobile-navbuttons" href="../work_phase_3/ethicsresponse.html"><span class="material-icons-round">gavel</span><br>Ethics</a>
+                <a class="mobile-navbuttons" href="../work_phase_3/genai.html"><span class="material-icons-round">smart_toy</span><br>GenAI</a>
             </nav>
             
 
             <div>
-                <script src="../work_phase_3/js/site_map.js"></script> 
+                <script type="module" src="../work_phase_3/js/site_map.js"></script>
                 <script type="module" src="../work_phase_3/js/modules/accordion.js"></script>
-                <script type="module" src="../work_phase_3/js/modules/openimg.js"></script>
+
             </div>
     </body>
 </html>
