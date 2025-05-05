@@ -1,0 +1,11 @@
+.photodisplay{
+    display: grid;
+    grid-template-columns: 40vw auto;
+    text-align: left;
+    row-gap: 1%;
+}
+
+.photodisplay p {
+    margin-top: 0;
+    padding-left: 2%;
+}

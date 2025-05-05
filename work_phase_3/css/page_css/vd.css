@@ -1,0 +1,84 @@
+.dividertext {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 1%;
+    
+}
+
+.colorgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    min-height: 30%;
+    margin: auto;
+        gap: 0.5%;
+}
+
+
+
+.Colorbox.textcolor {
+    background-color: var(--text);
+    border: 1px var(--dark) dotted;
+}
+
+.Colorbox.textcolor p{
+    color: var(--dark);
+    
+}
+.Colorbox{
+    background-color: var(--bright);
+    border: 1px var(--text) dotted;
+}
+.Colorbox.color1 {
+    background-color: var(--color1);
+}
+.Colorbox.color2 {
+    background-color: var(--color2);
+}
+.Colorbox.color3 {
+    background-color: var(--color3);
+}
+.Colorbox.color4 {
+    background-color: var(--color4);
+}
+.Colorbox.color5 {
+    background-color: var(--color5);
+}
+.Colorbox.hovercolor {
+    background-color: var(--altbackground);
+}
+.Colorbox.ash {
+    background-color: var(--ash);
+}
+.Colorbox.ebony {
+    background-color: var(--ebony);
+}
+.Colorbox.highlight {
+    background-color: var(--highlights);
+}
+.Colorbox.forest {
+    background-color: var(--forest);
+}
+.Colorbox.charcoal {
+    background-color: var(--charcoal);
+}
+.Colorbox.oil {
+    background-color: var(--oil);
+}
+.Colorbox.mark {
+    background-color: var(--mark);
+}
+.Colorbox.background {
+    background-color: var(--dark);
+    border: 1px var(--text) dotted;
+}
+
+.colordesc {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.accordioncontainer {
+    width: 100%;
+}

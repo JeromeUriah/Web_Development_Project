@@ -16,20 +16,29 @@
 .img-gallery {
     width: 70%;
     margin: auto;
-    display: grid;
-    grid-template-columns:  auto;
+    display: block;
+    overflow: hidden;
+    max-height: fit-content;
+    min-height: 0;
+
 }
 
 .img-gallery img{
     width: 30%;
+    min-width: 30%;
+    
     cursor: pointer;
-    border: 1px solid #ddd;
-    border-radius: 4px;
     padding: 5px;;
     margin: auto;
+    object-fit: contain;
+    
 }
 
 .img-gallery img:hover{
     transform: none;
     border-radius: 0;
+}
+
+.imageresized{
+    object-fit: contain;
 }

@@ -1,13 +1,10 @@
 :root {
-    --dark: rgb(1, 6, 8);
-    --bright: rgb(230 72 51);
-    --contrast:rgb(135 79 65);
-    --light:rgb(144 174 173);
-    --text:rgb(251 233 208);
+    --dark: #010609;
+    --bright: #e64833;
+    --text:#fbead0;
     --altbackground: #2A2A2A;
-    --greybackground: rgb(217, 217, 217);
     --textfont: "Instrument Serif", serif;
-    --navbar: rgb(51, 51, 51);
+    --navbar: #2a2a2a;
     --color1: #F7374F;
     --color2: #624db8;
     --color3: #C07F00;
@@ -35,7 +32,6 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
     color: var(--text);
     font-family: var(--textfont)
 }
-
 
 .logo{
     width: fit-content;

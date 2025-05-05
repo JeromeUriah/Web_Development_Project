@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="../work_phase_3/css/layout.css">
         <link rel="stylesheet" href="../work_phase_3/css/fonts.css">
         <link rel="stylesheet" href="../work_phase_3/css/components.css">
-        <link rel="stylesheet" href="../work_phase_3/css/vd.css">
+        <link rel="stylesheet" href="../work_phase_3/css/page_css/bd.css">
         <!--Importing Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,11 +49,91 @@
             </nav>
             
             <div class="right">
-                <ul class="breadcrumb">
-                    <li><a href="../work_phase_3/index.html">Home</a></li>
-                    <li><a href="../work_phase_3/styleguide.html">Style Guide</a></li>
-                    <li>Behavioural Design</li>
+                    <ul class="breadcrumb">
+                        <li><a href="../work_phase_3/index.html">Home</a></li>
+                        <li><a href="../work_phase_3/styleguide.html">Style Guide</a></li>
+                        <li>Behavioural Design</li>
+                    </ul>
 
+                    <section class="accordioncontainer">
+                        <button class="accordion"><h4>Menu Navigations</h4></button>
+                        <div class="panel">
+                            <h5>Desktop:</h5>
+                            <div class="photodisplaycon">
+                                <div class="photodisplay">
+                                    <img src="../work_phase_3/assets/Desktop Menu.png" alt="">
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                            <br>
+                            <h5>Mobile:</h5>
+                            <div class="photodisplaycon">
+                                <div class="photodisplay">
+                                    <img src="../work_phase_3/assets/Mobile Menu.png" alt="">
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <div class="divider"></div>
+                    <section class="accordioncontainer">
+                        <button class="accordion"><h4>Headers</h4></button>
+                        <div class="panel">
+                            <h5>Desktop No Hover:</h5>
+                            <div class="photodisplaycon">
+                                <div class="photodisplay">
+                                    <img src="../work_phase_3/assets/Desktop Header no hover.png" alt="">
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                            <br>
+                            <h5>Desktop Hover:</h5>
+                            <div class="photodisplaycon">
+                                <div class="photodisplay">
+                                    <img src="../work_phase_3/assets/Desktop Header.png" alt="">
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                            <br>
+                            <h5>Mobile:</h5>
+                            <div class="photodisplaycon">
+                                <div class="photodisplay">
+                                    <img src="../work_phase_3/assets/Header Mobile.png" alt="">
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <div class="divider"></div>
+                    <section class="accordioncontainer">
+                        <button class="accordion"><h4>Trending Carosell</h4></button>
+                        <div class="panel">
+                            <h5>Desktop And Mobile:</h5>
+                            <div class="photodisplaycon">
+                                <div class="photodisplay">
+                                    <img src="../work_phase_3/assets/Trending Carosell.png" alt="">
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <div class="divider"></div>
+                    <section class="accordioncontainer">
+                        <button class="accordion"><h4>Topics Navigation</h4></button>
+                        <div class="panel">
+                            <h5>Desktop And Mobile:</h5>
+                            <div class="photodisplaycon">
+                                <div class="photodisplay">
+                                    <img src="../work_phase_3/assets/Topics_menu_desktop.png" alt="">
+                                    <p>Description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </div>    
         </div>
         <nav id="left-mobile">
             <a class="mobile-navbuttons" href="../work_phase_3/index.html"><span class="material-icons-round">home</span><br>Home</a>
@@ -62,4 +142,7 @@
             <a class="mobile-navbuttons" href="../work_phase_3/ethicsresponse.html"><span class="material-icons-round">gavel</span><br>Ethics</a>
             <a class="mobile-navbuttons" href="../work_phase_3/genai.html"><span class="material-icons-round">smart_toy</span><br>GenAI</a>
         </nav>
+        <div>
+            <script type="module" src="../work_phase_3/js/modules/accordion.js"></script>
+        </div>
 </html>
