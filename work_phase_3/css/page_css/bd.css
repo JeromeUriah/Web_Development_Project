@@ -5,7 +5,28 @@
     row-gap: 1%;
 }
 
+.photodisplay.twophotos{
+    display: block;
+    text-align: left;
+}
+
 .photodisplay p {
     margin-top: 0;
     padding-left: 2%;
+    width: 90%;
+}
+
+@media (max-width: 800px) {
+    .photodisplay img {
+        height: 90%;
+    }
+
+    .photodisplay {
+        display: block;
+    }
+
+    h5 {
+        text-align: center;
+        margin-bottom: 1px;
+    }
 }

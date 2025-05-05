@@ -52,11 +52,11 @@
     text-align: left;
     font-size: 0.9rem;
     font-family: var(--textfont);
-    margin: auto;
     border: var(--text) 1px solid;
     padding: 10px;
     background-color: var(--altbackground);
     max-width: 30%;
+    margin: auto;
 }
 
 .imgcontainer {

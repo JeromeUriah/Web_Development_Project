@@ -19,3 +19,10 @@
 .card-container {
     height: 80vh;
 }
+
+@media (max-width: 800px) {
+    .card-container {
+        height: 30%;
+    }
+
+}

@@ -1,0 +1,76 @@
+.textblock {
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+    padding-top: 100px;
+}
+
+.textblock p,h5{
+    margin-top: 4vh;
+}
+
+.start {
+    color: var(--bright);
+}
+
+mark {
+    color: var(--bright);
+    border: 1px solid var(--bright);
+}
+
+.article {
+    width: 80%;
+    float: left;
+    text-align: left;
+}
+
+.articlejump{
+    width: 10vw;
+    position: fixed;
+    right: 0;
+    text-align: left;
+}
+
+.articlejump a{
+    color: var(--text);
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.articlejump a:hover{
+    background-color: var(--dark);
+}
+
+.linkedcontent p{
+    margin-top: 2vh;
+    padding-left: 15px;
+}
+.accordioncontainer {
+    margin: 0;
+    margin-top: 2vh;
+}
+
+.imagesdisplay {
+    display:inline-block;
+    margin-top: 4vh;
+    width: 100vw;
+}
+
+.imagesdisplay img{
+    height: 30vh;
+}
+
+.card img{
+    height: 20vh;
+}
+
+@media (max-width:800px) {
+    .article {
+        width: 70%;
+    }
+    .articlejump{
+        width: 30vw;
+    }
+}

@@ -58,7 +58,9 @@
     height: 100vh;
     margin-top: 5vh;
 }
-
+.alignment {
+    text-align: left;
+}
 @media (max-width:800px) {
     .right{
         width: 100%;

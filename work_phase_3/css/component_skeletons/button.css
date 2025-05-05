@@ -1,0 +1,83 @@
+button {
+    background-color: var(--bright);
+    padding: 5px;
+    color: var(--text);
+    border-radius: 20px;
+    border: var(--dark);
+    min-width: 5vw;
+}
+
+button:hover {
+    background-color: var(--ash);
+    border: none;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.smallbutton{
+    width: fit-content;
+    display: inline-flex;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: solid var(--text) 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.searchbutton{
+    width: 10vw;
+    display: inline-flex;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: solid var(--text) 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.accountbutton{
+    width: fit-content;
+    display: inline-flex;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: var(--ash);
+    color: var(--text);
+}
+
+a:active {
+    transform: scale(0.9);
+}
+
+.material-icons-round.inbutton{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.material-icons-round.navbutton{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--text);
+}
+
+
+.badge {
+    position: absolute;
+    padding: 2px;
+    min-width: 5px;
+    min-height: 10px;
+    border-radius: 50%;
+    background: var(--bright);
+    color: white;
+    font-size: 0.5rem;
+    margin-left: 1.5rem;
+}

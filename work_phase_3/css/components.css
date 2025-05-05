@@ -3,6 +3,8 @@
 @import '../css/component_skeletons/swiper.css';
 @import '../css/component_skeletons/imagegallery.css';
 @import '../css/component_skeletons/breadcrumb.css';
+@import '../css/component_skeletons/button.css';
+@import '../css/component_skeletons/form.css';
 
 * {
     padding: 0;
@@ -103,6 +105,10 @@ li a:hover {
     background-color: var(--charcoal);
     padding: 1px;
     border-radius: 20px;
+}
+
+.buttonscontainer{
+    display: block;
 }
 
 @media (max-width:800px) {

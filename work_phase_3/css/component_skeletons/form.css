@@ -1,0 +1,22 @@
+label {
+    font-family: var(--textfont);
+    color: var(--text);
+    font-size: 1rem;
+    width: 20vw;
+}
+
+form {
+    display: block;
+    margin: auto;
+    width: min-content;
+    padding: 5px;
+}
+
+.individualform{
+    margin-bottom: 2px;
+}
+
+.individualform.submit {
+    margin: 0 auto;
+    text-align: right;
+}

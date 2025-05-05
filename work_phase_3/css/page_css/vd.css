@@ -14,8 +14,6 @@
         gap: 0.5%;
 }
 
-
-
 .Colorbox.textcolor {
     background-color: var(--text);
     border: 1px var(--dark) dotted;
@@ -81,4 +79,45 @@
 
 .accordioncontainer {
     width: 100%;
+}
+
+.typographydisplay{
+    width: 70%;
+    margin: 5px auto;
+    text-align: left;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px var(--ash);
+}
+
+.typographydisplay h1 {
+    font-size: 2.5rem;
+}
+
+.typographydisplay h2 {
+    font-size: 2rem;
+}
+
+.typographydisplay h3 {
+    font-size: 1.75rem;
+}
+
+.typographydisplay h4 {
+    font-size: 1.5rem;
+}
+
+.typographydisplay h5 {
+    font-size: 1.25rem;
+}
+
+.typographydisplay h6 {
+    font-size: 1rem;
+}
+
+.dividerpanel {
+    width: 99%;
+    height: 2.5px;
+    border-radius: 20px;
+    background: var(--text);
+    margin: 10px auto;
 }

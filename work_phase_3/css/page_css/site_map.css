@@ -42,3 +42,7 @@
 .imageresized{
     object-fit: contain;
 }
+
+#caption{
+    margin: auto;
+}
