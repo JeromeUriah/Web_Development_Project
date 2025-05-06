@@ -1,0 +1,20 @@
+mark {
+    color: var(--bright);
+    border: 1px solid var(--bright);
+}
+
+p,h1,h2,h3,h4,h5 {
+    line-height: 4vh;
+}
+
+.textblock {
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    line-height: 4vh;
+    margin-top: 55px;
+}
