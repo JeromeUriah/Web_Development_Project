@@ -1,0 +1,13 @@
+img {
+    display: block;
+    margin: auto;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.contentblock{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}

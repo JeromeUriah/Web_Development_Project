@@ -1,0 +1,20 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--textfont);
+    width: 100vw;
+    margin-top: 5vh;
+}
+
+.divider {
+    width: 50%;
+    height: 2.5px;
+    border-radius: 20px;
+    background: var(--text);
+    margin: 10px auto;
+    margin-bottom: 1%;
+}
+@media (max-width:800px) {
+
+    }

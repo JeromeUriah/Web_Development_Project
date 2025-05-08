@@ -1,0 +1,10 @@
+@import '../css/skeletons/swiper.css';
+
+.divider {
+    width: 50%;
+    height: 2.5px;
+    border-radius: 20px;
+    background: var(--text);
+    margin: 10px auto;
+    margin-bottom: 1%;
+}
