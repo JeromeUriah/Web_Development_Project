@@ -1,5 +1,8 @@
 @import '../css/skeletons/swiper.css';
 @import '../css/skeletons/searchbar.css';
+@import '../css/skeletons/topicsnavigation.css';
+@import '../css/skeletons/menu.css';
+
 
 .divider {
     width: 50%;

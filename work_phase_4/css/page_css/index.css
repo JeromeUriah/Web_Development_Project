@@ -11,3 +11,8 @@ img {
     align-items: center;
     text-align: center;
 }
+
+.material-icons-round {
+    color: var(--bright);
+    font-size: 5rem;
+}

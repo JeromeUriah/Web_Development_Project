@@ -1,8 +1,35 @@
-.topic-navigation {
-    display: inline;
+.topicnavigation {
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
 }
 
-.topic-navigation li{
-    float:left;
-    width: 10%;
+.topicnavigation a{
+    float: left;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    margin-top: 0;
 }
+
+.topicnavigation a:hover{
+    color: var(--bright);
+    cursor: pointer;
+    transform: scale(1.5);
+    border-bottom: solid 1px var(--bright);
+}
+
+.topicnavigation a:active{
+    transform: scale(1.2);
+    border-bottom: none;
+}
+
+.topicblock {
+    height: 2vw;
+    width: 70vw;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1vh;
+    border-bottom: 1px solid var(--text);
+}
+

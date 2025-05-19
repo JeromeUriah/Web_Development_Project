@@ -1,0 +1,33 @@
+
+#Menu a{
+    text-decoration: none;
+    font-weight: normal;
+    width: 85%;
+    display: block;
+    margin-top: 0;
+    padding: 5%;
+    color: var(--bright);
+}
+
+.material-icons-round {
+    margin-right: 5%;
+    vertical-align: bottom;
+}
+
+#Menu a:hover{
+    transform: scale(1.1);
+    background-color: var(--altbackground);
+    color: var(--text);
+    border-radius: 20px;
+}
+
+.activepage {
+    background-color: var(--navbar);
+    color: var(--text) !important;
+    border-radius: 20px;
+}
+
+.activepage::after {
+    content: "\2770";
+    padding-left: 5px;
+}
