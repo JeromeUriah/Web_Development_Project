@@ -1,0 +1,8 @@
+.topic-navigation {
+    display: inline;
+}
+
+.topic-navigation li{
+    float:left;
+    width: 10%;
+}
