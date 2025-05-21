@@ -4,5 +4,6 @@ input[type=text] {
     margin-top: 8px;
     margin-right: 16px;
     border-radius: 20px;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    width: 20vw;
 }
