@@ -22,12 +22,13 @@
 .imagestrip {
     height: 30%;
     white-space:nowrap; 
-    overflow: hidden; /* enables horizontal scroll if needed */
+    overflow: hidden; 
     margin-top: 20px;
 }
 
-.imagestrip img{
-    height: 50vh; /* adjust to your desired strip height */
-    object-fit: cover;
-    object-position: bottom;
+.imagestrip.members {
+    background: url(../../Assets/icons/membercard.jpg);
+    height: 20%;
+    background-position: bottom;
 }
+
