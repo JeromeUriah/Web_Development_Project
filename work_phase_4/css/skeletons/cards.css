@@ -1,0 +1,33 @@
+.cardscontainer {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 1%;
+}
+
+.cards {
+    background-color: var(--ash);
+    height: 40vw;
+    width: 20vw;
+    border-radius: 20px;
+    text-align: center;
+    border: solid 1px var(--text);
+    display: block;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.imagestrip {
+    height: 30%;
+    white-space:nowrap; 
+    overflow: hidden; /* enables horizontal scroll if needed */
+    margin-top: 20px;
+}
+
+.imagestrip img{
+    height: 50vh; /* adjust to your desired strip height */
+    object-fit: cover;
+    object-position: bottom;
+}

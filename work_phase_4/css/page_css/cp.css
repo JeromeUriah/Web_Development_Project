@@ -2,3 +2,9 @@
     background-color: var(--bright);
     border-radius: 0;
 }
+
+.CommunityGuidlines {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}

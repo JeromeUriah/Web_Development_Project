@@ -1,9 +1,9 @@
-input[type=text] {
+.search {
     padding: 6px;
     border: none;
-    margin-top: 8px;
-    margin-right: 16px;
+    margin: auto;
     border-radius: 20px;
     font-size: 0.9rem;
     width: 20vw;
+    margin-top: 0.5%;
 }

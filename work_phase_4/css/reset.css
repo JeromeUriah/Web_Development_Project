@@ -1,0 +1,57 @@
+/* Reset all margins, paddings, and borders */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Reset anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset heading and paragraph font styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove table spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset form elements */
+button,
+a {
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+    appearance: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default body styles */
+body {
+    line-height: 1;
+    font-family: sans-serif;
+    background: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}

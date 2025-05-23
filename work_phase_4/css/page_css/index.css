@@ -12,9 +12,47 @@ img {
     text-align: center;
 }
 
-
 .title {
     font-size: 7rem;
     line-height: 0;
     margin-top: 6vh;
+}
+.material-icons-round.indexpage {
+    color: var(--text);
+}
+
+.topicnavigation a{
+    min-height: 3vh;
+    padding: 2px;   
+    text-align: center;
+}
+
+.homebutton {
+    background-color: var(--bright);
+    text-decoration: none;
+    width: 10vw;
+}
+
+.topicblock {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.homebutton {
+    padding: 2px;
+    background-color: var(--bright);
+    color: var(--text);
+    width: 100%;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: solid 1px var(--text);
+    text-decoration: none;
+}
+
+.homebutton:hover {
+    transform: scale(0.9);
+}
+
+.material-icons-round.arrow{
+    font-size: 5rem;
 }

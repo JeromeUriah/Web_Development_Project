@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Community</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="../pwa_icons/ios/120.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../pwa_icons/ios/180.png"/>
+    <!-- iPad -->
+    <link rel="apple-touch-icon" sizes="76x76" href="../pwa_icons/ios/76.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="../pwa_icons/ios/152.png"/>
+    <!-- iPad Pro -->
+    <link rel="apple-touch-icon" sizes="167x167" href="../pwa_icons/ios/167.png"/>
+    <!-- Standard favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../pwa_icons/ios/16.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../work_phase_4/css/base.css">
+    <link rel="stylesheet" href="../work_phase_4/css/layout.css">
+    <link rel="stylesheet" href="../work_phase_4/css/components.css">
+    <link rel="stylesheet" href="../work_phase_4/css/page_css/cp.css">
+
+    <!--Importing Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <!--Importing Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a class="accounticon"><span class="material-icons-round navbutton">account_circle</span></a>
+        <a class="accounticon"><span class="material-icons-round navbutton1">email</span></a>
+    </div>
+    <div class="sidebar">
+        <nav id="Menu">
+            <a href="../work_phase_4/index.html" ><span class="material-icons-round">home</span>DAILY TRENDING</a>
+            <a href="../work_phase_4/sharedspace.html"><span class="material-icons-round">comment</span>SHARED SPACE</a>
+            <a><span class="material-icons-round">calendar_month</span>EVENTS HUB</a>
+            <a><span class="material-icons-round">logo_dev</span>RESOURCE HUB</a>
+            <div class="dropdown">
+                <a href="../work_phase_4/communityhub.html" class="dropbtn active"><span class="material-icons-round" >groups</span>COMMUNITY</a>
+                <div class="dropdown-content">
+                    <a href="../work_phase_4/communitypage.html">Community Rules</a>
+                    <a href="../work_phase_4/members.html">Members</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="sharedspace">
+            <div class="right">
+                <div class="cardscontainer">
+                    <a href="../work_phase_4/communitypage.html" class="cards guidelines">
+                        <div class="imagestrip">
+                            <img src="../work_phase_4/Assets/icons/guidelinescard.jpg">
+                        </div>
+                        <p>View our guidelines to see how we keep our community safe and welcoming!</p>
+                        <h2>Community Guidelines</h2>
+                    </a>
+                    <a href="../work_phase_4/members.html" class="cards members">
+                        <div class="imagestrip">
+                            <img src="../work_phase_4/Assets/icons/membercard.jpg">
+                        </div>
+                        <p>View Our Community Members!</p>
+                        <h2>Members</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="announcements">
+                <p>Announcements</p>
+                <div>
+                    <form id="community-form" enctype="multipart/form-data">
+                                    <h5>Welcome to the community!</h5>
+                                    <div class="individualform">
+                                        <label for="name">Full Name:</label>
+                                        <input type="text" id="name" name="name" required />
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" name="email" required />
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="message">Message (Optional):</label>
+                                        <textarea id="message" name="message"></textarea>
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="photo">Upload Photo (Optional, Max 10MB):</label>
+                                        <input type="file" id="photo" name="photo" accept="image/*" />
+                                    </div>
+                                    <div class="individualform submit">
+                                        <button type="submit">Join the Community</button>
+                                    </div>
+                                    <!-- Feedback message area -->
+                                </form>
+                                <p id="form-feedback" aria-live="polite"></p>
+                </div>
+            </div>
+    </div>    
+    <div>
+        <script type="module" src="../work_phase_4/js/bd.js"></script>
+    </div>
+
+</body>
+</html>

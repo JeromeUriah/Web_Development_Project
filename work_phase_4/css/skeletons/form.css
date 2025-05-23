@@ -1,0 +1,8 @@
+label {
+    color: var(--text);
+}
+
+form input {
+    width: 10vw;
+    border-radius: 20px;
+}

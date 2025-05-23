@@ -1,8 +1,12 @@
-@import '../css/skeletons/swiper.css';
+
 @import '../css/skeletons/searchbar.css';
 @import '../css/skeletons/topicsnavigation.css';
 @import '../css/skeletons/menu.css';
-
+@import '../css/skeletons/breadcrumb.css';
+@import '../css/skeletons/cards.css';
+@import '../css/skeletons/form.css';
+@import '../css/skeletons/card.css';
+@import '../css/skeletons/swiper.css';
 
 .divider {
     width: 50%;
@@ -27,13 +31,13 @@
 
 .material-icons-round.navbutton {
     color: var(--bright);
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-right: 10px;
 }
 
 .material-icons-round.navbutton1 {
     color: var(--bright);
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .accounticon {
@@ -44,5 +48,23 @@
 
 .accounticon:hover {
     cursor: pointer;
+    transform: scale(0.9);
+}
+
+button {
+    background-color: var(--bright);
+    padding: 5px;
+    color: var(--text);
+    border-radius: 20px;
+    border: var(--dark);
+    min-width: 5vw;
+}
+
+button:hover {
+    background-color: var(--ash);
+    border: none;
+}
+
+button:active {
     transform: scale(0.9);
 }

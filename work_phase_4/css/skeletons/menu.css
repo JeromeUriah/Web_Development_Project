@@ -4,9 +4,10 @@
     font-weight: normal;
     width: 85%;
     display: block;
-    margin-top: 0;
+    margin-top: 5px;
     padding: 5%;
     color: var(--bright);
+
 }
 
 .material-icons-round {
@@ -30,4 +31,51 @@
 .activepage::after {
     content: "\2770";
     padding-left: 5px;
+}
+
+.dropbtn {
+    text-decoration: none;
+    font-weight: normal;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    padding: 5%;
+    color: var(--bright);
+}
+
+.dropdown {
+    text-decoration: none;
+    font-weight: normal;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    color: var(--bright);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn.active {
+    background-color: var(--navbar);
+    color: var(--text);
+    border-radius: 20px;
+}
+
+.dropbtn.active::after{
+    content: "\2770";
+    padding-left: 5px;
+}
+
+.dropdown-content a {
+    text-align: end;
+    margin-top: 10px;
+    width: 100%;
 }

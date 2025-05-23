@@ -13,11 +13,19 @@
     --color4: #005B41;
     --color5:#2D9CCB;
     --highlights: #913175;
+    --ebony: #474E68;
+    --forest: #18230F;
+    --ash: #666362;
+    --charcoal: #36454F;
+    --oil: #3B3131;
+    --mark: #9863be;
 }
 
 body{
     background-color: var(--dark);
     word-break: normal;
+    margin: 0;
+    display: block;
 }
 
 h1,h2,h3,h4,h5,p,a,li,ol,i{
@@ -25,6 +33,7 @@ h1,h2,h3,h4,h5,p,a,li,ol,i{
     font-family: var(--textfont);
     margin-top: 4vh;
     line-height: 1.1;
+    text-decoration: none;
 }
 h1 {
     font-size: 2.5rem;
