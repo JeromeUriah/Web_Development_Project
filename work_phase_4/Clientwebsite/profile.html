@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shared Space</title>
+    <title>Profile</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png"/>
     <link rel="apple-touch-icon" sizes="120x120" href="../pwa_icons/ios/120.png"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../pwa_icons/ios/180.png"/>
@@ -19,11 +19,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/page_css/ss.css">
+    <link rel="stylesheet" href="../css/page_css/profile.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!--Importing Fonts-->
@@ -35,14 +35,13 @@
 </head>
 <body>
     <div class="header">
-        <input class="search" type="text" placeholder="Search..">
-        <a class="accounticon" href="../Clientwebsite/profile.html"><span class="material-icons-round navbutton">account_circle</span></a>
+        <a class="accounticon"><span class="material-icons-round navbutton">account_circle</span></a>
         <a class="accounticon"><span class="material-icons-round navbutton1">email</span></a>
     </div>
     <div class="sidebar">
         <nav id="Menu">
             <a href="../Clientwebsite/landing.html" ><span class="material-icons-round">home</span>DAILY TRENDING</a>
-            <a href="../Clientwebsite/sharedspace.html" class="activepage"><span class="material-icons-round" class="activepage">comment</span>SHARED SPACE</a>
+            <a href="../Clientwebsite/sharedspace.html"><span class="material-icons-round" class="activepage">comment</span>SHARED SPACE</a>
             <a><span class="material-icons-round">calendar_month</span>EVENTS HUB</a>
             <a><span class="material-icons-round">logo_dev</span>RESOURCE HUB</a>
             <div class="dropdown">
@@ -55,49 +54,15 @@
         </nav>
     </div>
     <div class="sharedspace">
-        <div class="right">
-            <div class="topicnavigation">
-                <a>Topic</a>
-                <a>Topic</a>
-                <a>Topic</a>
-            </div>
-                <p>Main Content</p>
-            </div>
-            <div class="announcements">
-                <p>Announcements</p>
-                <div>
-                    <form id="community-form" enctype="multipart/form-data">
-                                    <h5>Welcome to the community!</h5>
-                                    <div class="individualform">
-                                        <label for="name">Full Name:</label>
-                                        <input type="text" id="name" name="name" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="email">Email:</label>
-                                        <input type="text" id="email" name="email" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="message">Message (Optional):</label>
-                                        <textarea id="message" name="message"></textarea>
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="photo">Upload Photo (Optional, Max 10MB):</label>
-                                        <input type="file" id="photo" name="photo" accept="image/*" />
-                                    </div>
-                                    <div class="individualform submit">
-                                        <button type="submit">Join the Community</button>
-                                    </div>
-                                    <!-- Feedback message area -->
-                                </form>
-                                <p id="form-feedback" aria-live="polite"></p>
+            <div class="right">
+                <div class="profilehero">
+                    <p>Test</p>
                 </div>
             </div>
     </div>    
     <div>
         <script type="module" src="../js/bd.js"></script>
     </div>
-        
-        
-</body>
 
+</body>
 </html>

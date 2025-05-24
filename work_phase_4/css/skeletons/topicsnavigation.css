@@ -1,6 +1,5 @@
 .topicnavigation {
     width: 70vw;
-    margin: 0 auto;
     text-align: center;
     display: block;
 }
@@ -21,13 +20,5 @@
 .topicnavigation a:active{
     transform: scale(1.2);
     border-bottom: none;
-}
-
-.topicblock {
-    height: 2vw;
-    width: 70vw;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 1vh;
 }
 

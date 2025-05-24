@@ -1,0 +1,9 @@
+.topicnavigation {
+    margin-top: 5vh;
+    width: 100%;
+    text-align: left;
+    display: block;
+}
+.topicnavigation a{
+    float: none;
+}

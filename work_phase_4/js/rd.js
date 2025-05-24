@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-            <img src="${member.photo}" class="card-img-top" alt="User Photo" onerror="this.src='../work_phase_4/Assets/icons/default.jpg'">
+            <img src="${member.photo}" class="card-img-top" alt="User Photo" onerror="this.src='../../work_phase_4/Assets/icons/default.jpg'">
             <h5 class="card-title">${member.name}</h5>
             <p class="card-text">${member.message || 'No message provided.'}</p>
         `;
