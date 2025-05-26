@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shared Space</title>
+    <title>Events Hub</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png"/>
     <link rel="apple-touch-icon" sizes="120x120" href="../pwa_icons/ios/120.png"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../pwa_icons/ios/180.png"/>
@@ -19,11 +19,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
-    <link rel="stylesheet" href="../css/page_css/ss.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!--Importing Fonts-->
@@ -35,15 +34,14 @@
 </head>
 <body>
     <div class="header">
-        <input class="search" type="text" placeholder="Search..">
         <a class="accounticon" href="../Clientwebsite/profile.html"><span class="material-icons-round navbutton">account_circle</span></a>
         <a class="accounticon"><span class="material-icons-round navbutton1">email</span></a>
     </div>
     <div class="sidebar">
         <nav id="Menu">
             <a href="../Clientwebsite/landing.html" ><span class="material-icons-round">home</span>DAILY TRENDING</a>
-            <a href="../Clientwebsite/sharedspace.html" class="activepage"><span class="material-icons-round" class="activepage">comment</span>SHARED SPACE</a>
-            <a href="../Clientwebsite/eventshub.html"> <span class="material-icons-round">calendar_month</span>EVENTS HUB</a>
+            <a href="../Clientwebsite/sharedspace.html" ><span class="material-icons-round" class="activepage">comment</span>SHARED SPACE</a>
+            <a href="../Clientwebsite/eventshub.html" class="activepage"><span class="material-icons-round">calendar_month</span>EVENTS HUB</a>
             <a><span class="material-icons-round">logo_dev</span>RESOURCE HUB</a>
             <div class="dropdown">
                 <a href="../Clientwebsite/communityhub.html" class="dropbtn"><span class="material-icons-round">groups</span>COMMUNITY</a>
@@ -55,40 +53,56 @@
         </nav>
     </div>
     <div class="sharedspace">
-        <div class="right">
-            <div class="topicnavigation">
-                <a>Topic</a>
-                <a>Topic</a>
-                <a>Topic</a>
-            </div>
-            <div class="postcard">
-                <p>We're thrilled to welcome you to a space built for creators, thinkers, and enthusiasts shaping the future of technology. Whether you're passionate about AI, robotics, cybersecurity, software development, or the next big tech trend—this is your community.</p>
-                <p>This platform is designed to help you: Share ideas and insights with fellow innovators</p>
-                    <p>Discover community-led events and workshops</p>
-                    <p>Access and contribute to valuable resources</p>
-                    <p>Engage in discussions that matter to you</p>
-                <p>Our goal is to support meaningful connection, collaboration, and inspiration within the tech community—while remaining open and accessible to everyone curious about the power of innovation.</p>
-                <p>Let’s build, learn, and grow together. Start exploring, start contributing, and most of all—stay curious.</p>
-                <div class="postbuttons">
-                    <button class="smallbutton" aria="like the post"><span class="material-icons-round inbutton">thumb_up</span>10</button>
-                    <button class="smallbutton" aria="comment on the post"><span class="material-icons-round inbutton">chat_bubble_outline</span>15</button>
-                    <div class="spacing"></div>
-                    <button class="smallbutton" aria="Share the post">Share</button>
-                    <button class="smallbutton" aria="Report the post" >Report</button>
+            <div class="right">
+                <h1>Events Hub</h1>
+                <div>
+                    <form id="event-form" enctype="multipart/form-data">
+                                    <h5>Create A New Event!</h5>
+                                    <div class="individualform">
+                                        <label for="event_name">Event Name:</label>
+                                        <input type="text" id="event_name" name="event_name" required />
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="location">Location:</label>
+                                        <input type="text" id="location" name="location" required />
+                                    </div>
+                                    <div class="organiser">
+                                        <label for="organiser">Organiser:</label>
+                                        <input type="text" id="organiser" name="organiser" required />
+                                    </div>
+                                    <div class="event_type">
+                                        <label for="event_type">Event Type:</label>
+                                        <input type="text" id="event_type" name="event_type" required />
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="date_time">Date And Time:</label>
+                                        <input type="datetime-local" id="date_time" name="date_time" required />
+                                    </div>                                    
+                                    <div class="individualform">
+                                        <label for="description">Description:</label>
+                                        <textarea id="description" name="description" required></textarea>
+                                    </div>
+
+                                    <div class="individualform">
+                                        <label for="genericevent_photo">Upload Photo (Optional, Max 10MB):</label>
+                                        <input type="file" id="genericevent_photo" name="genericevent_photo" accept="image/*" />
+                                    </div>
+                                    <div class="individualform submit">
+                                        <button type="submit">Create your Event</button>
+                                    </div>
+                                    <!-- Feedback message area -->
+                                </form>
+                                <p id="form-feedback" aria-live="polite"></p>
                 </div>
-            </div>
+                <div>
+                <h1>Events Happening Right Now!</h1>
+                <section id="event-list">
+                                    
+                </section>
+                </div>
             </div>
             <div class="announcements">
-                <h5>Announcements</h5>
-                <div class="annoucementcard">
-                    <div class="announcmentimg">
-                        <img src="../Assets/icons/default.jpg">
-                    </div>
-                    <div class="announcmenttext">
-                        <p>Welcome</p>
-                    </div>
-                    
-                </div>
+                <p>Announcements</p>
                 <div>
                     <form id="community-form" enctype="multipart/form-data">
                                     <h5>Welcome to the community!</h5>
@@ -115,13 +129,14 @@
                                 </form>
                                 <p id="form-feedback" aria-live="polite"></p>
                 </div>
+                
             </div>
     </div>    
     <div>
         <script type="module" src="../js/bd.js"></script>
+        <script type="module" src="../js/event.js"></script>
+        <script type="module" src="../js/getevent.js"></script>
     </div>
-        
-        
-</body>
 
+</body>
 </html>

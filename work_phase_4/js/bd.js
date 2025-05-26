@@ -1,4 +1,4 @@
-import { postFormData } from "../js/modules/postFormData";
+import { postFormData } from "../js/modules/postFormData.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("community-form");

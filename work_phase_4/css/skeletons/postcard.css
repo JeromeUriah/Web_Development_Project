@@ -1,0 +1,35 @@
+.postcard {
+    border-bottom : solid 1px var(--text);
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.postcard p {
+    margin-top: 0;
+    line-height: 1;
+    vertical-align: bottom;
+    align-content: baseline;
+}
+
+.postbuttons{
+    display: grid;
+    grid-template-columns: 5% 5% auto 5% 5%;
+}
+
+.smallbutton {
+    width: fit-content;
+    display: inline-flex;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: solid var(--text) 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: var(--text);
+    cursor: pointer;
+    background-color: var(--dark);
+    min-width: 50%;
+}
+
+.material-icons-round.inbutton {
+    color: var(--text);
+}

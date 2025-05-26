@@ -1,0 +1,13 @@
+.annoucementcard {
+    width: 90%;
+    padding: 1%;
+    background-color: var(--ash);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.announcmentimg img {
+    width: 100%;
+    height: 100%;
+}
