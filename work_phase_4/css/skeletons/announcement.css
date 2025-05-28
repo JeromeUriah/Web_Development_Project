@@ -9,5 +9,52 @@
 
 .announcmentimg img {
     width: 100%;
-    height: 100%;
+}
+
+.announcmentimg.main img {
+    width:100%;
+}
+
+.announcmenttext{
+    padding: 1%;
+    display: grid;
+    grid-template-rows: 10% 10% auto 10%;
+}
+
+.announcmenttpreview{
+    padding: 1%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.announcmenttext p{
+    line-height: 1.3;
+    margin-top: 0;
+}
+
+.announcmentdetails {
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+
+.announcementdate {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 10%;
+}
+
+.announcementdate p {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.announcmenttitle h3 {
+    margin-top: 0;
+}
+
+.announcmenttitle p {
+    margin-top: 0;
+}
+.announcmenttpreview p {
+    margin-top: 0;
 }

@@ -31,6 +31,12 @@
     background-size: cover;
 }
 
+.cards.announcement {
+    background-image: url("../../Assets/icons/announcments.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .cardtext {
     background-color: var(--ash);
     margin: 5px;

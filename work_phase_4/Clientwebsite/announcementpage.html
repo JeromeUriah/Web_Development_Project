@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Members</title>
+    <title>Announcements</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png"/>
     <link rel="apple-touch-icon" sizes="120x120" href="../pwa_icons/ios/120.png"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../pwa_icons/ios/180.png"/>
@@ -19,10 +19,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/page_css/announcementpage.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!--Importing Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,11 +41,11 @@
     <div class="sidebar">
         <nav id="Menu">
             <a href="../Clientwebsite/landing.html" ><span class="material-icons-round">home</span>DAILY TRENDING</a>
-            <a href="../Clientwebsite/sharedspace.html" class="activepage"><span class="material-icons-round" class="activepage">comment</span>SHARED SPACE</a>
+            <a href="../Clientwebsite/sharedspace.html" ><span class="material-icons-round" class="activepage">comment</span>SHARED SPACE</a>
             <a href="../Clientwebsite/eventshub.html"><span class="material-icons-round">calendar_month</span>EVENTS HUB</a>
             <a><span class="material-icons-round">logo_dev</span>RESOURCE HUB</a>
             <div class="dropdown">
-                <a href="../Clientwebsite/communityhub.html" class="dropbtn"><span class="material-icons-round">groups</span>COMMUNITY</a>
+                <a href="../Clientwebsite/communityhub.html" class="dropbtn" ><span class="material-icons-round">groups</span>COMMUNITY</a>
                 <div class="dropdown-content">
                     <a href="../Clientwebsite/communitypage.html">Community Rules</a>
                     <a href="../Clientwebsite/members.html">Members</a>
@@ -54,49 +56,43 @@
     </div>
     <div class="sharedspace">
             <div class="right">
-            <ul class="breadcrumb">
-                <li><a href="../Clientwebsite/communityhub.html">Community</a></li>
-                <li>Members</li>
-            </ul>
-                <h1>Meet the Members!</h1>
-                <section id="community-list">
-                                    
-                </section>
-            </div>
-            <div class="announcements">
-                <p>Announcements</p>
-                <div>
-                    <form id="community-form" enctype="multipart/form-data">
-                                    <h5>Welcome to the community!</h5>
-                                    <div class="individualform">
-                                        <label for="name">Full Name:</label>
-                                        <input type="text" id="name" name="name" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="email">Email:</label>
-                                        <input type="text" id="email" name="email" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="message">Message (Optional):</label>
-                                        <textarea id="message" name="message"></textarea>
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="photo">Upload Photo (Optional, Max 10MB):</label>
-                                        <input type="file" id="photo" name="photo" accept="image/*" />
-                                    </div>
-                                    <div class="individualform submit">
-                                        <button type="submit">Join the Community</button>
-                                    </div>
-                                    <!-- Feedback message area -->
-                                </form>
-                                <p id="form-feedback" aria-live="polite"></p>
+            <h1>Announcements</h1>
+
+                <div class="annoucementcard mainpage">
+                    <div class="announcmentimg main">
+                        <img src="../Assets/icons/announcments.jpg">
+                    </div>
+                    <div class="announcmenttext">
+                        
+                        <div>
+                            <p>The [SITENAME] Team</p>
+                        </div>
+                        <div class="announcmenttitle">
+                            <h3>Welcome to SITENAME</h3>
+                        </div>
+                        <div>
+                            <p><mark class="articlemark">W</mark>e're thrilled to welcome you to a space built for creators, thinkers, and enthusiasts shaping the future of technology. Whether you're passionate about AI, robotics, cybersecurity, software development, or the next big tech trend—this is your community.</p>
+                            <p>This platform is designed to help you: </p>
+                            <p>Share ideas and insights with fellow innovators</p>
+                            <p>Discover community-led events and workshops</p>
+                            <p>Access and contribute to valuable resources</p>
+                            <p>Engage in discussions that matter to you</p>
+                            <p>Our goal is to support meaningful connection, collaboration, and inspiration within the tech community—while remaining open and accessible to everyone curious about the power of innovation.</p>
+                            <p>Let’s build, learn, and grow together. Start exploring, start contributing, and most of all—stay curious.</p>
+                        </div>
+                        <div class="announcementdate">
+                            <div></div>
+                            <div><p>27/05/2025 00:00</p></div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
     </div>    
     <div>
         <script type="module" src="../js/bd.js"></script>
-        <script type="module" src="../js/rd.js"></script>
     </div>
 
 </body>
 </html>
+

@@ -9,6 +9,7 @@
 @import '../css/skeletons/swiper.css';
 @import '../css/skeletons/announcement.css';
 @import '../css/skeletons/postcard.css';
+@import '../css/skeletons/commentblock.css';
 
 .divider {
     width: 50%;

@@ -1,35 +1,135 @@
-.postcard {
-    border-bottom : solid 1px var(--text);
+.onepost {
+    display: block;
     margin-top: 2%;
     padding: 1%;
+    border-bottom: solid 1px var(--text);
+}
+
+.onepost.main{
+    border-bottom: none;
+    
+}
+.onepost.main p{
+    margin-top: 0;
+} 
+
+.postcard {
+    display: block;
+    width: 90%;
+    padding: 1%;
+    margin: auto;
+}
+
+.postcard.main{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.postcard:hover {
+    background-color: var(--navbar);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.postcard h3 {
+    margin-top: 0;
 }
 
 .postcard p {
     margin-top: 0;
     line-height: 1;
-    vertical-align: bottom;
-    align-content: baseline;
 }
 
 .postbuttons{
     display: grid;
-    grid-template-columns: 5% 5% auto 5% 5%;
+    grid-template-columns: 5% 5% 5% 5% auto;
 }
 
 .smallbutton {
-    width: fit-content;
     display: inline-flex;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 20px;
+    padding: 10%;
     border: solid var(--text) 1px;
-    padding-left: 8px;
-    padding-right: 8px;
     color: var(--text);
     cursor: pointer;
     background-color: var(--dark);
     min-width: 50%;
+    margin-right: 10%;
+}
+
+.medbutton {
+    font-size: 0.8rem;
+    border-radius: 20px;
+    padding: 10%;
+    border: solid var(--text) 1px;
+    color: var(--text);
+    cursor: pointer;
+    background-color: var(--dark);
+    min-width: 0;
+    text-align: center;
+    margin-right: 10%;
 }
 
 .material-icons-round.inbutton {
     color: var(--text);
+    font-size: 1rem;
+}
+
+.material-icons-round.subbutton {
+    color: var(--text);
+    font-size: 1rem;
+}
+
+.postdetails {
+    display: grid;
+    grid-template-columns: 3% 30% auto 5%;
+}
+
+.poster {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+}
+
+.poster p::after {
+    padding-left: 2%;
+    content: "\275A";
+}
+
+.topictagging {
+    display: flex;
+}
+.topicdisplay {
+    text-align: center;
+}
+
+.topicdisplay p {
+    border: solid 1px var(--text);
+}
+
+.topicofpost {
+    border: 1px solid var(--text);
+    text-align: center;
+    padding: 1%;
+    width: 100%;
+    height: fit-content;
+}
+
+.profilepic img{
+    width: 30px;
+    height: 30px;   
+    align-items: center;
+    border-radius: 20px;
+}
+
+.profilepic{
+    margin: auto;
+}
+
+.authordetails p {
+    margin-left: 1%;
 }

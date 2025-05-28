@@ -1,0 +1,4 @@
+.annoucementcard.mainpage {
+    background-color: var(--dark);
+    border: solid 1px var(--text);
+}

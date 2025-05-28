@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Members</title>
+    <title>Test Post</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png"/>
     <link rel="apple-touch-icon" sizes="120x120" href="../pwa_icons/ios/120.png"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../pwa_icons/ios/180.png"/>
@@ -19,10 +19,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/page_css/comments.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!--Importing Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +45,7 @@
             <a href="../Clientwebsite/eventshub.html"><span class="material-icons-round">calendar_month</span>EVENTS HUB</a>
             <a><span class="material-icons-round">logo_dev</span>RESOURCE HUB</a>
             <div class="dropdown">
-                <a href="../Clientwebsite/communityhub.html" class="dropbtn"><span class="material-icons-round">groups</span>COMMUNITY</a>
+                <a href="../Clientwebsite/communityhub.html" class="dropbtn"><span class="material-icons-round ">groups</span>COMMUNITY</a>
                 <div class="dropdown-content">
                     <a href="../Clientwebsite/communitypage.html">Community Rules</a>
                     <a href="../Clientwebsite/members.html">Members</a>
@@ -54,14 +56,64 @@
     </div>
     <div class="sharedspace">
             <div class="right">
-            <ul class="breadcrumb">
-                <li><a href="../Clientwebsite/communityhub.html">Community</a></li>
-                <li>Members</li>
-            </ul>
-                <h1>Meet the Members!</h1>
-                <section id="community-list">
-                                    
-                </section>
+                <a href="../Clientwebsite/sharedspace.html" class="backbtn"><span class="material-icons-round backbtn">keyboard_double_arrow_left</span> BACK</a>
+                <div class="onepost main">
+                    <div class="post" href="testpost.html">
+                        <div class="postdetails">
+                            <div class="profilepic">
+                                <img src="../Assets/icons/profileimage.jpg">
+                            </div>
+                            <div class="poster">
+                                <p>The SITENAME Team</p>
+                                <p>30/05/2027</p>
+                            </div>
+                            <div></div>
+                            <div class="topicdisplay">
+                                <p>General</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Welcome</h3>
+                    <div class="postcontents">
+                        <p>We're thrilled to welcome you to a space built for creators, thinkers, and enthusiasts shaping the future of technology. Whether you're passionate about AI, robotics, cybersecurity, software development, or the next big tech trend—this is your community.</p>
+                        <p>This platform is designed to help you:</p>
+                        <p>- Share ideas and insights with fellow innovators</p>
+                        <p>- Discover community-led events and workshops</p>
+                        <p>- Access and contribute to valuable resources</p>
+                        <p>- Engage in discussions that matter to you</p>
+                        <p>Our goal is to support meaningful connection, collaboration, and inspiration within the tech community—while remaining open and accessible to everyone curious about the power of innovation.</p>
+                        <p>Let’s build, learn, and grow together. Start exploring, start contributing, and most of all—stay curious.</p>
+                    </div>
+                    <div class="topictagging">
+                        <p class="color1">#Helpful</p>
+                        <p class="color2">#General</p>
+                        <p class="color3">#Information</p>
+                    </div>
+                </div>
+                <div class="postbuttons">
+                        <button class="smallbutton" aria="like the post"><span class="material-icons-round inbutton">thumb_up</span>10</button>
+                        <button class="smallbutton" aria="comment on the post"><span class="material-icons-round inbutton">chat_bubble_outline</span>15</button>
+                        <button class="medbutton" aria="Share the post"><span class="material-icons-round subbutton ">share</span></button>
+                        <button class="medbutton" aria="Report the post" ><span class="material-icons-round subbutton ">sentiment_dissatisfied</span></button>
+                        <div class="spacing"></div>
+                    </div>
+                    <h3 class="comments">Comments</h3>
+                <div class="commentblock">
+                    <div class="commentthread">
+                        <div class="commentdetails">
+                            <div class="profilepic">
+                                <img src="../Assets/icons/default.jpg">
+                            </div>
+                            <div class="poster">
+                                <p>IAMAHUMAN</p>
+                                <p>31/05/2027</p>
+                            </div>
+                            <div></div>
+                        </div>
+                        <p>I like it</p>
+                    </div>
+                    
+                </div>
             </div>
             <div class="announcements">
                 <p>Announcements</p>
@@ -95,7 +147,6 @@
     </div>    
     <div>
         <script type="module" src="../js/bd.js"></script>
-        <script type="module" src="../js/rd.js"></script>
     </div>
 
 </body>

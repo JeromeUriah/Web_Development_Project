@@ -8,10 +8,9 @@
     --textfont: "Instrument Serif", serif;
     --navbar: rgb(51, 51, 51);
     --color1: #F7374F;
-    --color2: #44318E;
+    --color2: #2D9CCB;
     --color3: #C07F00;
     --color4: #005B41;
-    --color5:#2D9CCB;
     --highlights: #913175;
     --ebony: #474E68;
     --forest: #18230F;
@@ -110,7 +109,4 @@ p {
 }
 .color4 {
     color: var(--color4);
-}
-.color5 {
-    color: var(--color5);
 }
