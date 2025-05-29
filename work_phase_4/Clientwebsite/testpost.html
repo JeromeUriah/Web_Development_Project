@@ -96,8 +96,12 @@
                         <button class="medbutton" aria="Share the post"><span class="material-icons-round subbutton ">share</span></button>
                         <button class="medbutton" aria="Report the post" ><span class="material-icons-round subbutton ">sentiment_dissatisfied</span></button>
                         <div class="spacing"></div>
-                    </div>
+                </div>
                     <h3 class="comments">Comments</h3>
+                <div>
+                    <input class="Newpost" type="text" placeholder="Express Your Thoughts">
+                </div>
+                <br>
                 <div class="commentblock">
                     <div class="commentthread">
                         <div class="commentdetails">
@@ -111,37 +115,14 @@
                             <div></div>
                         </div>
                         <p>I like it</p>
+                        <div class="postbuttons commentbuttons">
+                            <a class="commentsmallbutton"><span class="material-icons-round inbutton">thumb_up</span></a>
+                            <a class="commentsmallbutton" aria="comment on the post"><span class="material-icons-round inbutton">chat_bubble_outline</span></a>
+                            <a class="commentsmallbutton" aria="Report the post" ><span class="material-icons-round subbutton ">sentiment_dissatisfied</span></a>
+                            <div class="spacing"></div>
+                        </div>
                     </div>
                     
-                </div>
-            </div>
-            <div class="announcements">
-                <p>Announcements</p>
-                <div>
-                    <form id="community-form" enctype="multipart/form-data">
-                                    <h5>Welcome to the community!</h5>
-                                    <div class="individualform">
-                                        <label for="name">Full Name:</label>
-                                        <input type="text" id="name" name="name" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="email">Email:</label>
-                                        <input type="text" id="email" name="email" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="message">Message (Optional):</label>
-                                        <textarea id="message" name="message"></textarea>
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="photo">Upload Photo (Optional, Max 10MB):</label>
-                                        <input type="file" id="photo" name="photo" accept="image/*" />
-                                    </div>
-                                    <div class="individualform submit">
-                                        <button type="submit">Join the Community</button>
-                                    </div>
-                                    <!-- Feedback message area -->
-                                </form>
-                                <p id="form-feedback" aria-live="polite"></p>
                 </div>
             </div>
     </div>    
