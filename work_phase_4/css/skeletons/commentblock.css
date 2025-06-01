@@ -1,0 +1,37 @@
+.comments {
+    border-bottom: solid 1px var(--text);
+}
+
+.post {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+    margin-top: 0;
+}
+
+.backbtn {
+    margin-left: 0;
+    margin-top: 1%;
+    color: var(--bright);
+}
+
+.material-icons-round.backbtn {
+    margin-right: 0;
+}
+
+.commentdetails {
+    display: grid;
+    grid-template-columns: 3% 30% auto;
+}
+
+.commentthread p {
+    margin-top: 0;
+    margin-left: 1%;
+}
+
+.commentblock {
+    width: 90%;
+    margin:auto;
+    border-left: solid 1px var(--text);
+    padding-bottom: 1%;
+}

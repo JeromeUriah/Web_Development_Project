@@ -1,7 +1,7 @@
 .right {
     width: 80vw;
     background-image: url(../../Assets/icons/prebackgrond.jpg);
-    margin-top: 2%;
+    margin-top: 5%;
     border-radius: 20px;
     padding: 1%;
 }
@@ -93,3 +93,4 @@
 .userwalltext{
     border-bottom: 1px soild var(--text);
 }
+
