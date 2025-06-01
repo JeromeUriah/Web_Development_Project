@@ -58,32 +58,37 @@
                 <h1>Events Hub</h1>
                 <div>
                     <form id="event-form" enctype="multipart/form-data">
-                                    <h5>Create A New Event!</h5>
+                                    <div></div>
                                     <div class="individualform">
                                         <label for="event_name">Event Name:</label>
                                         <input type="text" id="event_name" name="event_name" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="location">Location:</label>
-                                        <input type="text" id="location" name="location" required />
-                                    </div>
-                                    <div class="organiser">
-                                        <label for="organiser">Organiser:</label>
-                                        <input type="text" id="organiser" name="organiser" required />
                                     </div>
                                     <div class="event_type">
                                         <label for="event_type">Event Type:</label>
                                         <input type="text" id="event_type" name="event_type" required />
                                     </div>
-                                    <div class="individualform">
-                                        <label for="date_time">Date And Time:</label>
-                                        <input type="datetime-local" id="date_time" name="date_time" required />
-                                    </div>                                    
+                                    <div></div>
+                                    <div></div>
                                     <div class="individualform">
                                         <label for="description">Description:</label>
                                         <textarea id="description" name="description" required></textarea>
                                     </div>
-
+                                    <div class="organiser">
+                                        <label for="organiser">Organiser:</label>
+                                        <input type="text" id="organiser" name="organiser" required />
+                                    </div>
+                                    <div></div>
+                                    <div></div>
+                                    <div class="individualform">
+                                        <label for="date_time">Date And Time:</label>
+                                        <input type="datetime-local" id="date_time" name="date_time" required />
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="location">Location:</label>
+                                        <input type="text" id="location" name="location" required />
+                                    </div>                                   
+                                    <div></div>
+                                    <div></div>
                                     <div class="individualform">
                                         <label for="genericevent_photo">Upload Photo (Optional, Max 10MB):</label>
                                         <input type="file" id="genericevent_photo" name="genericevent_photo" accept="image/*" />
@@ -93,7 +98,7 @@
                                     </div>
                                     <!-- Feedback message area -->
                                 </form>
-                                <p id="form-feedback" aria-live="polite"></p>
+                                <p id="form-feedback-events" aria-live="polite"></p>
                 </div>
                 <div>
                 <h1>Events Happening Right Now!</h1>
@@ -121,8 +126,9 @@
                     </div>
                 </a>
                 <div>
+                    <h5>Welcome to the community!</h5>
                     <form id="community-form" enctype="multipart/form-data">
-                                    <h5>Welcome to the community!</h5>
+                                    
                                     <div class="individualform">
                                         <label for="name">Full Name:</label>
                                         <input type="text" id="name" name="name" required />

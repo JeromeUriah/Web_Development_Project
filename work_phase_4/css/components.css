@@ -10,6 +10,8 @@
 @import '../css/skeletons/announcement.css';
 @import '../css/skeletons/postcard.css';
 @import '../css/skeletons/commentblock.css';
+@import '../css/skeletons/forms.css';
+@import '../css/skeletons/eventcard.css';
 
 .divider {
     width: 50%;

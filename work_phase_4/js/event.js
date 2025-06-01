@@ -1,14 +1,14 @@
-import { postFormData } from '../js/modules/postFormData.js';
+import { postEventData } from '../js/modules/postEventData.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('event-form');
-    const feedback = document.getElementById('form-feedback');
+    const feedback = document.getElementById('form-feedback-events');
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         feedback.textContent = 'Submitting...';
-        const { success, data } = await postFormData(
+        const { success, data } = await postEventData(
             form, 
             "https://damp-castle-86239-1b70ee448fbd.herokuapp.com/decoapi/genericevent/",
             {

@@ -14,15 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         data.forEach(event => {
         const card = document.createElement('div');
-        card.className = 'card';
+        card.className = 'eventcard';
         card.innerHTML = `
+        <div class="eventcontainer">
             <img src="${event.genericevent_photo}" class="card-img-top" alt="User Photo" onerror="this.src='../../work_phase_4/Assets/icons/default.jpg'">
-            <h4 class="card-title">${event.event_name}</h4>
-            <h5 class="card-text">${event.event_type}</h5>
-            <h4 class="card-text">${event.description}</h4>
-            <p class="card-text">${event.date_time}</p>
-            <p class="card-text">${event.location}</p>
-            <p class="card-text">${event.organiser}</p>
+            <div class="eventdetails">
+                <h4 class="card-title">Event Name: ${event.event_name}</h4>
+                <div></div>
+                <P class="card-text">Event Type: ${event.event_type}</p>
+                <p class="card-text">Description: ${event.description}</p>
+                <p class="card-text">Date and Time: ${event.date_time}</p>
+                <p class="card-text">Location: ${event.location}</p>
+                <p class="card-text">Organiser: ${event.organiser}</p>
+                <div></div>
+                <div></div>
+                <button> Sign Up </button>
+            </div>
+        </div>
         `;
         container.appendChild(card);
         });
