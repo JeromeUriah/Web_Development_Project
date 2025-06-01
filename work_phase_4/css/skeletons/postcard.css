@@ -161,3 +161,15 @@
 .postcontents img{
     width: 100%;
 }
+
+@media (max-width: 800px) {
+    .topictagging {
+        display: block;
+        margin: auto;
+    }
+
+    .topictagging p {
+        margin-top: 0;
+        line-height: 0;
+    }
+}

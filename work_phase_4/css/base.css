@@ -57,6 +57,7 @@ h5 {
 p {
     font-size: 1.2rem;
 }
+
 .content{
     padding: 0.5%;
     word-break: normal;
@@ -109,4 +110,30 @@ p {
 }
 .color4 {
     color: var(--color4);
+}
+
+@media (max-width: 800px) {
+    h1 {
+    font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        font-size: 1.1rem;
+    }
+        
+    p {
+    font-size: 1rem;
+    }
 }

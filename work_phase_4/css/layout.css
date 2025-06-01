@@ -63,5 +63,10 @@
 }
 
 @media (max-width:800px) {
-
+    .sidebar {
+        display: none;
+    }
+    .announcements {
+        display: none;
+    }
     }
