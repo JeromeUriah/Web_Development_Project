@@ -94,3 +94,15 @@
     border-bottom: 1px soild var(--text);
 }
 
+@media (max-width: 800px) {
+    .right {
+        width: 100%;
+    }
+
+    .profileinfo {
+        display: none;
+    }
+}
+
+
+
