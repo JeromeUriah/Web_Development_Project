@@ -41,7 +41,7 @@ img {
     height: 2vw;
     width: 70vw;
     text-align: center;
-    margin: 0 auto;
+    margin: 1% auto;
     margin-bottom: 1vh;
     display: grid;
     grid-template-columns: 10% 90%;

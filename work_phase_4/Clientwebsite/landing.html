@@ -34,138 +34,150 @@
 </head>
 <body>
     <div class="content">
-    <div class="header">
-        <input class="search" type="text" placeholder="Search..">
-        <a href="../Clientwebsite/profile.html" class="accounticon"><span class="material-icons-round navbutton">account_circle</span></a>
-        <a class="accounticon"><span class="material-icons-round navbutton1">email</span></a>
-    </div>
-        <a href="../index.html"><h1 class="title">[SITENAME]</h1></a>
-            <div id="my-swiper"> 
-                <div class="divider"></div>
-                <h2>Trending Posts </h2>
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                            <a href="testpost.html" class="swiper-slide">
-                                <div class="swiper-textbox">
-                                    <div class="topicdisplay">
-                                        <p>General</p>
-                                    </div>
-                                    <h3>Welcome</h3>
-                                    <p>The SITENAME Team</p>
-                                    <p>31/05/2027</p>
-                                    <div class="topictagging">
-                                        <P><span class="material-icons-round topictag">tag</span>Tags</P>
-                                        <p class="color1">#Helpful</p>
-                                        <p class="color2">#General</p>
-                                        <p class="color3">#Information</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="testpost2.html" class="swiper-slide">
-                                <div class="swiper-textbox">
-                                    <div class="topicdisplay">
-                                        <p>AI</p>
-                                    </div>
-                                    <h3>Quantum Computing — Hype or the Next Tech Revolution?</h3>
-                                    <p>The SITENAME Team</p>
-                                    <p>01/06/2027</p>
-                                    <div class="topictagging">
-                                        <P><span class="material-icons-round topictag">tag</span>Tags</P>
-                                        <p class="color1">#Discussion</p>
-                                        <p class="color2">#AI</p>
-                                        <p class="color3">#New</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="swiper-slide">
-                                <div class="swiper-textbox">
-                                    <p>Post 3</p>
-                                </div>
-                            </a>
-                            <a class="swiper-slide">
-                                <div class="swiper-textbox">
-                                    <p>Post 4</p>
-                                </div>
-                            </a>
-                            <a class="swiper-slide">
-                                <div class="swiper-textbox">
-                                    <p>Post 5</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>    
-                </div>
-            </div>
+        <div class="header" role="banner" aria-label="Site header with search and user access">
+            <input class="search" type="text" placeholder="Search.." aria-label="Search this site">
+            <a href="../Clientwebsite/profile.html" class="accounticon" aria-label="View your profile">
+                <span class="material-icons-round navbutton" aria-hidden="true">account_circle</span>
+            </a>
+            <a class="accounticon" aria-label="Check messages">
+                <span class="material-icons-round navbutton1" aria-hidden="true">email</span>
+            </a>
+        </div>
 
-        <div class="topicblock">
+        <a href="../index.html"><h1 class="title" id="site-title">[SITENAME]</h1></a>
+
+        <div id="my-swiper" role="region" aria-labelledby="trending-posts-title">
+            <div class="divider"></div>
+            <h2 id="trending-posts-title" class="swiperh2">Trending Posts</h2>
+            <div class="swiper" aria-label="Swiper carousel of trending posts">
+                <div class="swiper-wrapper">
+                    <a href="testpost.html" class="swiper-slide" aria-label="Read post: Welcome">
+                        <div class="swiper-textbox">
+                            <div class="topicdisplay"><p>General</p></div>
+                            <h3>Welcome</h3>
+                            <p>The SITENAME Team</p>
+                            <p>31/05/2027</p>
+                            <div class="topictagging">
+                                <p><span class="material-icons-round topictag" aria-hidden="true">tag</span>Tags</p>
+                                <p class="color1">#Helpful</p>
+                                <p class="color2">#General</p>
+                                <p class="color3">#Information</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="testpost2.html" class="swiper-slide" aria-label="Read post: Quantum Computing">
+                        <div class="swiper-textbox">
+                            <div class="topicdisplay"><p>AI</p></div>
+                            <h3>Quantum Computing — Hype or the Next Tech Revolution?</h3>
+                            <p>The SITENAME Team</p>
+                            <p>01/06/2027</p>
+                            <div class="topictagging">
+                                <p><span class="material-icons-round topictag" aria-hidden="true">tag</span>Tags</p>
+                                <p class="color1">#Discussion</p>
+                                <p class="color2">#AI</p>
+                                <p class="color3">#New</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="swiper-slide" aria-label="Post 3 (placeholder)">
+                        <div class="swiper-textbox"><p>Post 3</p></div>
+                    </a>
+                    <a class="swiper-slide" aria-label="Post 4 (placeholder)">
+                        <div class="swiper-textbox"><p>Post 4</p></div>
+                    </a>
+                    <a class="swiper-slide" aria-label="Post 5 (placeholder)">
+                        <div class="swiper-textbox"><p>Post 5</p></div>
+                    </a>
+                </div>
+                <div class="swiper-button-prev" aria-label="Previous slide"></div>
+                <div class="swiper-button-next" aria-label="Next slide"></div>
+            </div>
+        </div>
+
+        <div class="topicblock" role="navigation" aria-label="Topic navigation">
             <button class="homebutton"><a href="../Clientwebsite/sharedspace.html">Shared Space</a></button>
             <div class="topicnavigation">
-                <a>General</a>
-                <a>AI</a>
-                <a>Computing</a>
+                <a href="#" aria-label="Topic: General">General</a>
+                <a href="#" aria-label="Topic: AI">AI</a>
+                <a href="#" aria-label="Topic: Computing">Computing</a>
             </div>
-        </div>    
-        
-        <div class="contentblock">
-            <a href="#welcome"><span class="material-icons-round arrow">keyboard_double_arrow_down</span></a>
         </div>
 
-        <div class="divider"></div>
-        <div class="contentblock" id="welcome">
-            <h2>You Belong Here. Welcome!</h2>
-            <p> A diverse community where you can share your voice, access valuable resources, and connect with others who share your interests in technology. Discover trending discussions, explore events, find helpful materials, and message fellow members directly. Create your personalized space and become part of our supportive network.</p>
-        </div>
+        <main role="main" aria-label="Main content area">
+            <div class="contentblock">
+                <a href="#welcome" aria-label="Scroll to welcome section">
+                    <span class="material-icons-round arrow" aria-hidden="true">keyboard_double_arrow_down</span>
+                </a>
+            </div>
 
-        <div class="divider"></div>
-        <div class="contentblock">
-            <img src="../Assets/icons/Commentimage.jpg">
-            <h2>SHARED SPACE</h2>
-            <p>The Shared Space is an open community hub where you can express yourself and engage with others in meaningful ways. You can create text posts to share your thoughts, stories, or updates, and upload photos or videos to visually communicate moments and ideas. Interact with others by liking posts, leaving comments, or sharing content that resonates with you. To help keep conversations organized and easy to explore, you can use tags and browse through topics that match your interests. This space is designed to be inclusive, supportive, and engaging—a place where everyone’s voice can be heard and valued.</p>
-        </div>
+            <div class="divider"></div>
+            <div class="contentblock" id="welcome" aria-labelledby="welcome-title">
+                <h2 id="welcome-title">You Belong Here. Welcome!</h2>
+                <p>A diverse community where you can share your voice, access valuable resources, and connect with others who share your interests in technology...</p>
+            </div>
 
-        <div class="divider"></div>
-        <div class="contentblock">
-            <img src="../Assets/icons/Sharedspaceimg.jpg">
-            <h2>COMMUNITY HUB</h2>
-            <p>The Community page is a central place where members can come together with a shared understanding of how to interact respectfully and safely. Here, you’ll find the rules that guide behavior within the space and the values that shape the community’s culture and purpose. If you ever come across content that doesn’t align with these standards, the report posts feature allows you to flag it for review. This page also includes announcements to keep everyone informed about updates, events, or important news. It’s designed to support a positive, welcoming environment where everyone feels safe, heard, and respected.</p>
-        </div>
+            <div class="divider"></div>
+            <div class="contentblock" aria-labelledby="sharedspace-title">
+                <img src="../Assets/icons/Commentimage.jpg" alt="Comment symbol for shared space section">
+                <h2 id="sharedspace-title">SHARED SPACE</h2>
+                <p>The Shared Space is an open community hub where you can express yourself...</p>
+            </div>
 
-        <div class="divider"></div>
-        <div class="contentblock">
-            <img src="../Assets/icons/Eventimage.jpg">
-            <h2>EVENTS</h2>
-            <p>The Events Space is your go-to area for discovering, planning, and participating in community events. Whether you’re interested in hosting your own event or signing up to attend one, this page makes it easy to get involved. Stay organized with the event calendar, which shows upcoming activities and important dates, and use the local event map to see what’s happening nearby. This space encourages active community participation by bringing people together through shared experiences, learning opportunities, and local engagement.</p>
-        </div>
+            <div class="divider"></div>
+            <div class="contentblock" aria-labelledby="communityhub-title">
+                <img src="../Assets/icons/Sharedspaceimg.jpg" alt="Community interaction illustration">
+                <h2 id="communityhub-title">COMMUNITY HUB</h2>
+                <p>The Community page is a central place where members can come together...</p>
+            </div>
 
-        <div class="divider"></div>
-        <div class="contentblock">
-            <img src="../Assets/icons/resourcehub.jpg">
-            <h2>RESOURCE HUB</h2>
-            <p>The Resource Hub is a central space where community members can access and share helpful digital tools and files. You can find trusted software links and driver links to support your tech needs, making it easier to get the right tools quickly. The file download section lets you access shared documents and materials, while the file upload feature allows you to contribute your own resources for others to use. This hub is designed to foster knowledge sharing, support collaboration, and ensure everyone has access to the resources they need.</p>
-        </div>
+            <div class="divider"></div>
+            <div class="contentblock" aria-labelledby="events-title">
+                <img src="../Assets/icons/Eventimage.jpg" alt="Calendar image representing events">
+                <h2 id="events-title">EVENTS</h2>
+                <p>The Events Space is your go-to area for discovering, planning, and participating in community events...</p>
+            </div>
 
-        <div class="divider"></div>
-        <div class="contentblock">
-            <img src="../Assets/icons/userwall.jpg">
-            <h2>USER WALL</h2>
-            <p>The User Wall is your personal space to showcase your identity and connect with others in the community. You can customise your wall with backgrounds, write a user description, and upload a profile picture to express who you are. Engage with others through direct messaging and wall comments, fostering meaningful interactions and conversations. You can also add your social links to stay connected beyond the platform. This space empowers you to personalise your presence, build relationships, and share your story in an inclusive and welcoming environment.</p>
-        </div>
+            <div class="divider"></div>
+            <div class="contentblock" aria-labelledby="resources-title">
+                <img src="../Assets/icons/resourcehub.jpg" alt="Folder icon for resource hub">
+                <h2 id="resources-title">RESOURCE HUB</h2>
+                <p>The Resource Hub is a central space where community members can access and share helpful digital tools and files...</p>
+            </div>
 
-        <div class="divider"></div>
-            <nav class="mobilemenu">
-                <a href="../Clientwebsite/landing.html" class="mobileicon"><span class="material-icons-round mobile">home</span><p>DAILY</p></a>
-                <a href="../Clientwebsite/sharedspace.html" class="mobileicon"><span class="material-icons-round mobile">comment</span><p>SHARED</p></a>
-                <a href="../Clientwebsite/eventshub.html" class="mobileicon"> <span class="material-icons-round mobile">calendar_month</span><p>EVENTS</p></a>
-                <a href="#" class="mobileicon"><span class="material-icons-round mobile" >logo_dev</span><p>RESOURCE</p></a>
-                <a href="../Clientwebsite/communityhub.html" class="mobileicon"><span class="material-icons-round mobile">groups</span><p>COMMUNITY</p></a>
-                <a href="../Clientwebsite/join.html" class="mobileicon"><span class="material-icons-round mobile" >diversity_1</span><p>JOIN</p></a>
-            </nav>
+            <div class="divider"></div>
+            <div class="contentblock" aria-labelledby="userwall-title">
+                <img src="../Assets/icons/userwall.jpg" alt="User profile wall illustration">
+                <h2 id="userwall-title">USER WALL</h2>
+                <p>The User Wall is your personal space to showcase your identity and connect with others in the community...</p>
+            </div>
+        </main>
+
+        <nav class="mobilemenu" role="navigation" aria-label="Mobile navigation menu">
+            <a href="../Clientwebsite/landing.html" class="mobileicon" aria-label="Go to Daily Trending">
+                <span class="material-icons-round mobile" aria-hidden="true">home</span><p>DAILY</p>
+            </a>
+            <a href="../Clientwebsite/sharedspace.html" class="mobileicon" aria-label="Go to Shared Space">
+                <span class="material-icons-round mobile" aria-hidden="true">comment</span><p>SHARED</p>
+            </a>
+            <a href="../Clientwebsite/eventshub.html" class="mobileicon" aria-label="Go to Events Hub">
+                <span class="material-icons-round mobile" aria-hidden="true">calendar_month</span><p>EVENTS</p>
+            </a>
+            <a href="#" class="mobileicon" aria-label="Go to Resource Hub">
+                <span class="material-icons-round mobile" aria-hidden="true">logo_dev</span><p>RESOURCE</p>
+            </a>
+            <a href="../Clientwebsite/communityhub.html" class="mobileicon" aria-label="Go to Community Hub">
+                <span class="material-icons-round mobile" aria-hidden="true">groups</span><p>COMMUNITY</p>
+            </a>
+            <a href="../Clientwebsite/join.html" class="mobileicon" aria-label="Join the Community">
+                <span class="material-icons-round mobile" aria-hidden="true">diversity_1</span><p>JOIN</p>
+            </a>
+        </nav>
     </div>
+
     <div>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="../js/script.js"></script>
     </div>
 </body>
+
 </html>

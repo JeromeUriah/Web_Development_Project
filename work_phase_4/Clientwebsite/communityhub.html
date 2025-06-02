@@ -33,106 +33,127 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <a class="accounticon" href="../Clientwebsite/profile.html"><span class="material-icons-round navbutton">account_circle</span></a>
-        <a class="accounticon"><span class="material-icons-round navbutton1">email</span></a>
+    <div class="header" role="banner" aria-label="Site header with account options">
+        <a class="accounticon" href="../Clientwebsite/profile.html" aria-label="Go to profile">
+            <span class="material-icons-round navbutton" aria-hidden="true">account_circle</span>
+        </a>
+        <a class="accounticon" aria-label="Check messages">
+            <span class="material-icons-round navbutton1" aria-hidden="true">email</span>
+        </a>
     </div>
-    <div class="sidebar">
+
+    <div class="sidebar" role="navigation" aria-label="Main sidebar menu">
         <nav id="Menu">
-            <a href="../Clientwebsite/landing.html" ><span class="material-icons-round">home</span>DAILY TRENDING</a>
-            <a href="../Clientwebsite/sharedspace.html"><span class="material-icons-round">comment</span>SHARED SPACE</a>
-            <a href="../Clientwebsite/eventshub.html"><span class="material-icons-round">calendar_month</span>EVENTS HUB</a>
-            <a><span class="material-icons-round">logo_dev</span>RESOURCE HUB</a>
+            <a href="../Clientwebsite/landing.html" aria-label="Go to Daily Trending"><span class="material-icons-round" aria-hidden="true">home</span>DAILY TRENDING</a>
+            <a href="../Clientwebsite/sharedspace.html" aria-label="Go to Shared Space"><span class="material-icons-round" aria-hidden="true">comment</span>SHARED SPACE</a>
+            <a href="../Clientwebsite/eventshub.html" aria-label="Go to Events Hub"><span class="material-icons-round" aria-hidden="true">calendar_month</span>EVENTS HUB</a>
+            <a href="#" aria-label="Go to Resource Hub"><span class="material-icons-round" aria-hidden="true">logo_dev</span>RESOURCE HUB</a>
             <div class="dropdown">
-                <a href="../Clientwebsite/communityhub.html" class="dropbtn active"><span class="material-icons-round" >groups</span>COMMUNITY</a>
-                <div class="dropdown-content">
-                    <a href="../Clientwebsite/communitypage.html">Community Rules</a>
-                    <a href="../Clientwebsite/members.html">Members</a>
-                    <a href="../Clientwebsite/announcementpage.html">Announcements</a>
+                <a href="../Clientwebsite/communityhub.html" class="dropbtn active" aria-label="Go to Community section">
+                    <span class="material-icons-round" aria-hidden="true">groups</span>COMMUNITY
+                </a>
+                <div class="dropdown-content" role="menu" aria-label="Community submenu">
+                    <a href="../Clientwebsite/communitypage.html" role="menuitem">Community Rules</a>
+                    <a href="../Clientwebsite/members.html" role="menuitem">Members</a>
+                    <a href="../Clientwebsite/announcementpage.html" role="menuitem">Announcements</a>
                 </div>
             </div>
         </nav>
     </div>
-    <div class="sharedspace">
-            <div class="right">
-                <div class="cardscontainer">
-                    <a href="../Clientwebsite/communitypage.html" class="cards guidelines">
-                        <div class="cardtext">
-                            <p >View our guidelines to see how we keep our community safe and welcoming!</p>
-                            <h2>Community Guidelines</h2>
-                        </div>
-                    </a>
-                    <a href="../Clientwebsite/members.html" class="cards members">
-                        <div class="cardtext">
-                            <p>View Our Community Members!</p>
-                            <h2>Members</h2>
-                        </div>
-                    </a>
-                    <a href="../Clientwebsite/announcementpage.html" class="cards announcement">
-                        <div class="cardtext">
-                            <p>View All Announcements!</p>
-                            <h2>Announcements</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="announcements">
-                <h5>Announcements</h5>
-                <a href="announcementpage.html" class="annoucementcard">
-                    <div class="announcmentimg">
-                        <img src="../Assets/icons/announcments.jpg">
-                    </div>
-                    <div class="announcmenttpreview">
-                        <div>
-                            <p>The [SITENAME] Team</p>
-                        </div>
-                        <div class="announcmenttitle">
-                            <p>Welcome</p>
-                        </div>
-                        <div>
-                            <p>27/05/2025 00:00</p>
-                        </div>
+
+    <main class="sharedspace" role="main" aria-label="Community Hub main content">
+        <div class="right">
+            <div class="cardscontainer">
+                <a href="../Clientwebsite/communitypage.html" class="cards guidelines" aria-label="View community guidelines">
+                    <div class="cardtext">
+                        <p>View our guidelines to see how we keep our community safe and welcoming!</p>
+                        <h2>Community Guidelines</h2>
                     </div>
                 </a>
-                <div>
-                    <form id="community-form" enctype="multipart/form-data">
-                                    <h5>Welcome to the community!</h5>
-                                    <div class="individualform">
-                                        <label for="name">Full Name:</label>
-                                        <input type="text" id="name" name="name" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="email">Email:</label>
-                                        <input type="text" id="email" name="email" required />
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="message">Message (Optional):</label>
-                                        <textarea id="message" name="message"></textarea>
-                                    </div>
-                                    <div class="individualform">
-                                        <label for="photo">Upload Photo (Optional, Max 10MB):</label>
-                                        <input type="file" id="photo" name="photo" accept="image/*" />
-                                    </div>
-                                    <div class="individualform submit">
-                                        <button type="submit">Join the Community</button>
-                                    </div>
-                                    <!-- Feedback message area -->
-                                </form>
-                                <p id="form-feedback" aria-live="polite"></p>
-                </div>
+                <a href="../Clientwebsite/members.html" class="cards members" aria-label="View community members">
+                    <div class="cardtext">
+                        <p>View Our Community Members!</p>
+                        <h2>Members</h2>
+                    </div>
+                </a>
+                <a href="../Clientwebsite/announcementpage.html" class="cards announcement" aria-label="View announcements">
+                    <div class="cardtext">
+                        <p>View All Announcements!</p>
+                        <h2>Announcements</h2>
+                    </div>
+                </a>
             </div>
-            <nav class="mobilemenu">
-                <a href="../Clientwebsite/landing.html" class="mobileicon"><span class="material-icons-round mobile">home</span><p>DAILY</p></a>
-                <a href="../Clientwebsite/sharedspace.html" class="mobileicon"><span class="material-icons-round mobile">comment</span><p>SHARED</p></a>
-                <a href="../Clientwebsite/eventshub.html" class="mobileicon"> <span class="material-icons-round mobile">calendar_month</span><p>EVENTS</p></a>
-                <a href="#" class="mobileicon"><span class="material-icons-round mobile" >logo_dev</span><p>RESOURCE</p></a>
-                <a href="../Clientwebsite/communityhub.html" class="mobileicon"><span class="material-icons-round mobile">groups</span><p>COMMUNITY</p></a>
-                <a href="../Clientwebsite/join.html" class="mobileicon"><span class="material-icons-round mobile" >diversity_1</span><p>JOIN</p></a>
-            </nav>
-    </div>    
+        </div>
+
+        <div class="announcements" aria-labelledby="announcement-heading">
+            <h5 id="announcement-heading">Announcements</h5>
+            <a href="announcementpage.html" class="annoucementcard" aria-label="Read announcement: Welcome">
+                <div class="announcmentimg">
+                    <img src="../Assets/icons/announcments.jpg" alt="Announcement banner with icons">
+                </div>
+                <div class="announcmenttpreview">
+                    <div><p>The [SITENAME] Team</p></div>
+                    <div class="announcmenttitle"><p>Welcome</p></div>
+                    <div><p>27/05/2025 00:00</p></div>
+                </div>
+            </a>
+
+            <div>
+                <form id="community-form" enctype="multipart/form-data" aria-label="Community join form">
+                    <h5>Welcome to the community!</h5>
+
+                    <div class="individualform">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+
+                    <div class="individualform">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="individualform">
+                        <label for="message">Message (Optional):</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+
+                    <div class="individualform">
+                        <label for="photo">Upload Photo (Optional, Max 10MB):</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" />
+                    </div>
+
+                    <div class="individualform submit">
+                        <button type="submit">Join the Community</button>
+                    </div>
+                </form>
+                <p id="form-feedback" aria-live="polite"></p>
+            </div>
+        </div>
+
+        <nav class="mobilemenu" role="navigation" aria-label="Mobile menu">
+            <a href="../Clientwebsite/landing.html" class="mobileicon" aria-label="Go to Daily Trending">
+                <span class="material-icons-round mobile" aria-hidden="true">home</span><p>DAILY</p>
+            </a>
+            <a href="../Clientwebsite/sharedspace.html" class="mobileicon" aria-label="Go to Shared Space">
+                <span class="material-icons-round mobile" aria-hidden="true">comment</span><p>SHARED</p>
+            </a>
+            <a href="../Clientwebsite/eventshub.html" class="mobileicon" aria-label="Go to Events Hub">
+                <span class="material-icons-round mobile" aria-hidden="true">calendar_month</span><p>EVENTS</p>
+            </a>
+            <a href="#" class="mobileicon" aria-label="Go to Resource Hub">
+                <span class="material-icons-round mobile" aria-hidden="true">logo_dev</span><p>RESOURCE</p>
+            </a>
+            <a href="../Clientwebsite/communityhub.html" class="mobileicon" aria-label="Go to Community Hub">
+                <span class="material-icons-round mobile" aria-hidden="true">groups</span><p>COMMUNITY</p>
+            </a>
+            <a href="../Clientwebsite/join.html" class="mobileicon" aria-label="Join the Community">
+                <span class="material-icons-round mobile" aria-hidden="true">diversity_1</span><p>JOIN</p>
+            </a>
+        </nav>
+    </main>
+
     <div>
         <script type="module" src="../js/bd.js"></script>
     </div>
-
 </body>
 </html>
