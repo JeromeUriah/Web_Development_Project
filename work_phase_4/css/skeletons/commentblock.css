@@ -35,3 +35,9 @@
     border-left: solid 1px var(--text);
     padding-bottom: 1%;
 }
+
+@media (max-width: 800px) {
+    .commentdetails {
+        grid-template-columns: 10% 30% auto;
+    }
+}

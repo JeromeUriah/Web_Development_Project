@@ -11,6 +11,7 @@ label {
     display: block;
     width: 100%;
     margin: auto;
+    color: var(--text);
 }
 
 .individualform.submit button {
@@ -22,7 +23,11 @@ label {
 }
 
 #event-form {
-    width: 100%;
+    width: 50%;
     display:  grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
+    margin: auto;
+    background-color: var(--cardback);
+    padding: 5%;
+    border-radius: 20px;
 }

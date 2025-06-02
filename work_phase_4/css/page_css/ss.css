@@ -9,19 +9,21 @@
     float: none;
 }
 
-.Newpost {
-    width: 95%;
-    background-color: var(--charcoal);
-    color: var(--text);
-    padding: 1%;
-    margin: auto;
-    border-radius: 20px;
-    border: solid 1px var(--text);
-}
-
 .activetopic {
     color: var(--bright);
     cursor: pointer;
     transform: scale(1.2);
     border-bottom: solid 1px var(--bright);
 }
+
+.newpostbar {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    .topicnavigation {
+        text-align: center;
+    }
+
+    }

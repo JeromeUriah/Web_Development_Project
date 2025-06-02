@@ -86,4 +86,8 @@ img {
         padding-left: 5%;
         padding-right: 5%;
     }
+    
+    .contentblock{
+        margin-bottom: 5vh;
+    }
 }

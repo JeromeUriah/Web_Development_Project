@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/page_css/eventhub.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <!--Importing Fonts-->
@@ -55,10 +56,11 @@
     </div>
     <div class="sharedspace">
             <div class="right">
-                <h1>Events Hub</h1>
+                <h1 class="eventsheading">[Events Hub]</h1>
+                <h1 class="eventsheading">Create an Event!</h1>
+                <div class="divider"></div>
                 <div>
                     <form id="event-form" enctype="multipart/form-data">
-                                    <div></div>
                                     <div class="individualform">
                                         <label for="event_name">Event Name:</label>
                                         <input type="text" id="event_name" name="event_name" required />
@@ -67,8 +69,6 @@
                                         <label for="event_type">Event Type:</label>
                                         <input type="text" id="event_type" name="event_type" required />
                                     </div>
-                                    <div></div>
-                                    <div></div>
                                     <div class="individualform">
                                         <label for="description">Description:</label>
                                         <textarea id="description" name="description" required></textarea>
@@ -101,7 +101,8 @@
                                 <p id="form-feedback-events" aria-live="polite"></p>
                 </div>
                 <div>
-                <h1>Events Happening Right Now!</h1>
+                <h1 class="eventsheading">Events Happening Right Now!</h1>
+                <div class="divider"></div>
                 <section id="event-list">
                                     
                 </section>
@@ -154,6 +155,14 @@
                 </div>
                 
             </div>
+            <nav class="mobilemenu">
+                <a href="../Clientwebsite/landing.html" class="mobileicon"><span class="material-icons-round mobile">home</span><p>DAILY</p></a>
+                <a href="../Clientwebsite/sharedspace.html" class="mobileicon"><span class="material-icons-round mobile">comment</span><p>SHARED</p></a>
+                <a href="../Clientwebsite/eventshub.html" class="mobileicon"> <span class="material-icons-round mobile">calendar_month</span><p>EVENTS</p></a>
+                <a href="#" class="mobileicon"><span class="material-icons-round mobile" >logo_dev</span><p>RESOURCE</p></a>
+                <a href="../Clientwebsite/communityhub.html" class="mobileicon"><span class="material-icons-round mobile">groups</span><p>COMMUNITY</p></a>
+                <a href="../Clientwebsite/join.html" class="mobileicon"><span class="material-icons-round mobile" >diversity_1</span><p>JOIN</p></a>
+            </nav>
     </div>    
     <div>
         <script type="module" src="../js/bd.js"></script>

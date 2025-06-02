@@ -8,3 +8,10 @@
     grid-template-columns: auto auto;
     
 }
+
+@media (max-width:800px) {
+.CommunityGuidlines {
+    display: block;
+    }   
+
+    }

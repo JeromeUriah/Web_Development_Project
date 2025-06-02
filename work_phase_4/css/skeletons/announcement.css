@@ -58,3 +58,22 @@
 .announcmenttpreview p {
     margin-top: 0;
 }
+
+@media (max-width:800px) {
+    .annoucementcard {
+        width: 90%;
+        padding: 1%;
+        background-color: var(--ash);
+        margin: auto;
+        display: block;
+    }
+
+    .announcementdate {
+    grid-template-columns: auto 30%;
+    }
+
+    .announcmenttext{
+    padding: 1%;
+    display: block;
+}
+}

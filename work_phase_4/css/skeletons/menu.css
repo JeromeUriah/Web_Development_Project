@@ -80,3 +80,38 @@
     margin-top: 10px;
     width: 100%;
 }
+
+.mobilemenu {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .mobilemenu {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        overflow: hidden;
+        position: fixed;
+        background-color: var(--dark);
+        bottom: 0;
+        width: 100%;
+        height: 5vh;
+        border-top: 1px solid var(--bright);
+        text-align: center;
+    }
+
+    .mobilemenu a{
+        margin-top:0;
+        display: block;
+    }
+
+    .mobilemenu p{
+        margin-top:0;
+        font-size: 0.5rem;
+    }
+
+    .material-icons-round.mobile{
+        margin-right: 0;
+        vertical-align: bottom;
+        font-size: 1rem; 
+    }
+}

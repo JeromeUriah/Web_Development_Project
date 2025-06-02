@@ -44,3 +44,19 @@
     min-height: 30%;
     padding: 5px;
 }
+
+@media (max-width:800px) {
+    .cards {
+        background-color: var(--ash);
+        width: 100%;
+        border-radius: 20px;
+        text-align: center;
+        border: solid 1px var(--text);
+        display: block;
+    }
+
+    .cardscontainer {
+    display: block;
+}
+
+    }

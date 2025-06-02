@@ -149,7 +149,7 @@
 }
 
 .Newpost {
-    width: 95%;
+    width: 90%;
     background-color: var(--charcoal);
     color: var(--text);
     padding: 1%;
@@ -171,5 +171,17 @@
     .topictagging p {
         margin-top: 0;
         line-height: 0;
+    }
+
+    .postbuttons {
+        grid-template-columns: 15% 15% 15% 15% auto;
+    }
+
+    .postdetails {
+        grid-template-columns: 10% 20% auto 20%;
+    }
+
+    .postbuttons.commentbuttons {
+        grid-template-columns: 10% 10% 10% 10% auto;
     }
 }

@@ -27,7 +27,7 @@
 }
 
 .swiper-slide {
-    background-color: var(--oil);
+    background-color: var(--cardback);
     position: relative;
     height: 100%;
     overflow: hidden;
