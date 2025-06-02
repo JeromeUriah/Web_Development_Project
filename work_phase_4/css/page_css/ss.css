@@ -25,3 +25,8 @@
     transform: scale(1.2);
     border-bottom: solid 1px var(--bright);
 }
+
+@media (max-width:800px) {
+
+    
+    }

@@ -69,4 +69,15 @@
     .announcements {
         display: none;
     }
+    .sharedspace {
+        width: 100%;
+        display: block;
+    }
+
+    .right {
+        width: 100%;
+        display: block;
+        padding: 1%;
+    }
+
     }
