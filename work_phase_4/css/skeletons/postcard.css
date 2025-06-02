@@ -101,8 +101,15 @@
 }
 
 .topictagging {
-    display: flex;
+    display: block;
+    margin: auto;
 }
+
+.topictagging p {
+        margin-top: 0;
+        line-height: 0;
+}
+
 .topicdisplay {
     text-align: center;
 }
@@ -162,10 +169,15 @@
     width: 100%;
 }
 
+.material-icons-round.topictag {
+    margin-right: 0;
+    vertical-align: middle;
+    color: var(--text);
+}
+
 @media (max-width: 800px) {
-    .topictagging {
-        display: block;
-        margin: auto;
+    .postbuttons {
+    grid-template-columns: 20% 20% 20% 20% auto;
     }
 
     .topictagging p {
