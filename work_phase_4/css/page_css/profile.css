@@ -94,6 +94,15 @@
     border-bottom: 1px soild var(--text);
 }
 
+.editprofile {
+    display: grid;
+    grid-template-columns: auto 10%;
+}
+
+.editprofile button{
+    border-radius: 0px;
+}
+
 @media (max-width:800px) {
     .right {
         width: 100%;
@@ -127,6 +136,10 @@
     .socialmedia {
         grid-template-columns: auto 7% 7% 7%;
         margin-top:1%
+    }
+
+    .editprofile {
+    grid-template-columns: auto 30%;
     }
 
     }

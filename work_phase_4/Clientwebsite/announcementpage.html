@@ -29,7 +29,8 @@
     <!--Importing Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Reenie+Beanie&display=swap" rel="stylesheet">
     <!--Importing Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
@@ -63,7 +64,6 @@
     <main class="sharedspace" role="main" aria-label="Announcements section">
         <div class="right">
             <h1>Announcements</h1>
-
             <article class="annoucementcard mainpage" role="article" aria-labelledby="announcement-title">
                 <div class="announcmentimg main">
                     <img src="../Assets/icons/announcments.jpg" alt="People collaborating around a table representing announcements" />
@@ -76,8 +76,14 @@
                         <h3 id="announcement-title">Welcome to SITENAME</h3>
                     </div>
                     <div>
-                        <p><mark class="articlemark">W</mark>e're thrilled to welcome you to a space built for creators, thinkers, and enthusiasts shaping the future of technology...</p>
-                        <!-- (trimmed for brevity) -->
+                        <p><mark class="articlemark">W</mark>e're thrilled to welcome you to a space built for creators, thinkers, and enthusiasts shaping the future of technology. Whether you're passionate about AI, robotics, cybersecurity, software development, or the next big tech trend—this is your community.</p>
+                            <p>This platform is designed to help you: </p>
+                            <p>Share ideas and insights with fellow innovators</p>
+                            <p>Discover community-led events and workshops</p>
+                            <p>Access and contribute to valuable resources</p>
+                            <p>Engage in discussions that matter to you</p>
+                            <p>Our goal is to support meaningful connection, collaboration, and inspiration within the tech community—while remaining open and accessible to everyone curious about the power of innovation.</p>
+                            <p>Let’s build, learn, and grow together. Start exploring, start contributing, and most of all—stay curious.</p>
                     </div>
                     <div class="announcementdate">
                         <div></div>
@@ -86,6 +92,46 @@
                 </div>
             </article>
         </div>
+        <div class="announcements">
+                
+                <div class="form-container">
+                    <h5>Welcome to the community!</h5>
+                    <form id="community-form" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Community Sign-Up</legend>
+                                    <div class="individualform">
+                                        <label for="name">Full Name:</label>
+                                        <input type="text" id="name" name="name" required />
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" name="email" required />
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="message">Message (Optional):</label>
+                                        <textarea id="message" name="message"></textarea>
+                                    </div>
+                                    <div class="individualform">
+                                        <label for="photo">Upload Photo (Optional, Max 10MB):</label>
+                                        <input type="file" id="photo" name="photo" accept="image/*" />
+                                    </div>
+                        <div class="individualform submit">
+                            <button type="submit">Join the Community</button>
+                        </div>
+                            <!-- Feedback message area -->
+                        </form>
+                        </fieldset>
+                        <p id="form-feedback" aria-live="polite"></p>
+                </div>
+                <div class="divider"></div>
+                <h5>Events Happening Soon</h5>
+                <div class="eventssoon">
+                    <img src="../Assets/icons/profileimage.jpg">
+                    <p>End Of Project Celebration</p>
+                    <p>2025-06-09T16:00:00+10:00</p>
+                    <p>UQ</p>
+                </div>
+                </div>
 
         <nav class="mobilemenu" role="navigation" aria-label="Mobile menu">
             <a href="../Clientwebsite/landing.html" class="mobileicon" aria-label="Daily Trending"><span class="material-icons-round mobile" aria-hidden="true">home</span><p>DAILY</p></a>
@@ -95,6 +141,9 @@
             <a href="../Clientwebsite/communityhub.html" class="mobileicon" aria-label="Community Hub"><span class="material-icons-round mobile" aria-hidden="true">groups</span><p>COMMUNITY</p></a>
             <a href="../Clientwebsite/join.html" class="mobileicon" aria-label="Join the Community"><span class="material-icons-round mobile" aria-hidden="true">diversity_1</span><p>JOIN</p></a>
         </nav>
+        <div>
+            <script type="module" src="../js/bd.js"></script>
+        </div>
     </main>
 </body>
 

@@ -12,6 +12,7 @@
 @import '../css/skeletons/commentblock.css';
 @import '../css/skeletons/forms.css';
 @import '../css/skeletons/eventcard.css';
+@import '../css/skeletons/eventssoon.css';
 
 .divider {
     width: 50%;
@@ -68,10 +69,15 @@ button {
 button:hover {
     background-color: var(--ash);
     border: none;
+    color: var(--bright);
 }
 
 button:active {
     transform: scale(0.9);
+}
+
+.irpage {
+    width: 70%;
 }
 
 @media (max-width:800px) {

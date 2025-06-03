@@ -1,4 +1,6 @@
 .annoucementcard.mainpage {
     background-color: var(--dark);
     border: solid 1px var(--text);
+    display: grid;
+    grid-template-columns: 30% auto;
 }

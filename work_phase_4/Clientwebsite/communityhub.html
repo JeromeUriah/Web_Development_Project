@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Community</title>
@@ -17,7 +16,6 @@
     <!-- Standard favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="../pwa_icons/ios/16.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/base.css">
@@ -59,9 +57,26 @@
                 </div>
             </div>
         </nav>
+        <h5>Announcements</h5>
+        <a href="announcementpage.html" class="annoucementcard">
+            <div class="announcmentimg">
+                <img src="../Assets/icons/announcments.jpg" class="imageforann" alt="Announcement image">
+            </div>
+            <div class="announcmenttpreview">
+                <div>
+                    <p>The [SITENAME] Team</p>
+                </div>
+                <div class="announcmenttitle">
+                    <p>Welcome</p>
+                </div>
+                <div>
+                    <p>27/05/2025 00:00</p>
+                </div>
+            </div>
+        </a>
     </div>
 
-    <main class="sharedspace" role="main" aria-label="Community Hub main content">
+    <main class="sharedspace" aria-label="Community Hub main content">
         <div class="right">
             <div class="cardscontainer">
                 <a href="../Clientwebsite/communitypage.html" class="cards guidelines" aria-label="View community guidelines">
@@ -86,47 +101,41 @@
         </div>
 
         <div class="announcements" aria-labelledby="announcement-heading">
-            <h5 id="announcement-heading">Announcements</h5>
-            <a href="announcementpage.html" class="annoucementcard" aria-label="Read announcement: Welcome">
-                <div class="announcmentimg">
-                    <img src="../Assets/icons/announcments.jpg" alt="Announcement banner with icons">
-                </div>
-                <div class="announcmenttpreview">
-                    <div><p>The [SITENAME] Team</p></div>
-                    <div class="announcmenttitle"><p>Welcome</p></div>
-                    <div><p>27/05/2025 00:00</p></div>
-                </div>
-            </a>
-
-            <div>
-                <form id="community-form" enctype="multipart/form-data" aria-label="Community join form">
-                    <h5>Welcome to the community!</h5>
-
-                    <div class="individualform">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required />
-                    </div>
-
-                    <div class="individualform">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required />
-                    </div>
-
-                    <div class="individualform">
-                        <label for="message">Message (Optional):</label>
-                        <textarea id="message" name="message"></textarea>
-                    </div>
-
-                    <div class="individualform">
-                        <label for="photo">Upload Photo (Optional, Max 10MB):</label>
-                        <input type="file" id="photo" name="photo" accept="image/*" />
-                    </div>
-
-                    <div class="individualform submit">
-                        <button type="submit">Join the Community</button>
-                    </div>
+            <div class="form-container">
+                <h5>Welcome to the community!</h5>
+                <form id="community-form" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Community Sign-Up</legend>
+                        <div class="individualform">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="individualform">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" required />
+                        </div>
+                        <div class="individualform">
+                            <label for="message">Message (Optional):</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <div class="individualform">
+                            <label for="photo">Upload Photo (Optional, Max 10MB):</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" />
+                        </div>
+                        <div class="individualform submit">
+                            <button type="submit">Join the Community</button>
+                        </div>
+                    </fieldset>
+                    <p id="form-feedback" aria-live="polite"></p>
                 </form>
-                <p id="form-feedback" aria-live="polite"></p>
+            </div>
+            <div class="divider"></div>
+            <h5>Events Happening Soon</h5>
+            <div class="eventssoon">
+                <img src="../Assets/icons/profileimage.jpg" alt="Event image">
+                <p>End Of Project Celebration</p>
+                <p>2025-06-09T16:00:00+10:00</p>
+                <p>UQ</p>
             </div>
         </div>
 

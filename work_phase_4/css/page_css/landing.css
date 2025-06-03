@@ -71,6 +71,14 @@ img {
     margin: auto;
 }
 
+.swiper-textbox h3 {
+    margin-top: 0;
+}
+
+.swiper-textbox p {
+    margin-top: 0;
+}
+
 @media (max-width: 800px) {
     .title {
         font-size: 5rem;

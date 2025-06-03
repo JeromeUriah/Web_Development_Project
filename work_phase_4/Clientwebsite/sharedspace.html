@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Shared Space</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png"/>
     <link rel="apple-touch-icon" sizes="120x120" href="../pwa_icons/ios/120.png"/>
@@ -35,9 +33,11 @@
 </head>
 <body>
     <div class="header">
+        <span class="material-icons-round search">search</span>
         <input class="search" type="text" placeholder="Search..">
+        
         <a class="accounticon" href="../Clientwebsite/profile.html"><span class="material-icons-round navbutton">account_circle</span></a>
-        <a class="accounticon"><span class="material-icons-round navbutton1">email</span></a>
+        <a class="accounticon" ><span class="material-icons-round navbutton1">email</span></a>
     </div>
     <div class="sidebar">
         <nav id="Menu">
@@ -54,6 +54,23 @@
                 </div>
             </div>
         </nav>
+        <h5>Announcements</h5>
+                <a href="announcementpage.html" class="annoucementcard">
+                    <div class="announcmentimg">
+                        <img src="../Assets/icons/announcments.jpg" class="imageforann">
+                    </div>
+                    <div class="announcmenttpreview">
+                        <div>
+                            <p>The [SITENAME] Team</p>
+                        </div>
+                        <div class="announcmenttitle">
+                            <p>Welcome</p>
+                        </div>
+                        <div>
+                            <p>27/05/2025 00:00</p>
+                        </div>
+                    </div>
+                </a>
     </div>
     <div class="sharedspace">
         <div class="right">
@@ -64,7 +81,7 @@
                 <a>Computing</a>
             </div>
             <div class="newpostbar">
-                <input class="Newpost" type="text" placeholder="+ Add New Post">
+                    <input class="Newpost" type="text" placeholder="+ Add New Post">
             </div>
             <div class="onepost">
                 <a class="postcard" href="testpost.html">
@@ -141,26 +158,11 @@
                 
         </div>
             <div class="announcements">
-                <h5>Announcements</h5>
-                <a href="announcementpage.html" class="annoucementcard">
-                    <div class="announcmentimg">
-                        <img src="../Assets/icons/announcments.jpg">
-                    </div>
-                    <div class="announcmenttpreview">
-                        <div>
-                            <p>The [SITENAME] Team</p>
-                        </div>
-                        <div class="announcmenttitle">
-                            <p>Welcome</p>
-                        </div>
-                        <div>
-                            <p>27/05/2025 00:00</p>
-                        </div>
-                    </div>
-                </a>
-                <div>
+                <div class="form-container">
                     <h5>Welcome to the community!</h5>
                     <form id="community-form" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Community Sign-Up</legend>
                                     <div class="individualform">
                                         <label for="name">Full Name:</label>
                                         <input type="text" id="name" name="name" required />
@@ -177,14 +179,22 @@
                                         <label for="photo">Upload Photo (Optional, Max 10MB):</label>
                                         <input type="file" id="photo" name="photo" accept="image/*" />
                                     </div>
-                                    <div class="individualform submit">
-                                        <button type="submit">Join the Community</button>
-                                    </div>
-                                    <!-- Feedback message area -->
-                                </form>
-                                <p id="form-feedback" aria-live="polite"></p>
+                        <div class="individualform submit">
+                            <button type="submit">Join the Community</button>
+                        </div>
+                            <!-- Feedback message area -->
+                        </form>
+                        </fieldset>
+                        <p id="form-feedback" aria-live="polite"></p>
                 </div>
-
+                <div class="divider"></div>
+                <h5>Events Happening Soon</h5>
+                <div class="eventssoon">
+                    <img src="../Assets/icons/profileimage.jpg">
+                    <p>End Of Project Celebration</p>
+                    <p>2025-06-09T16:00:00+10:00</p>
+                    <p>UQ</p>
+                </div>
                 
             </div>
 
@@ -200,8 +210,6 @@
     <div>
         <script type="module" src="../js/bd.js"></script>
     </div>
-        
-        
 </body>
 
 </html>

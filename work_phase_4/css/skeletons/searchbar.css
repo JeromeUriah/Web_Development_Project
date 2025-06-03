@@ -1,11 +1,18 @@
 .search {
-    padding: 6px;
+    padding: 0.5%;
     border: none;
     margin: auto;
     border-radius: 20px;
     font-size: 0.9rem;
     width: 30%;
     margin-top: 2%;
+}
+
+.material-icons-round.search {
+    margin-right: 0;
+    width: fit-content;
+    padding: 0;
+    margin-top: 0;
 }
 
 

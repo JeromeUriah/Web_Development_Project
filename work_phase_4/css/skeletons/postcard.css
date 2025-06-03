@@ -52,7 +52,6 @@
     font-size: 0.8rem;
     border-radius: 20px;
     padding: 10%;
-    border: solid var(--text) 1px;
     color: var(--text);
     cursor: pointer;
     background-color: var(--dark);
@@ -64,7 +63,6 @@
     font-size: 0.8rem;
     border-radius: 20px;
     padding: 10%;
-    border: solid var(--text) 1px;
     color: var(--text);
     cursor: pointer;
     background-color: var(--dark);
@@ -173,6 +171,14 @@
     margin-right: 0;
     vertical-align: middle;
     color: var(--text);
+}
+
+.material-icons-round.inbutton:hover {
+    color: var(--bright);
+}
+
+.material-icons-round.subbutton:hover  {
+    color: var(--bright);
 }
 
 @media (max-width: 800px) {

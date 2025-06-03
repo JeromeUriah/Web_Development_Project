@@ -5,6 +5,8 @@
     padding-bottom: 10%;
     margin-top: 1%;
     border-radius: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 label {
@@ -23,11 +25,15 @@ label {
 }
 
 #event-form {
-    width: 50%;
     display:  grid;
     grid-template-columns: auto auto;
-    margin: auto;
     background-color: var(--cardback);
+    margin: auto;
+    color: black;
     padding: 5%;
     border-radius: 20px;
+}
+
+.form-container {
+    width: 100%;
 }

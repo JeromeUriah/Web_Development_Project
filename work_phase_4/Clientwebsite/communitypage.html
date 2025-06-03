@@ -52,6 +52,23 @@
                 </div>
             </div>
         </nav>
+        <h5>Announcements</h5>
+                <a href="announcementpage.html" class="annoucementcard">
+                    <div class="announcmentimg">
+                        <img src="../Assets/icons/announcments.jpg" class="imageforann">
+                    </div>
+                    <div class="announcmenttpreview">
+                        <div>
+                            <p>The [SITENAME] Team</p>
+                        </div>
+                        <div class="announcmenttitle">
+                            <p>Welcome</p>
+                        </div>
+                        <div>
+                            <p>27/05/2025 00:00</p>
+                        </div>
+                    </div>
+                </a>
     </div>
     <div class="sharedspace">
             <div class="right">
@@ -101,26 +118,11 @@
 
             </div>
             <div class="announcements">
-                <h5>Announcements</h5>
-                <a href="announcementpage.html" class="annoucementcard">
-                    <div class="announcmentimg">
-                        <img src="../Assets/icons/announcments.jpg">
-                    </div>
-                    <div class="announcmenttpreview">
-                        <div>
-                            <p>The [SITENAME] Team</p>
-                        </div>
-                        <div class="announcmenttitle">
-                            <p>Welcome</p>
-                        </div>
-                        <div>
-                            <p>27/05/2025 00:00</p>
-                        </div>
-                    </div>
-                </a>
-                <div>
+                <div class="form-container">
+                    <h5>Welcome to the community!</h5>
                     <form id="community-form" enctype="multipart/form-data">
-                                    <h5>Welcome to the community!</h5>
+                        <fieldset>
+                            <legend>Community Sign-Up</legend>
                                     <div class="individualform">
                                         <label for="name">Full Name:</label>
                                         <input type="text" id="name" name="name" required />
@@ -137,12 +139,21 @@
                                         <label for="photo">Upload Photo (Optional, Max 10MB):</label>
                                         <input type="file" id="photo" name="photo" accept="image/*" />
                                     </div>
-                                    <div class="individualform submit">
-                                        <button type="submit">Join the Community</button>
-                                    </div>
-                                    <!-- Feedback message area -->
-                                </form>
-                                <p id="form-feedback" aria-live="polite"></p>
+                        <div class="individualform submit">
+                            <button type="submit">Join the Community</button>
+                        </div>
+                            <!-- Feedback message area -->
+                        </form>
+                        </fieldset>
+                        <p id="form-feedback" aria-live="polite"></p>
+                </div>
+                <div class="divider"></div>
+                <h5>Events Happening Soon</h5>
+                <div class="eventssoon">
+                    <img src="../Assets/icons/profileimage.jpg">
+                    <p>End Of Project Celebration</p>
+                    <p>2025-06-09T16:00:00+10:00</p>
+                    <p>UQ</p>
                 </div>
             </div>
             <nav class="mobilemenu">

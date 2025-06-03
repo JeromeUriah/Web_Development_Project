@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SITEMAP</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../pwa_icons/ios/60.png"/>
@@ -16,7 +15,6 @@
     <!-- Standard favicons -->
     <link rel="icon" type="image/png" sizes="16x16" href="../pwa_icons/ios/16.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="../pwa_icons/ios/32.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/base.css">
@@ -35,11 +33,12 @@
 <body>
     <div class="content">
         <div class="header" role="banner" aria-label="Site header with search and user access">
+            <span class="material-icons-round search">search</span>
             <input class="search" type="text" placeholder="Search.." aria-label="Search this site">
             <a href="../Clientwebsite/profile.html" class="accounticon" aria-label="View your profile">
                 <span class="material-icons-round navbutton" aria-hidden="true">account_circle</span>
             </a>
-            <a class="accounticon" aria-label="Check messages">
+            <a class="accounticon" aria-label="Check messages" href="../index.html">
                 <span class="material-icons-round navbutton1" aria-hidden="true">email</span>
             </a>
         </div>
@@ -57,12 +56,6 @@
                             <h3>Welcome</h3>
                             <p>The SITENAME Team</p>
                             <p>31/05/2027</p>
-                            <div class="topictagging">
-                                <p><span class="material-icons-round topictag" aria-hidden="true">tag</span>Tags</p>
-                                <p class="color1">#Helpful</p>
-                                <p class="color2">#General</p>
-                                <p class="color3">#Information</p>
-                            </div>
                         </div>
                     </a>
                     <a href="testpost2.html" class="swiper-slide" aria-label="Read post: Quantum Computing">
@@ -71,12 +64,6 @@
                             <h3>Quantum Computing — Hype or the Next Tech Revolution?</h3>
                             <p>The SITENAME Team</p>
                             <p>01/06/2027</p>
-                            <div class="topictagging">
-                                <p><span class="material-icons-round topictag" aria-hidden="true">tag</span>Tags</p>
-                                <p class="color1">#Discussion</p>
-                                <p class="color2">#AI</p>
-                                <p class="color3">#New</p>
-                            </div>
                         </div>
                     </a>
                     <a class="swiper-slide" aria-label="Post 3 (placeholder)">
@@ -103,7 +90,7 @@
             </div>
         </div>
 
-        <main role="main" aria-label="Main content area">
+        <main aria-label="Main content area">
             <div class="contentblock">
                 <a href="#welcome" aria-label="Scroll to welcome section">
                     <span class="material-icons-round arrow" aria-hidden="true">keyboard_double_arrow_down</span>
@@ -112,47 +99,58 @@
 
             <div class="divider"></div>
             <div class="contentblock" id="welcome" aria-labelledby="welcome-title">
-                <h2 id="welcome-title">You Belong Here. Welcome!</h2>
+                <h2 id="welcome-title">What is [STIENAME]?</h2>
+                <h3>You Belong Here. Welcome!</h3>
                 <p> A diverse community where you can share your voice, access valuable resources, and connect with others who share your interests in technology. Discover trending discussions, explore events, find helpful materials, and message fellow members directly. Create your personalized space and become part of our supportive network.</p>
-                <div class="pageexample">
+                <div class="pageexample"></div>
+            </div>
 
-                </div>
+            <div class="divider"></div>
+            <div class="contentblock" aria-labelledby="sharedspace-title">
+                <img src="../Assets/icons/default.jpg" alt="Comment symbol for daily trending section">
+                <h2 id="dailytrending-title">DAILY TRENDING</h2>
+                <h3>Discover What’s Buzzing Today</h3>
+                <p>Stay informed and inspired with our Daily Trending feature — a curated selection of the top 5 most talked-about posts in the tech and innovation community. Updated every day, this list highlights the ideas, discussions, and discoveries making waves right now. Whether you're here to learn, share, or explore, these trending picks keep you connected to what matters most.</p>
             </div>
 
             <div class="divider"></div>
             <div class="contentblock" aria-labelledby="sharedspace-title">
                 <img src="../Assets/icons/Commentimage.jpg" alt="Comment symbol for shared space section">
                 <h2 id="sharedspace-title">SHARED SPACE</h2>
-                <p>The Shared Space is an open community hub where you can express yourself and engage with others in meaningful ways. You can create text posts to share your thoughts, stories, or updates, and upload photos or videos to visually communicate moments and ideas. Interact with others by liking posts, leaving comments, or sharing content that resonates with you. To help keep conversations organized and easy to explore, you can use tags and browse through topics that match your interests. This space is designed to be inclusive, supportive, and engaging—a place where everyone’s voice can be heard and valued.</p>
+                <h3>Share, Connect, and Be Heard</h3>
+                <p>Welcome to Shared Space — an open community hub where your voice matters. Here, you can post your thoughts, stories, updates, and even upload photos or videos to bring your experiences to life. Engage with others by liking, commenting, or sharing content that speaks to you. Use tags to keep discussions organized and explore topics that match your interests. This is a space built on inclusivity, support, and meaningful connection — where every contribution counts and every voice is valued.</p>
             </div>
 
             <div class="divider"></div>
             <div class="contentblock" aria-labelledby="communityhub-title">
                 <img src="../Assets/icons/Sharedspaceimg.jpg" alt="Community interaction illustration">
                 <h2 id="communityhub-title">COMMUNITY HUB</h2>
-                <p>The Community page is a central place where members can come together with a shared understanding of how to interact respectfully and safely. Here, you’ll find the rules that guide behavior within the space and the values that shape the community’s culture and purpose. If you ever come across content that doesn’t align with these standards, the report posts feature allows you to flag it for review. This page also includes announcements to keep everyone informed about updates, events, or important news. It’s designed to support a positive, welcoming environment where everyone feels safe, heard, and respected.</p>
+                <h3>Fostering Respect and Connection</h3>
+                <p>The Community page is your guide to building a safe, respectful, and welcoming space for all. Here, you’ll find the community rules and shared values that shape how we interact and support one another. Stay informed through announcements about updates, events, and important news. If you encounter content that doesn’t align with our standards, use the report feature to flag it for review. This space is here to ensure every member feels safe, heard, and empowered to participate meaningfully.</p>
             </div>
 
             <div class="divider"></div>
             <div class="contentblock" aria-labelledby="events-title">
                 <img src="../Assets/icons/Eventimage.jpg" alt="Calendar image representing events">
                 <h2 id="events-title">EVENTS</h2>
-                <p>The Events Space is your go-to area for discovering, planning, and participating in community events. Whether you’re interested in hosting your own event or signing up to attend one, this page makes it easy to get involved. Stay organized with the event calendar, which shows upcoming activities and important dates, and use the local event map to see what’s happening nearby. This space encourages active community participation by bringing people together through shared experiences, learning opportunities, and local engagement.</p>
+                <h3>Connect Through Events and Experiences</h3>
+                <p>The Events Hub is your go-to space for discovering, planning, and joining community activities. Whether you're hosting an event or attending one, this page makes it easy to get involved. Use the interactive calendar to stay updated on upcoming events and important dates, and explore the local event map to find gatherings near you. Designed to spark participation and connection, this space brings people together through shared experiences, learning, and local engagement.</p>
             </div>
 
             <div class="divider"></div>
             <div class="contentblock" aria-labelledby="resources-title">
                 <img src="../Assets/icons/resourcehub.jpg" alt="Folder icon for resource hub">
                 <h2 id="resources-title">RESOURCE HUB</h2>
-                <p>The Resource Hub is a central space where community members can access and share helpful digital tools and files. You can find trusted software links and driver links to support your tech needs, making it easier to get the right tools quickly. The file download section lets you access shared documents and materials, while the file upload feature allows you to contribute your own resources for others to use. This hub is designed to foster knowledge sharing, support collaboration, and ensure everyone has access to the resources they need.</p>
+                <h3>Access and Share What You Need</h3>
+                <p>The Resource Hub is your central space for discovering and contributing valuable digital tools and files. From trusted software and driver links to downloadable documents, everything you need is just a click away. Share your own resources with the community through the upload feature and help others solve problems, learn, or collaborate. This hub is built to encourage knowledge sharing and ensure everyone has access to the right tools for success.</p>
             </div>
 
             <div class="divider"></div>
             <div class="contentblock" aria-labelledby="userwall-title">
                 <img src="../Assets/icons/userwall.jpg" alt="User profile wall illustration">
                 <h2 id="userwall-title">USER WALL</h2>
-                <p>The User Wall is your personal space to showcase your identity and connect with others in the community. You can customise your wall with backgrounds, write a user description, and upload a profile picture to express who you are. Engage with others through direct messaging and wall comments, fostering meaningful interactions and conversations. You can also add your social links to stay connected beyond the platform. This space empowers you to personalise your presence, build relationships, and share your story in an inclusive and welcoming environment.</p>
-        </div>
+                <h3>Express Yourself and Connect</h3>
+                <p>The User Wall is your personal space to showcase who you are and build connections within the community. Customise your wall with backgrounds, a user description, and a profile picture that reflect your identity. Interact through direct messages and wall comments to spark conversations and form meaningful relationships. Add your social links to stay connected beyond the platform. This space is designed to empower you to share your story, foster connection, and be part of an inclusive, welcoming environment.</p>
             </div>
         </main>
 
@@ -183,5 +181,4 @@
         <script src="../js/script.js"></script>
     </div>
 </body>
-
 </html>
