@@ -9,9 +9,8 @@
 }
 
 .swiper {
-    position: relative;
     width: 100%;
-    height: 100%;
+    height:80%;
 }
 
 .swiper-slide-active {
@@ -26,8 +25,7 @@
 
 .swiper-slide {
     background-color: var(--cardback);
-    position: relative;
-    height: 100%;
+    height: 80%;
     overflow: hidden;
     border-radius: 10px;
     display: block;
@@ -51,7 +49,6 @@
 
 .swiper-slide::before {
     content: '';
-    position: absolute;
     width: 100%;
     height: 100%;
     z-index: 5;
